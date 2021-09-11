@@ -1,0 +1,26 @@
+body,html{
+    height: 100%;  
+    font-family:'pf_handbook_proregular';
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+body{
+    background-color: $l-grey;
+}
+
+p {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+input{
+    padding: 14px !important;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 17px;
+}

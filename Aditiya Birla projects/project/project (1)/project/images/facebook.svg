@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="23px" viewBox="0 0 12 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/32px/Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.5714424,5.16071448 C21.2098348,5.10714298 19.9642976,5 18.5178673,5 C15.491078,5 13.4151826,6.84821649 13.4151826,10.2366134 L13.4151826,13.1562597 L10,13.1562597 L10,17.1205502 L13.4151826,17.1205502 L13.4151826,27.2857409 L17.5134018,27.2857409 L17.5134018,17.1205502 L20.9151916,17.1205502 L21.4375136,13.1562597 L17.5134018,13.1562597 L17.5134018,10.6250067 C17.5134018,9.48661249 17.8214379,8.69643298 19.4687613,8.69643298 L21.5714424,8.69643298 L21.5714424,5.16071448 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="C02-Footer" transform="translate(-1209.000000, -209.000000)">
+            <g id="Copyright/Social">
+                <g transform="translate(47.000000, 204.000000)">
+                    <g id="Social" transform="translate(1152.000000, 0.000000)">
+                        <g id="Icon/32px/Facebook">
+                            <rect id="Icon-BG" x="0" y="0" width="32" height="32"></rect>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <g id="Fill/Secondary/White" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                                <rect id="Rectangle-Copy" x="0" y="0" width="32" height="32"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

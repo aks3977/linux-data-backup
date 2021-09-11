@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container"><br>
+		
+		<div class="col-lg-6 m-auto d-block">
+			
+			<form class="bg-light">
+				
+				<div class="form-group">
+					<label for="user" class="font-weight-bold"> Username: </label>
+					<input type="text" name="user" class="form-control" id="user" autocomplete="off">
+					<span id="username" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				
+
+				<div class="form-group mobile_number">
+					<label class="font-weight-bold"> Mobile Number: </label>
+					<input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off">
+					<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Email: </label>
+					<input type="text" name="email" class="form-control" id="emails" autocomplete="off">
+					<span id="emailids" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> OTP: </label>
+					<input type="text" name="email" class="form-control" id="otp" autocomplete="off">
+					<span id="otp-no" class="text-danger font-weight-bold"> </span>
+				</div>
+				
+
+				<input type="submit" name="submit" value="submit" class="btn btn-success" 	autocomplete="off">
+
+
+			</form><br><br>
+
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+
+$('.mobile_number').on("#mobileNumber", checkValue)
+
+function checkValue(e) {
+    // var input = document.getElementById('contact');
+    // alert("name",input);
+    console.log(typeof e.target.value);
+    let mobileNum = e.target.value
+
+    if (mobileNum.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)) {
+        $('#mobileno').innerHTML="";
+    } else {
+		$('#mobileno').innerHTML="invalid mobile number";
+
+    }
+}
+
+
+		// function validation(){
+
+		// 	var user = document.getElementById('user').value;
+		// 	var mobileNumber = document.getElementById('mobileNumber').value;
+		// 	var emails = document.getElementById('emails').value;
+		// 	var otp = document.getElementById('otp').value;
+
+
+           
+
+
+
+		// 	if(user == ""){
+		// 		document.getElementById('username').innerHTML =" ** Please fill the username field";
+		// 		return false;
+		// 	}
+		// 	if((user.length <= 2) || (user.length > 20)) {
+		// 		document.getElementById('username').innerHTML =" ** Username lenght must be between 2 and 20";
+		// 		return false;	
+		// 	}
+		// 	if(!isNaN(user)){
+		// 		document.getElementById('username').innerHTML =" ** only characters are allowed";
+		// 		return false;
+		// 	}
+
+
+
+
+
+
+
+
+
+
+
+		// 	if(mobileNumber == ""){
+		// 		document.getElementById('mobileno').innerHTML =" ** Please fill the mobile NUmber field";
+		// 		return false;
+		// 	}
+		// 	if(isNaN(mobileNumber)){
+		// 		document.getElementById('mobileno').innerHTML =" ** user must write digits only not characters";
+		// 		return false;
+		// 	}else{
+		// 		document.getElementById('mobileno').innerHTML ="";
+		// 		return false;
+
+		// 	}
+
+			
+		// 	if(mobileNumber.length!=10){
+		// 		document.getElementById('mobileno').innerHTML =" ** Mobile Number must be 10 digits only";
+		// 		return false;
+		// 	}
+
+
+		// 	if(emails == ""){
+		// 		document.getElementById('emailids').innerHTML =" ** Please fill the email idx` field";
+		// 		return false;
+		// 	}
+		// 	if(emails.indexOf('@') <= 0 ){
+		// 		document.getElementById('emailids').innerHTML =" ** @ Invalid Position";
+		// 		return false;
+		// 	}
+
+		// 	if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+		// 		document.getElementById('emailids').innerHTML =" ** . Invalid Position";
+		// 		return false;
+		// 	}
+
+
+		// 	if(otp == ""){
+        //         document.getElementById('otp-no').innerHTML = "** please fill the otp field";
+        //         return false;
+        //     }
+        //     if(isNaN(otp)){
+        //         document.getElementById('otp-no').innerHTML = "**otp is invalid";
+        //         return false;
+
+        //     }
+        //     if(otp.length!=6){
+        //         document.getElementById('otp-no').innerHTML = "**otp is invalid";
+        //         return false;
+
+        //     }
+			
+
+		// }
+
+	</script>
+
+</body>
+</html>

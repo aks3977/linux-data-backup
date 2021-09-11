@@ -1,0 +1,2907 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <!-- Import the amp-youtube component -->
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <!-- Import the amp-accordion component -->
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <!-- Import `amp-selector` component in the header which we'll use to implement the tab switching. -->
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <!-- Import the amp-bind component -->
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
+    <style amp-custom>
+      /*--Fonts--*/
+      @font-face {
+        font-family: pfhandbookpro-lightitalic;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-lightitalic-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-lightitalic-eot.eot?#iefix") format("embedded-opentype"),url(../fonts/pf-handbook-pro/pfhandbookpro-lightitalic-woff2.woff2) format("woff2"),url(../fonts/pf-handbook-pro/pfhandbookpro-lightitalic-woff.woff) format("woff"),url(../fonts/pf-handbook-pro/pfhandbookpro-lightitalic-svg.svg#pfhandbookpro-lightitalic) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: pfhandbookpro-lightitalic;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-lightitalic-svg.svg#pfhandbookpro-lightitalic") format("svg");
+        }
+      }
+      @font-face {
+        font-family: pfhandbookpro-regular;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-regular-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-regular-eot.eot?#iefix") format("embedded-opentype"),url(../fonts/pf-handbook-pro/pfhandbookpro-regular-woff2.woff2) format("woff2"),url(../fonts/pf-handbook-pro/pfhandbookpro-regular-woff.woff) format("woff"),url(../fonts/pf-handbook-pro/pfhandbookpro-regular-svg.svg#pfhandbookpro-regular) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: pfhandbookpro-regular;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-regular-svg.svg#pfhandbookpro-regular") format("svg");
+        }
+      }
+      @font-face {
+        font-family: pfhandbookpro-bold;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-bold-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-bold-eot.eot?#iefix") format("embedded-opentype"),url(../fonts/pf-handbook-pro/pfhandbookpro-bold-woff2.woff2) format("woff2"),url(../fonts/pf-handbook-pro/pfhandbookpro-bold-woff.woff) format("woff"),url(../fonts/pf-handbook-pro/pfhandbookpro-bold-svg.svg#pfhandbookpro-bold) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: pfhandbookpro-bold;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-bold-svg.svg#pfhandbookpro-bold") format("svg");
+        }
+      }
+      @font-face {
+        font-family: pfhandbookpro-light;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-light-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-light-eot.eot?#iefix") format("embedded-opentype"),url(../fonts/pf-handbook-pro/pfhandbookpro-light-woff2.woff2) format("woff2"),url(../fonts/pf-handbook-pro/pfhandbookpro-light-woff.woff) format("woff"),url(../fonts/pf-handbook-pro/pfhandbookpro-light-svg.svg#pfhandbookpro-light) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: pfhandbookpro-light;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-light-svg.svg#pfhandbookpro-light") format("svg");
+        }
+      }
+      @font-face {
+        font-family: pfhandbookpro-medium;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-medium-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-medium-eot.eot?#iefix") format("embedded-opentype"),url(../fonts/pf-handbook-pro/pfhandbookpro-medium-woff2.woff2) format("woff2"),url(../fonts/pf-handbook-pro/pfhandbookpro-medium-woff.woff) format("woff"),url(../fonts/pf-handbook-pro/pfhandbookpro-medium-svg.svg#pfhandbookpro-medium) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: pfhandbookpro-medium;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-medium-svg.svg#pfhandbookpro-medium") format("svg");
+        }
+      }
+      @font-face {
+        font-family: pfhandbookpro-thin;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-thin-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-thin-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-handbook-pro/pfhandbookpro-thin-woff2.woff2") format("woff2"), url("../fonts/pf-handbook-pro/pfhandbookpro-thin-woff.woff") format("woff"), url("../fonts/pf-handbook-pro/pfhandbookpro-thin-svg.svg#pfhandbookpro-thin") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+          font-family: pfhandbookpro-thin;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-thin-svg.svg#pfhandbookpro-thin") format("svg");
+        }
+      }
+
+      @font-face {
+        font-family: pfhandbookpro-thinitalic;
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-thinitalic-eot.eot");
+        src: url("../fonts/pf-handbook-pro/pfhandbookpro-thinitalic-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-handbook-pro/pfhandbookpro-thinitalic-woff2.woff2") format("woff2"), url("../fonts/pf-handbook-pro/pfhandbookpro-thinitalic-woff.woff") format("woff"), url("../fonts/pf-handbook-pro/pfhandbookpro-thinitalic-svg.svg#pfhandbookpro-thinitalic") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+          font-family: pfhandbookpro-thinitalic;
+          src: url("../fonts/pf-handbook-pro/pfhandbookpro-thinitalic-svg.svg#pfhandbookpro-thinitalic") format("svg");
+        }
+      }
+
+      @font-face {
+        font-family: pfencoresanspro-reg;
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-eot.eot");
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-eot.eot?#iefix") format("embedded-opentype"),url(../fonts/pf-encore-sans-pro/pfencoresanspro-reg-woff2.woff2) format("woff2"),url(../fonts/pf-encore-sans-pro/pfencoresanspro-reg-woff.woff) format("woff"),url(../fonts/pf-encore-sans-pro/pfencoresanspro-reg-svg.svg#pfencoresanspro-reg) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: pfencoresanspro-reg;
+          src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-svg.svg#pfencoresanspro-reg") format("svg");
+        }
+      }
+      @font-face {
+        font-family: pfencoresanspro-bold;
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bold-eot.eot");
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bold-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bold-woff2.woff2") format("woff2"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bold-woff.woff") format("woff"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bold-svg.svg#pfencoresanspro-bold") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+          font-family: pfencoresanspro-bold;
+          src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bold-svg.svg#pfencoresanspro-bold") format("svg");
+        }
+      }
+
+      @font-face {
+        font-family: pfencoresanspro-bolditalic;
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bolditalic-eot.eot");
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bolditalic-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bolditalic-woff2.woff2") format("woff2"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bolditalic-woff.woff") format("woff"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bolditalic-svg.svg#pfencoresanspro-bolditalic") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+          font-family: pfencoresanspro-bolditalic;
+          src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bolditalic-svg.svg#pfencoresanspro-bolditalic") format("svg");
+        }
+      }
+
+      @font-face {
+        font-family: pfencoresanspro-book;
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-book-eot.eot");
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-book-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-book-woff2.woff2") format("woff2"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-book-woff.woff") format("woff"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-book-svg.svg#pfencoresanspro-book") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+          font-family: pfencoresanspro-book;
+          src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-book-svg.svg#pfencoresanspro-book") format("svg");
+        }
+      }
+
+      @font-face {
+        font-family: pfencoresanspro-bookitalic;
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bookitalic-eot.eot");
+        src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bookitalic-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bookitalic-woff2.woff2") format("woff2"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bookitalic-woff.woff") format("woff"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-bookitalic-svg.svg#pfencoresanspro-bookitalic") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+          font-family: pfencoresanspro-bookitalic;
+          src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-bookitalic-svg.svg#pfencoresanspro-bookitalic") format("svg");
+        }
+      }
+
+      @font-face {
+        font-family: font-icons;
+        src: url("../fonts/font-icons.eot");
+        src: url("../fonts/font-icons.eot?#iefix") format("embedded-opentype"),url(../fonts/font-icons.woff2) format("woff2"),url(../fonts/font-icons.woff) format("woff"),url(../fonts/font-icons.svg#font-icons) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /*--Fonts--*/
+
+      /*--General CSS--*/
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        content: "";
+        font-family: font-icons;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 1;
+        speak: none;
+        text-transform: none;
+      }
+      .icon-home:before {
+        content: "\EA04";
+      }
+      .icon-login:before {
+        content: "\EA05";
+      }
+      .icon-arrow:before {
+        content: "\EA08";
+      }
+      .icon-phone:before {
+        content: "\EA06";
+      }
+
+      body {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: pfhandbookpro-regular,sans-serif;
+        font-size: 1.8rem;
+        line-height: 20px;
+        overflow-x: hidden;
+      }
+      html {
+        font-size: 10px;
+      }
+      .container-fluid {
+        max-width: 1400px;
+      }
+      @media screen and (max-width:1200px) {
+        .container-fluid {
+          max-width: 1200px;
+        }
+      }
+      .pull-right {
+        float: right;
+      }
+      .outerpadding {
+        padding-left: 33px;
+        padding-right: 33px;
+      }
+      @media screen and (max-width:1200px) {
+        .outerpadding {
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+      }
+      @media screen and (max-width:1020px) {
+        .outerpadding {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+      }
+      .main-content {
+        width: 100%;
+        clear: both;
+        overflow-x: hidden;
+        margin-bottom: 35px;
+      }
+      .float100 {
+        float: left;
+        width: 100%;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
+      img.pull-right {
+        margin-left: 15px;
+        margin-bottom: 15px;
+      }
+      img {
+        margin-bottom: 15px;
+        max-width: 100%;
+      }
+      :focus {
+        outline: 0;
+      }
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 0;
+        font-weight: 500;
+        margin-bottom: 2rem;
+      }
+      .h1,
+      .headline-1,
+      h1 {
+        font-family: "pfhandbookpro-regular", sans-serif;
+        letter-spacing: -1.2px;
+        font-size: 9rem;
+        line-height: 7.2rem;
+      }
+      @media (max-width: 767px) {
+        .h1,
+        .headline-1,
+        h1 {
+          font-size: 6.4rem;
+          line-height: 5.6rem;
+          letter-spacing: normal;
+        }
+      }
+
+      .h2,
+      .headline-2,
+      h2 {
+        font-family: "pfhandbookpro-regular", sans-serif;
+        font-size: 64px;
+        line-height: 72px;
+      }
+      @media (max-width: 767px) {
+        .h2,
+        .headline-2,
+        h2 {
+          font-size: 44px;
+          line-height: 48px;
+        }
+      }
+
+      .h3,
+      .headline-3,
+      h3 {
+        font-family: "pfhandbookpro-regular", sans-serif;
+        font-size: 44px;
+        line-height: 48px;
+      }
+      @media (max-width: 767px) {
+        .h3,
+        .headline-3,
+        h3 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+      }
+
+      .h4,
+      .headline-4,
+      h4 {
+        font-family: "pfhandbookpro-regular", sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+      }
+      @media (max-width: 767px) {
+        .h4,
+        .headline-4,
+        h4 {
+          font-size: 28px;
+          line-height: 32px;
+        }
+      }
+
+      .h5,
+      .headline-5,
+      .subheader,
+      h5 {
+        font-family: "pfhandbookpro-regular", sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      @media (max-width: 767px) {
+        .h5,
+        .headline-5,
+        .subheader,
+        h5 {
+          font-size: 22px;
+          line-height: 28px;
+        }
+      }
+
+      .headline-6 {
+        font-family: "pfhandbookpro-regular", sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      @media (max-width: 767px) {
+        .headline-6 {
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+
+      .font18,
+      p {
+        font-size: 1.8rem;
+        line-height: 20px;
+        margin-bottom: 10px;
+        color: #6c7174;
+      }
+      .font16,
+      .small {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+      }
+      .font14,
+      small {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin-bottom: 10px;
+        display: block;
+      }
+      a {
+        font-family: pfhandbookpro-regular,sans-serif;
+        font-size: 1.8rem;
+        line-height: 20px;
+        color: #c7222a;
+        text-decoration: none;
+      }
+      a:active,
+      a:focus,
+      a:hover {
+        color: #c7222a;
+        text-decoration: none;
+        border-bottom: 1px solid #c7222a;
+      }
+      .padding48 {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      ul {
+        list-style: none;
+        font-size: 1.6rem;
+        padding-left: 18px;
+      }
+      ul li {
+        padding: 0;
+        margin: 0;
+        font-family: "pfhandbookpro-regular", sans-serif;
+        color: #000000;
+      }
+      ul li::before {
+        content: "\2022";
+        color: #c7222a;
+        font-weight: 700;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      ul li:last-child {
+        padding-bottom: 0;
+      }
+      ul ul {
+        padding-top: 10px;
+      }
+      ol {
+        font-size: 1.6rem;
+        padding-left: 18px;
+      }
+      ol li {
+        font-family: pfencoresanspro-reg,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #6c7174;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      ol ol {
+        padding-top: 10px;
+      }
+      .show {
+        display: block;
+      }
+      .hide {
+        display: none;
+      }
+      .button {
+        line-height: 28px;
+        text-align: left;
+        border: none;
+        border-radius: 4px;
+        padding: 0;
+        white-space: normal;
+        text-transform: uppercase;
+        opacity: 1;
+        min-width: 184px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .m-b-xs-0 {
+        padding-bottom: 0;
+      }
+      .m-b-xs-1 {
+        padding-bottom: 1px;
+      }
+      .m-b-xs-2 {
+        padding-bottom: 2px;
+      }
+      .m-b-xs-3 {
+        padding-bottom: 3px;
+      }
+      .m-b-xs-4 {
+        padding-bottom: 4px;
+      }
+      .m-b-xs-5 {
+        padding-bottom: 5px;
+      }
+      .m-b-xs-6 {
+        padding-bottom: 6px;
+      }
+      .m-b-xs-7 {
+        padding-bottom: 7px;
+      }
+      .m-b-xs-8 {
+        padding-bottom: 8px;
+      }
+      .m-b-xs-9 {
+        padding-bottom: 9px;
+      }
+      .m-b-xs-10 {
+        padding-bottom: 10px;
+      }
+      .m-b-xs-11 {
+        padding-bottom: 11px;
+      }
+      .m-b-xs-12 {
+        padding-bottom: 12px;
+      }
+      .m-b-xs-13 {
+        padding-bottom: 13px;
+      }
+      .m-b-xs-14 {
+        padding-bottom: 14px;
+      }
+      .m-b-xs-15 {
+        padding-bottom: 15px;
+      }
+      .m-b-xs-16 {
+        padding-bottom: 16px;
+      }
+      .m-b-xs-17 {
+        padding-bottom: 17px;
+      }
+      .m-b-xs-18 {
+        padding-bottom: 18px;
+      }
+      .m-b-xs-19 {
+        padding-bottom: 19px;
+      }
+      .m-b-xs-20 {
+        padding-bottom: 20px;
+      }
+      .m-b-xs-21 {
+        padding-bottom: 21px;
+      }
+      .m-b-xs-22 {
+        padding-bottom: 22px;
+      }
+      .m-b-xs-23 {
+        padding-bottom: 23px;
+      }
+      .m-b-xs-24 {
+        padding-bottom: 24px;
+      }
+      .m-b-xs-25 {
+        padding-bottom: 25px;
+      }
+      .m-b-xs-26 {
+        padding-bottom: 26px;
+      }
+      .m-b-xs-27 {
+        padding-bottom: 27px;
+      }
+      .m-b-xs-28 {
+        padding-bottom: 28px;
+      }
+      .m-b-xs-29 {
+        padding-bottom: 29px;
+      }
+      .m-b-xs-30 {
+        padding-bottom: 30px;
+      }
+      .m-b-xs-31 {
+        padding-bottom: 31px;
+      }
+      .m-b-xs-32 {
+        padding-bottom: 32px;
+      }
+      .m-b-xs-33 {
+        padding-bottom: 33px;
+      }
+      .m-b-xs-34 {
+        padding-bottom: 34px;
+      }
+      .m-b-xs-35 {
+        padding-bottom: 35px;
+      }
+      .m-b-xs-36 {
+        padding-bottom: 36px;
+      }
+      .m-b-xs-37 {
+        padding-bottom: 37px;
+      }
+      .m-b-xs-38 {
+        padding-bottom: 38px;
+      }
+      .m-b-xs-39 {
+        padding-bottom: 39px;
+      }
+      .m-b-xs-40 {
+        padding-bottom: 40px;
+      }
+      .m-b-xs-41 {
+        padding-bottom: 41px;
+      }
+      .m-b-xs-42 {
+        padding-bottom: 42px;
+      }
+      .m-b-xs-43 {
+        padding-bottom: 43px;
+      }
+      .m-b-xs-44 {
+        padding-bottom: 44px;
+      }
+      .m-b-xs-45 {
+        padding-bottom: 45px;
+      }
+      .m-b-xs-46 {
+        padding-bottom: 46px;
+      }
+      .m-b-xs-47 {
+        padding-bottom: 47px;
+      }
+      .m-b-xs-48 {
+        padding-bottom: 48px;
+      }
+      .m-b-xs-49 {
+        padding-bottom: 49px;
+      }
+      .m-b-xs-50 {
+        padding-bottom: 50px;
+      }
+      .m-b-xs-51 {
+        padding-bottom: 51px;
+      }
+      .m-b-xs-52 {
+        padding-bottom: 52px;
+      }
+      .m-b-xs-53 {
+        padding-bottom: 53px;
+      }
+      .m-b-xs-54 {
+        padding-bottom: 54px;
+      }
+      .m-b-xs-55 {
+        padding-bottom: 55px;
+      }
+      .m-b-xs-56 {
+        padding-bottom: 56px;
+      }
+      .m-b-xs-57 {
+        padding-bottom: 57px;
+      }
+      .m-b-xs-58 {
+        padding-bottom: 58px;
+      }
+      .m-b-xs-59 {
+        padding-bottom: 59px;
+      }
+      .m-b-xs-60 {
+        padding-bottom: 60px;
+      }
+      .m-b-xs-61 {
+        padding-bottom: 61px;
+      }
+      .m-b-xs-62 {
+        padding-bottom: 62px;
+      }
+      .m-b-xs-63 {
+        padding-bottom: 63px;
+      }
+      .m-b-xs-64 {
+        padding-bottom: 64px;
+      }
+      .m-b-xs-65 {
+        padding-bottom: 65px;
+      }
+      .m-b-xs-66 {
+        padding-bottom: 66px;
+      }
+      .m-b-xs-67 {
+        padding-bottom: 67px;
+      }
+      .m-b-xs-68 {
+        padding-bottom: 68px;
+      }
+      .m-b-xs-69 {
+        padding-bottom: 69px;
+      }
+      .m-b-xs-70 {
+        padding-bottom: 70px;
+      }
+      .m-b-xs-71 {
+        padding-bottom: 71px;
+      }
+      .m-b-xs-72 {
+        padding-bottom: 72px;
+      }
+      .m-b-xs-73 {
+        padding-bottom: 73px;
+      }
+      .m-b-xs-74 {
+        padding-bottom: 74px;
+      }
+      .m-b-xs-75 {
+        padding-bottom: 75px;
+      }
+      .m-b-xs-76 {
+        padding-bottom: 76px;
+      }
+      .m-b-xs-77 {
+        padding-bottom: 77px;
+      }
+      .m-b-xs-78 {
+        padding-bottom: 78px;
+      }
+      .m-b-xs-79 {
+        padding-bottom: 79px;
+      }
+      .m-b-xs-80 {
+        padding-bottom: 80px;
+      }
+      .m-b-xs-81 {
+        padding-bottom: 81px;
+      }
+      .m-b-xs-82 {
+        padding-bottom: 82px;
+      }
+      .m-b-xs-83 {
+        padding-bottom: 83px;
+      }
+      .m-b-xs-84 {
+        padding-bottom: 84px;
+      }
+      .m-b-xs-85 {
+        padding-bottom: 85px;
+      }
+      .m-b-xs-86 {
+        padding-bottom: 86px;
+      }
+      .m-b-xs-87 {
+        padding-bottom: 87px;
+      }
+      .m-b-xs-88 {
+        padding-bottom: 88px;
+      }
+      .m-b-xs-89 {
+        padding-bottom: 89px;
+      }
+      .m-b-xs-90 {
+        padding-bottom: 90px;
+      }
+      .m-b-xs-91 {
+        padding-bottom: 91px;
+      }
+      .m-b-xs-92 {
+        padding-bottom: 92px;
+      }
+      .m-b-xs-93 {
+        padding-bottom: 93px;
+      }
+      .m-b-xs-94 {
+        padding-bottom: 94px;
+      }
+      .m-b-xs-95 {
+        padding-bottom: 95px;
+      }
+      .m-b-xs-96 {
+        padding-bottom: 96px;
+      }
+      .m-b-xs-97 {
+        padding-bottom: 97px;
+      }
+      .m-b-xs-98 {
+        padding-bottom: 98px;
+      }
+      .m-b-xs-99 {
+        padding-bottom: 99px;
+      }
+      .m-b-xs-100 {
+        padding-bottom: 100px;
+      }
+      .spacer-breakpoint {
+        height: 0;
+        width: 100%;
+      }
+      /*--General CSS--*/
+
+      /*--Navigation CSS--*/
+      #mobi-navigation.main-nav-active.active .utility-links {
+        display: none;
+      }
+      #mobi-navigation .menu-content .mobi-nav-wrapper .red-link > a,
+      #mobi-navigation .menu-content .mobi-nav-wrapper .red-link span {
+        color: #c7222a;
+      }
+      #mobi-navigation .menu-content .mobi-nav-wrapper .yellow-link > a,
+      #mobi-navigation .menu-content .mobi-nav-wrapper .yellow-link span {
+        color: #d4ae69;
+      }
+      #mobi-navigation .menu-content .mobi-nav-wrapper .green-link > a,
+      #mobi-navigation .menu-content .mobi-nav-wrapper .green-link span {
+        color: #969f6e;
+      }
+      #mobi-navigation .menu-content .mobi-nav-wrapper .pink-link > a,
+      #mobi-navigation .menu-content .mobi-nav-wrapper .pink-link span {
+        color: #da9089;
+      }
+      .mobi-nav-wrapper ul li a,
+      .mobi-nav-wrapper ul li span {
+        font-family: pfhandbookpro-bold,sans-serif;
+        font-size: 2.8rem;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #c7222a;
+      }
+
+      /*--Navigation CSS--*/
+
+      /*--Breadcrumb CSS--*/
+      .top-menu,
+      nav {
+        width: 100%;
+      }
+      .breadcrum-comp__link {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: #6c7174;
+        text-transform: capitalize;
+        position: relative;
+        padding-right: 2.2rem;
+      }
+      .breadcrum-comp__link:active,
+      .breadcrum-comp__link:focus,
+      .breadcrum-comp__link:hover {
+        border: none;
+      }
+      .breadcrum-comp__link:last-child {
+        color: #6a4742;
+        cursor: default;
+      }
+      .breadcrum-comp__link:first-child:after {
+        display: none;
+      }
+      .breadcrum-comp__link:after {
+        content: "\EA15";
+        font-family: font-icons;
+        position: absolute;
+        left: -1.6rem;
+        bottom: 0;
+        font-size: 10px;
+      }
+      /*--Breadcrumb CSS--*/
+
+      /*--Product Banner CSS--*/
+      .cat-pro-banner {
+        margin-right: 0;
+        max-width: 100%;
+        display: inline-block;
+      }
+      .cat-pro-banner__title {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        margin-bottom: 1rem;
+      }
+      .cat-pro-banner__desc {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        color: #000000;
+        margin: 0;
+      }
+      .btn-wrap.btn-left {
+        text-align: left;
+      }
+      .btn-wrap {
+        display: block;
+        width: 100%;
+      }
+      .cat-pro-banner__btn-wrap {
+        padding-top: 1.5rem;
+      }
+      .button-brown {
+        color: #ffffff;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-transform: capitalize;
+        padding: 1.2rem;
+        min-width: 15.4rem;
+        font-family: "pfhandbookpro-bold", sans-serif;
+        border-radius: 2px;
+      }
+      a.button-brown:active,
+      a.button-brown:focus,
+      a.button-brown:hover,
+      a.button-brown:not([href]):not([tabindex]) {
+        color: #fff;
+        border-bottom: none;
+      }
+      .wb-protecting-shade-bg {
+        background-color: #6a4742;
+      }
+
+      /*--Product Banner CSS--*/
+
+      /*--key features CSS--*/
+      .title-wrap {
+        margin-bottom: 2rem;
+      }
+      .title-wrap__title {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        color: #000000;
+        margin-bottom: 0;
+      }
+      .state-list {
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+      .state-list__item--xs-center {
+        text-align: left;
+
+      }
+      .state-list__item {
+        width: 50%;
+        margin-bottom: 2rem;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      ul li.state-list__item:before {
+        display: none;
+      }
+      .state__icon {
+        font-size: 5rem;
+        line-height: 5rem;
+        display: block;
+      }
+      .state__desc {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        display: block;
+      }
+      .wb-brand-dark-grey-clr {
+        color: #6c7174;
+      }
+      .wb-light-brown-clr {
+        color: #b37671;
+      }
+      .icon {
+        margin: 4px;
+      }
+      .icon-plan-8:before {
+        content: "\EA43";
+      }
+      .icon-enhance-protection:before {
+        content: "\EA44";
+      }
+      .icon-joint-life:before {
+        content: "\EA42";
+      }
+      .icon-premium-return:before {
+        content: "\EA41";
+      }
+      /*--key features CSS--*/
+
+      /*--Video blog CSS--*/
+      .video-blog-wrap--v2 {
+        padding: 2rem 0;
+      }
+      .video-blog--v2 {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .video-blog {
+        width: 100%;
+      }
+      .video-blog__info-wrap--v2 {
+        padding-right: 0;
+        width: 100%;
+      }
+      .video-blog__title--v2 {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      .video-blog__title a {
+        color: #000000;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+      .video-blog__title a:hover {
+        color: #c7222a;
+      }
+      .video-blog__title--v2 a {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        white-space: normal;
+        border: none;
+      }
+      .wb-video-blog2-bg {
+        background: #fdf7f7;
+        position: relative;
+      }
+      .video-blog--v2 .video-blog__desc {
+        height: auto;
+      }
+      .video-blog__desc--v2 {
+        margin-bottom: 2rem;
+      }
+      .video-blog__desc--v2 p {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        color: #000000;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .video-blog__img-wrap--v2 {
+        float: left;
+        width: 100%;
+      }
+
+      .wb-video-blog2-bg:before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: calc(50vw);
+        height: 100%;
+        background: #fdf7f7;
+      }
+      .wb-video-blog2-bg:after {
+        content: "";
+        top: 0;
+        position: absolute;
+        left: 100%;
+        width: calc(50vw);
+        height: 100%;
+        background: #fdf7f7;
+      }
+      /*--Video blog CSS--*/
+
+      /*--illustration CSS--*/
+      .illustration__img-wrap {
+        padding: 0.4rem;
+        border-radius: 2px;
+        border: 1px solid #cdcece;
+        box-shadow: 0 0 14px 0 rgba(106, 71, 66, 0.24);
+        display: block;
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+      }
+
+      /*--illustration CSS--*/
+
+      /*--Link Block CSS--*/
+      .link-list {
+        position: relative;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+
+      .three-col-list.link-list__container {
+        position: relative;
+        width: 100%;
+        display: block;
+      }
+      .three-col-list.link-list__container ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 0;
+      }
+      .link-list__list {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+      }
+      .three-col-list.link-list__container ul li {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      ul li:last-child {
+        padding-bottom: 0;
+      }
+      .link-list__list li {
+        padding: 0;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .link-list__list li:before {
+        display: none;
+      }
+      .three-col-list.link-list__container ul li:last-child a {
+        border: none;
+      }
+      .three-col-list.link-list__container ul li a {
+        padding: 18px 20px 18px 40px;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        color: #000000;
+        display: block;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #f1f3f6;
+      }
+      .three-col-list.link-list__container .link-list__list--icon .icon {
+        -ms-transform: none;
+        transform: none;
+        top: 20px;
+        font-size: 2.4rem;
+        display: inline-block;
+        vertical-align: middle;
+        color: #b37671;
+        position: absolute;
+        left: 0;
+      }
+      .link-list__list li a:after {
+        content: "\EA0B";
+        font-family: "font-icons";
+        color: #6a4742;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1;
+        text-transform: none;
+        position: absolute;
+        font-size: 1.8rem;
+        right: 0;
+        top: 37%;
+      }
+      .icon-coins:before {
+        content: "\EA60";
+      }
+      /*--Link Block CSS--*/
+
+      /*--Icon Value CSS--*/
+      .title-wrap__sub-title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        color: #000000;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .state-list {
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      .state-list__item {
+        width: 50%;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding-right: 0;
+      }
+      .state__icon {
+        font-size: 5rem;
+        line-height: 5rem;
+        display: block;
+      }
+      .state__value {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        font-weight: 600;
+        display: block;
+      }
+      .value__unit {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+      }
+      .state__desc {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        display: block;
+      }
+      .icon-claims:before {
+        content: "\EA18";
+      }
+      .icon-served-india:before {
+        content: "\EA19";
+      }
+      .icon-world-locations:before {
+        content: "\EA1A";
+      }
+      .icon-assets:before {
+        content: "\EA17";
+      }
+
+      /*--Icon Value CSS--*/
+
+      /*--Accordian V2 CSS--*/
+      .accordian--v2 {
+        max-width: 92.8rem;
+        margin: 0 auto;
+      }
+      .accordian--v2 .title-wrap {
+        text-align: left;
+      }
+      .accordian--v2 .accordian__wrap {
+        margin: 0 -15px;
+        width: auto;
+        border-radius: 0;
+        padding-left: 0;
+        overflow: hidden;
+      }
+      .accordian--v2 .accordian__item:first-child {
+        border-top: 1px solid #f1f3f6;
+      }
+      .accordian--v2 .accordian__item {
+        border: none;
+        border-bottom: 1px solid #f1f3f6;
+      }
+      .accordian--v2 .accordian__title {
+        background: #ffffff;
+        margin-bottom: 0;
+        border: none;
+      }
+      .accordian__title {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 2rem 6.4rem 2rem 1.6rem;
+        color: #000000;
+        font-family: "pfhandbookpro-regular", sans-serif;
+        position: relative;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .accordian--v2 .accordian__title[aria-expanded="true"] {
+        background: #f1f3f6;
+        border-color: #f1f3f6;
+        color: #c7222a;
+      }
+      .accordian--v2 .accordian__title[aria-expanded="true"] .accordian__icon {
+        -ms-transform: translateY(-70%) rotate(180deg);
+        transform: translateY(-70%) rotate(180deg);
+      }
+      .accordian--v2 .accordian__icon {
+        font-size: 1.4rem;
+      }
+      .accordian__title .accordian__icon {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 1.6rem;
+        color: #6a4742;
+        transition: all 0.3s ease;
+      }
+      .icon-arrow:before {
+        content: "\EA08";
+      }
+      .accordian__info {
+        padding: 2rem 1.6rem;
+        display: none;
+      }
+      .accordian__desc {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        color: #000000;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .table {
+        width: 100%;
+        max-width: 38rem;
+        margin-bottom: 1rem;
+        color: #212529;
+      }
+      .table__wrap {
+        width: 100%;
+        border: 1px solid #353535;
+      }
+      .table__row {
+        border-bottom: 1px solid #353535;
+      }
+      .table__body .table__data,
+      .table__body .table__heading,
+      .table__head .table__data,
+      .table__head .table__heading {
+        vertical-align: middle;
+        text-align: center;
+        font-family: "pfhandbookpro-regular", sans-serif;
+        color: #000000;
+      }
+      .table__body .table__data,
+      .table__body .table__heading,
+      .table__head .table__data,
+      .table__head .table__heading {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+      }
+      .table__body .table__data:first-child,
+      .table__body .table__heading:first-child,
+      .table__head .table__data:first-child,
+      .table__head .table__heading:first-child {
+        width: 25%;
+      }
+      .table__body .table__data:first-child,
+      .table__body .table__data:nth-child(2),
+      .table__body .table__heading:first-child,
+      .table__body .table__heading:nth-child(2),
+      .table__head .table__data:first-child,
+      .table__head .table__data:nth-child(2),
+      .table__head .table__heading:first-child,
+      .table__head .table__heading:nth-child(2) {
+        border-right: 1px solid #353535;
+      }
+      .table td,
+      .table th {
+        padding: 0.75rem;
+        border-top: 1px solid #353535;
+      }
+
+      /*--Accordian V2 CSS--*/
+
+      /*--Accordion CSS--*/
+      .accordian__item {
+        border: 1px solid #dddddd;
+      }
+      .accordian__title {
+        background-color: #f5f5f5;
+      }
+      .accordian__title[aria-expanded="true"] {
+        background: #f5f5f5;
+        border-bottom-color: #dddddd;
+        color: #c7222a;
+      }
+      .icon-decrement:before {
+        content: "\EA2C";
+      }
+      .accordian__title[aria-expanded="true"] .icon-increment:before {
+        content: "\EA2C";
+      }
+      .icon-increment:before {
+        content: "\EA2E";
+      }
+      .accordian__view-all,
+      .accordian__view-less {
+        padding-left: 0;
+        margin-top: 2rem;
+      }
+      .button {
+        line-height: 2.8rem;
+        border: none;
+        border-radius: 4px;
+        white-space: normal;
+        opacity: 1;
+        display: inline-block;
+      }
+      .button-link {
+        text-align: center;
+        min-width: 0;
+        padding: 0 2rem 0 0;
+        color: #da9089;
+        font-size: 2rem;
+        font-family: "pfhandbookpro-bold", sans-serif;
+        background: transparent;
+        text-decoration: underline;
+        text-transform: capitalize;
+      }
+      .hide {
+        display: none;
+      }
+      /*--Accordion CSS--*/
+
+      /*--Tabs CSS--*/
+      amp-selector[role=tablist].tabs__links {
+        display: flex;
+      }
+      amp-selector[role=tablist].tabs__links [role=tab][selected] {
+        outline: none;
+      }
+      amp-selector[role=tablist].tabs__links {
+        display: flex;
+      }
+      amp-selector.tabs__contents [role=tabpanel] {
+        display: none;
+      }
+      amp-selector.tabs__contents [role=tabpanel][selected] {
+        outline: none;
+        display: block;
+      }
+      .tabs {
+        clear: both;
+        width: 100%;
+      }
+      .tabs__links {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      .tabs__links--center {
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .tabs__links--v2 {
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+      .tabs__link--v2 {
+        border-bottom: 1px solid #cdcece;
+      }
+      .tabs__link {
+        position: relative;
+      }
+      .tabs__link--v2:first-child .tabs__anchor {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .tabs__link[aria-selected='true'] .tabs__anchor--v2 {
+        color: #6a4742;
+        background: transparent;
+        border-bottom: 2px solid #6a4742;
+      }
+      .tabs__anchor {
+        font-size: 1.6rem;
+        padding: 1.2rem 2rem;
+      }
+      .tabs__anchor--v2 {
+        text-transform: capitalize;
+        max-width: 20rem;
+      }
+      .tabs__anchor--v2 {
+        color: #cdcece;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        padding: 1.2rem 2rem;
+        background: transparent;
+        overflow: initial;
+      }
+
+      .tabs__content {
+        padding: 0.4rem 0 2.4rem;
+      }
+      .benefits-list {
+        max-width: 725px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        font-size: 1.6rem;
+      }
+      .benefits {
+        padding-left: 3.5rem;
+        position: relative;
+      }
+      .benefits-list__item {
+        padding-bottom: 1.6rem;
+        margin-bottom: 1.6rem;
+        border-bottom: 1px solid #f1f3f6;
+        font-family: "pfhandbookpro-regular", sans-serif;
+      }
+      .benefits-list__item:before {
+        display: none;
+      }
+      .benefits__icon {
+        font-size: 2.2rem;
+        max-width: 2.2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #b37671;
+      }
+      .benefits__title {
+        font-size: 2.2rem;
+        display: block;
+        line-height: 1;
+        color: #000000;
+      }
+      .benefits__desc {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        color: #000000;
+        display: block;
+      }
+      .benefits__sublist {
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+        list-style: disc;
+      }
+      .benefits__sublist-item {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        color: #000000;
+      }
+      .benefits-list__item:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      .benefits__sublist-item:before {
+        display: none;
+      }
+      .wb-info-card1-bg {
+        background: #fdf7f7;
+        position: relative;
+        padding: 2rem 0 0;
+      }
+      .wb-info-card1-bg:before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: calc(50vw);
+        height: 100%;
+        background: #fdf7f7;
+      }
+      .wb-info-card1-bg:after {
+        content: "";
+        top: 0;
+        position: absolute;
+        left: 100%;
+        width: calc(50vw);
+        height: 100%;
+        background: #fdf7f7;
+      }
+      .icon-death:before {
+        content: "\EA4B";
+      }
+      .icon-illness:before {
+        content: "\EA4C";
+      }
+      .icon-waiver:before {
+        content: "\EA4F";
+      }
+      .icon-premium:before {
+        content: "\EA3F";
+      }
+      .icon-joint-shield:before {
+        content: "\EA4D";
+      }
+      .icon-plus-one:before {
+        content: "\EA4E";
+      }
+      .icon-age:before {
+        content: "\EA50";
+      }
+      .icon-chair:before {
+        content: "\EA51";
+      }
+      .icon-terms:before {
+        content: "\EA55";
+      }
+      .icon-premium-terms:before {
+        content: "\EA53";
+      }
+      .icon-premium-mode:before {
+        content: "\EA52";
+      }
+      .icon-sum:before {
+        content: "\EA54";
+      }
+      /*--Tabs CSS--*/
+
+      /*-- Media blogs CSS --*/
+
+      .media-tile-list {
+        background: rgba(237, 201, 198, 0.15);
+        margin: 0 -15px;
+        position: relative;
+      }
+      .media-tile-list__title {
+        display: block;
+        font-size: 1.8rem;
+        font-family: "pfhandbookpro-thin", sans-serif;
+        padding: 2rem 1.5rem;
+        margin-bottom: 0;
+      }
+      .media-tile {
+        width: 100vw;
+        max-width: 100%;
+        position: relative;
+        display: flex;
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 15px;
+      }
+      .media-tile__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .media-tile__link:hover {
+        border-bottom: transparent;
+      }
+      .media-tile-list .view-all--v2 {
+        right: 1.5rem;
+        top: 2rem;
+        position: absolute;
+        font-size: 1.8rem;
+      }
+      .media-tile-list .view-all--v2:hover {
+        border-bottom: transparent;
+        text-decoration: underline;
+      }
+      .media-tile--col2 .media-tile__container:nth-child(-n + 4) {
+        display: block;
+      }
+      .media-tile__container--col2:nth-child(odd) {
+        margin-right: 3rem;
+      }
+      .media-tile__container--col2 {
+        width: calc(50% - 3rem);
+      }
+      .media-tile__container--blog {
+        margin-top: 0;
+        margin-bottom: 3.2rem;
+      }
+      .media-tile__container {
+        position: relative;
+      }
+      .media-tile__wrapper--blog {
+        width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 100%;
+        min-height: 11.2rem;
+        background: #ffffff;
+        border: 1px solid #dedede;
+      }
+      .media-tile__media--blog,
+      .media-tile__media--liked {
+        position: relative;
+      }
+      .media-tile__media--blog {
+        display: block;
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        min-height: 12rem;
+      }
+      .media-tile__content--blog {
+        padding: 1.6rem;
+        min-height: 11rem;
+      }
+      .media-tile__media--blog amp-img {
+        min-height: 11.2rem;
+      }
+      .media-tile__media amp-img {
+        margin: 0;
+        display: block;
+        height: auto;
+        object-fit: cover;
+        z-index: 0;
+        width: 100%;
+      }
+      .media-tile__content {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .media-tile__title--blog {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        position: static;
+        color: #000000;
+      }
+      .media-tile__wrapper--has-link:hover .media-tile__title {
+        color: #c7222a;
+      }
+
+      /*-- Media blogs CSS --*/
+
+      /*-- LI Footer CSS --*/
+      .wb-footer {
+        padding: 2rem 0 4rem;
+        background: #201e19;
+      }
+      .reg-office {
+        border-top: 1px solid #cdcece;
+        border-bottom: 1px solid #cdcece;
+        padding: 2rem 0;
+      }
+      .reg-office__title {
+        font-family: "pfencoresanspro-bold", sans-serif;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: #cdcece;
+        display: block;
+        margin-bottom: 2rem;
+        margin-top: 0;
+      }
+      .reg-office__title:nth-child(2) {
+        margin-bottom: 0.8rem;
+      }
+      .reg-office__desc {
+        font-family: "pfencoresanspro-book", sans-serif;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #cdcece;
+        margin-bottom: 2rem;
+        margin-top: 0;
+      }
+      .aware-block {
+        padding: 2rem 0;
+        border-bottom: 1px solid #cdcece;
+        margin-bottom: 3rem;
+      }
+      .aware-block__title {
+        font-family: "pfencoresanspro-bold", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: #cdcece;
+        margin-bottom: 0.8rem;
+        margin-top: 0;
+      }
+      .aware-block__desc {
+        font-family: "pfencoresanspro-book", sans-serif;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #cdcece;
+        margin: 0;
+      }
+      .foot-link-socialset {
+        padding: 0 15px;
+      }
+      .foot-link-set__title-link {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 2rem 3.5rem 2rem 0;
+        margin-bottom: 0;
+        position: relative;
+        font-family: "pfencoresanspro-bold", sans-serif;
+        color: #cdcece;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 35px;
+      }
+      .foot-link-set__list--social {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      .foot-link-set__list {
+        margin-bottom: 2rem;
+        padding-left: 0;
+        margin-top: 0;
+      }
+      .foot-link-set__list--social .foot-link-set__item {
+        margin-right: 4rem;
+      }
+      .foot-link-socialset__title {
+        margin-bottom: 0;
+      }
+      .foot-link-set__item:before {
+        display: none;
+      }
+      .foot-link-set__link {
+        font-family: "pfencoresanspro-book", sans-serif;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        color: #cdcece;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .foot-link-set__list--social .foot-link-set__icon {
+        font-size: 2.8rem;
+        color: #cdcece;
+      }
+      .foot-link-set__sub-title {
+        font-family: "pfencoresanspro-bold", sans-serif;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: #cdcece;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+      }
+      .icon-facebook:before {
+        content: "\EA01";
+      }
+      .icon-linkedIn:before {
+        content: "\EA13";
+      }
+      .icon-twitter:before {
+        content: "\EA03";
+      }
+      .icon-instagram:before {
+        content: "\EA02";
+      }
+      .icon-youtube:before {
+        content: "\EA0A";
+      }
+      .foot-link-set__title {
+        padding-right: 0;
+        background-color: transparent;
+        border: none;
+        color: #cdcece;
+      }
+      .foot-link-set__link:active,
+      .foot-link-set__link:focus,
+      .foot-link-set__link:hover,
+      .foot-link-set__title-link:active,
+      .foot-link-set__title-link:focus,
+      .foot-link-set__title-link:hover {
+        color: #da9089;
+        border: none;
+      }
+      .foot-link-set__title[aria-expanded="true"],
+      .foot-link-set__title[aria-expanded="true"] a {
+        color: #da9089;
+      }
+      .foot-link-set__link--bold {
+        font-family: "pfencoresanspro-bold", sans-serif;
+        line-height: 2.2rem;
+      }
+      .wb-footer .foot-link-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        border-bottom: 0;
+        margin: 0 -15px;
+      }
+      .wb-footer .foot-link-wrap__col {
+        width: 100%;
+      }
+      .foot-link-set {
+        border-bottom: 1px solid #cdcece;
+        padding: 0 15px;
+      }
+      .foot-link-set__title .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 1.2rem;
+        font-family: font-icons;
+        font-size: 1.4rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        z-index: 1;
+        transition: transform 0.3s ease-out;
+      }
+      .foot-link-set__title[aria-expanded="true"] .icon {
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      .foot-link-set__list--tax {
+        max-width: 100%;
+      }
+      .foot-link-set__list--tax .foot-link-set__item:first-child {
+        padding-top: 0;
+      }
+      .foot-link-set__list--tax .foot-link-set__item {
+        padding: 1.8rem 0;
+        border-bottom: 1px solid #cdcece;
+      }
+      .wb-footer .img-link-block {
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .wb-footer .img-link-block__img {
+        max-width: 5.5rem;
+        height: 3.6rem;
+        margin-right: 1rem;
+      }
+      .foot-link-set__list--tax .foot-link-set__link {
+        line-height: 1.8rem;
+        white-space: normal;
+        width: calc(100% - 55px);
+      }
+      .foot-link-set__list--tax .foot-link-set__item:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+      /*-- LI Footer CSS --*/
+
+      /*--Footer CSS--*/
+      footer .footer-bottom-wrapper .lower-div,
+      footer .footer-bottom-wrapper .upper-div,
+      main {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      footer .footer-bottom-wrapper {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+      }
+      footer .footer-logo {
+        float: left;
+        margin-right: 10px;
+      }
+      footer .footer-logo img {
+        max-width: 130px;
+        height: auto;
+      }
+      footer .footer-logo a {
+        border-bottom: none;
+      }
+      footer .upper-div {
+        float: left;
+        width: 100%;
+        padding: 40px 0 0;
+      }
+      @media screen and (max-width:1020px) {
+        footer .upper-div {
+          border-bottom: none;
+        }
+      }
+      footer .upper-div .lcol {
+        margin-left: 64px;
+        float: left;
+      }
+      footer .upper-div ul {
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+      footer .upper-div ul li {
+        margin-top: 12px;
+        padding: 0;
+      }
+      footer .upper-div ul li:first-child {
+        margin-top: 0;
+      }
+      footer .upper-div ul li:before {
+        display: none;
+      }
+      footer .upper-div ul li a {
+        color: #fff;
+        font-family: pfencoresanspro-reg,sans-serif;
+        font-size: 1.6rem;
+        line-height: 24px;
+      }
+      footer .upper-div ul li a:active,
+      footer .upper-div ul li a:focus,
+      footer .upper-div ul li a:hover {
+        border-bottom-color: #fff;
+      }
+      footer .upper-div ul+ul {
+        margin-top: 12px;
+      }
+      @media screen and (max-width:767px) {
+        footer .upper-div {
+          padding: 32px 0 0;
+        }
+      }
+      footer .lower-div {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        clear: both;
+        padding: 32px 0 22px;
+      }
+      @media screen and (max-width:767px) {
+        footer .lower-div {
+          display: block;
+          float: left;
+        }
+      }
+      footer .lower-div .copyright p {
+        color: #fff;
+        font-family: pfencoresanspro-reg,sans-serif;
+        font-size: 1.6rem;
+        line-height: 24px;
+        margin-top: 0;
+      }
+      @media screen and (max-width:1020px) and (min-width:768px) {
+        footer .lower-div .copyright p {
+          margin-bottom: 0;
+        }
+      }
+      footer .lower-div .socialicons ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        float: right;
+      }
+      footer .lower-div .socialicons ul li {
+        display: inline-block;
+        padding: 0 8px;
+      }
+      footer .lower-div .socialicons ul li:before {
+        display: none;
+      }
+      footer .lower-div .socialicons ul li a {
+        color: #fff;
+      }
+      footer .lower-div .socialicons ul li a:active,
+      footer .lower-div .socialicons ul li a:focus,
+      footer .lower-div .socialicons ul li a:hover {
+        border-bottom: none;
+      }
+      footer .lower-div .socialicons ul li a .icon {
+        color: #fff;
+        font-size: 2.2rem;
+      }
+      @media screen and (max-width:767px) {
+        footer .lower-div .socialicons ul {
+          display: none;
+        }
+      }
+      @media screen and (max-width:1020px) {
+        footer .lower-div .socialicons {
+          display: none;
+        }
+      }
+      @media screen and (max-width:767px) {
+        footer .lower-div .socialicons {
+          display: block;
+        }
+      }
+      @media screen and (max-width:1020px) and (min-width:768px) {
+        footer .lower-div {
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding: 18px 0 33px;
+        }
+      }
+      @media screen and (max-width:767px) {
+        footer .lower-div {
+          padding: 20px 0;
+        }
+      }
+      footer .contacttext {
+        float: left;
+        margin-right: 32px;
+        color: #fff;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      footer .contacttext .caption {
+        color: #fff;
+        font-size: 1.6rem;
+        line-height: 24px;
+        font-family: pfhandbookpro-regular,sans-serif;
+        margin-top: 0;
+      }
+      footer .contacttext .caption a {
+        color: #fff;
+      }
+      footer .contacttext .caption a:active,
+      footer .contacttext .caption a:focus,
+      footer .contacttext .caption a:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+      footer .contacttext .icon {
+        font-size: 2.2rem;
+        color: #fff;
+        margin: 0 8px;
+      }
+      .dark-grey-bg {
+        background-color: #6c7174;
+      }
+      @media screen and (max-width:1020px) {
+        footer .lcol {
+          display: none;
+        }
+      }
+      @media screen and (max-width:1020px) and (min-width:768px) {
+        footer .upper-div {
+          width: 25%;
+        }
+        footer .lower-div {
+          width: 75%;
+          display: block;
+          clear: none;
+          float: left;
+        }
+        footer .lower-div .socialicons {
+          display: block;
+          margin-top: 10px;
+        }
+        footer .lower-div .socialicons ul {
+          display: none;
+        }
+      }
+      /*--Footer CSS--*/
+    </style>
+    <link rel="canonical" href=".">
+    <title></title>
+  </head>
+  <body>
+    <div class="main-content main-content--website">
+      <a class="visuallyhidden" name="maincontent" id="mainContent"></a>
+      <div class="container-fluid">
+        <div class="outerpadding">
+          <!-- breadcrumb Start -->
+          <div class="website-breadcrumb">
+            <nav class="breadcrum-comp">
+              <a href="#" class="breadcrum-comp__link" title="dummy title text">Homepage</a>
+              <a href="#" class="breadcrum-comp__link" title="dummy title text">Explore Plan</a>
+              <a href="#" class="breadcrum-comp__link" title="dummy title text">LifeShield Plan</a>
+            </nav>
+          </div>
+          <!-- breadcrumb End -->
+          <div class="spacer-breakpoint divider m-b-xs-18"></div>
+          <!-- product banner Start -->
+          <div class="category-product-banner">
+            <div class="category-product-banner__top">
+              <div class="cat-pro-banner">
+                <h3 class="cat-pro-banner__title">अपने प्रियजनों के भविष्य की सुरक्षा अब अनुकूलन योग्य विकल्पों के साथ आसान है।</h3>
+                <p class="cat-pro-banner__desc">आदित्य बिड़ला सन लाइफ इंश्योरेंस लाइफ शील्ड प्लान आपको अपने परिवार की जरूरतों के अनुसार 8 अलग-अलग प्लान विकल्पों में से एक संयोजन बनाने की सुविधा प्रदान करता है, ताकि उन्हें आपकी अनुपस्थिति में भी उनकी जीवनशैली से समझौता न करना पड़े।</p>
+                <div class="btn-wrap cat-pro-banner__btn-wrap btn-left">
+                  <button class="button button-brown wb-protecting-shade-bg">अभी खरीदें</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product banner End -->
+          <div class="spacer-breakpoint divider m-b-xs-20"></div>
+          <!-- key features  Start -->
+          <div class="icon-value">
+            <div class="title-wrap">
+              <h2 class="title-wrap__title">प्रमुख विशेषताऐं</h2>
+            </div>
+            <ul class="state-list">
+              <li class="state-list__item state-list__item--xs-center">
+                <div class="state">
+                  <span class="state__icon wb-light-brown-clr icon icon-plan-8"></span>
+                  <!-- provision for img instead of icon -->
+                  <!-- <amp-img src="../images/award1.png" class="state__img" layout="responsive" alt="AMP"></amp-img> -->
+                  <span class="state__desc wb-brand-dark-grey-clr">आपकी विभिन्न सुरक्षा आवश्यकताओं के अनुरूप 8 योजना विकल्प</span>
+                </div>
+              </li>
+              <li class="state-list__item state-list__item--xs-center">
+                <div class="state">
+                  <span class="state__icon wb-light-brown-clr icon icon-enhance-protection"></span>
+                  <span class="state__desc wb-brand-dark-grey-clr">उन्नत जीवन चरण संरक्षण विकल्प</span>
+                </div>
+              </li>
+              <li class="state-list__item state-list__item--xs-center">
+                <div class="state">
+                  <span class="state__icon wb-light-brown-clr icon icon-joint-life"></span>
+                  <span class="state__desc wb-brand-dark-grey-clr">संयुक्त जीवन सुरक्षा विकल्प</span>
+                </div>
+              </li>
+              <li class="state-list__item state-list__item--xs-center">
+                <div class="state">
+                  <span class="state__icon wb-light-brown-clr icon icon-premium-return"></span>
+                  <span class="state__desc wb-brand-dark-grey-clr">प्रीमियम विकल्प की वापसी</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- key features  End -->
+          <div class="spacer-breakpoint divider m-b-xs-20"></div>
+          
+
+          <div class="spacer-breakpoint divider m-b-xs-40"></div>
+          <!-- video blog  Start -->
+          <div class="video-blog-wrap video-blog-wrap--v2 wb-video-blog2-bg">
+            <div class="video-blog video-blog--v2">
+              <div class="video-blog__info-wrap video-blog__info-wrap--v2">
+                <h3 class="video-blog__title video-blog__title--v2">
+                  <a href="#" title="dummy title text">पुस्तक तकरीबन विस्तरणक्षमता संसाध काम प्राप्त स्थापित पुष्टिकर्ता। </a>
+                </h3>
+                <div class="video-blog__desc video-blog__desc--v2">
+                  <p>पुस्तक तकरीबन विस्तरणक्षमता संसाध काम प्राप्त स्थापित पुष्टिकर्ता केवल विवरण मुखय सभीकुछ बिन्दुओ बनाकर बिन्दुओ सोफ़तवेर संदेश। पुस्तक तकरीबन विस्तरणक्षमता संसाध काम प्राप्त स्थापित पुष्टिकर्ता केवल विवरण मुखय सभीकुछ बिन्दुओ बनाकर बिन्दुओ सोफ़तवेर संदेश</p>
+                </div>
+              </div>
+              <div class="video-blog__img-wrap video-blog__img-wrap--v2">
+                <amp-youtube width="480" height="255" layout="responsive" data-videoid="lBTCB7yLs8Y"></amp-youtube>
+              </div>
+            </div>
+          </div>
+          <!-- video blog  End -->
+
+          <div class="spacer-breakpoint divider m-b-xs-40"></div>
+          <!-- illustration Start -->
+          <div class="illustration">
+            <div class="title-wrap">
+              <h2 class="title-wrap__title">चित्रण</h2>
+            </div>
+            <div class="illustration__img-wrap js-addto">
+              <amp-img src="../../images/illustration1@3x.jpg" width="1272" height="477" layout="responsive" alt="illustration" title="illustration" class="illustration__img js-img"></amp-img>
+            </div>
+          </div>
+          <!-- illustration End -->
+          <div class="spacer-breakpoint divider m-b-xs-40"></div>
+          <!--Link Block Starts-->
+          <div class="link-list">
+            <div class="title-wrap">
+              <h2 class="title-wrap__title">अन्य टर्म उत्पाद</h2>
+            </div>
+            <!--Link List Starts -->
+            <div class="three-col-list link-list__container">
+              <ul class="link-list__list link-list__list--icon">
+                <li class="">
+                  <a href="#" title="dummy title text">
+                    <span class="icon icon-coins"></span>आय शील्ड योजना</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Link Block End-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wb-footer">
+      <div class="container-fluid">
+        <div class="outerpadding">
+          <div class="foot-link-wrap">
+            <amp-accordion class="foot-link-wrap__col" expand-single-section animate>
+
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Term Insurance</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Life Shield Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Income Shield Plan</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">(ULIP) Wealth with <br> Protection Plans</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Max Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Secure Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Assure Plus</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Fortune Elite Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Aspire Plan</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Savings with protection</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI SecurePlus Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision MoneyBack Plus Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision LifeIncome Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Savings Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision LifeSecure Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Income Assured Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision Endowment Plus Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Guaranteed Milestone Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI - Jeevan Bachat Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Monthly Income Plan</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Group Insurance</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <h5 class="foot-link-set__sub-title">Protection Solution</h5>
+                  <ul class="foot-link-set__list foot-link-set__list--sub">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Employer Employee</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Non Employer Employee</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Credit Life</a>
+                    </li>
+                  </ul>
+                  <h5 class="foot-link-set__sub-title">Retirement Solution</h5>
+                  <ul class="foot-link-set__list foot-link-set__list--sub">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Gratuity</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Leave Encashment</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">PRMBS</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Superannuation</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Group Anuity</a>
+                    </li>
+                  </ul>
+                  <a href="#" title="dummy title text" class="foot-link-set__link foot-link-set__link--bold">Group Anuity</a>
+                </div>
+              </section>
+
+            </amp-accordion>
+
+            <amp-accordion class="foot-link-wrap__col" expand-single-section animate>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Retirement Plan</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Empower Pension Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Immediate Annuity Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Empower Pension- SP Plan</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Health Insurance</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Cancer Shield Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI CritiShield Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Hospital Plus Plan</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Aspire Plan</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Child Plans</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision Star Plan</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Discontinued Plans</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Ultima</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Ultima</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Pay Premium</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Initial</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Renewal</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Loan Payment</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Insurance Calculators</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Human Life Value Calculator</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Retirement Calculator</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Wealth Calculator</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Child Calculator</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Health Insurance Calculator</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Tax Savings Calculator</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">About Us</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Who Are We</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Company Profile</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Public Disclosure</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </amp-accordion>
+            <amp-accordion class="foot-link-wrap__col" expand-single-section animate>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Our Funds</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">NAV Performance</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Fund Portfolio &amp; Benchmark</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Market Outlook</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">How Do I?</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Manage My Policy</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Manage Claims</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Register for One ABD ID</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Download Forms</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">FAQs</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Read Articles</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Contact Us</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Feedback</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Dictionary</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Quick Links</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Download Policy Contract</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Contact Salahkar</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Premium Paid Certificate</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">SI Registration</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Tax Benefits</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Unclaimed Amount</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Riders</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Rural</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">NRI</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Public Disclosure</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">RDAI Circular</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">NAV Formula</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">IRDAI Consumer Education</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Environmental Management System</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link"> IRDAI Public Notice on Spurious Phone Calls and Fictitious/Fraudulent Offers</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </amp-accordion>
+            <amp-accordion class="foot-link-wrap__col" expand-single-section animate>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Tax Planning</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list foot-link-set__list--tax">
+                    <li class="foot-link-set__item">
+                      <div class="img-link-block">
+                        <amp-img srcset="../images/footer-link1.png" class="img-link-block__img" alt="" width="55" height="36" ></amp-img>
+                        <a href="#" title="dummy title text" class="foot-link-set__link">Choosing term insurance the right way. The most important article that a 25-year</a>
+                      </div>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <div class="img-link-block">
+                        <amp-img srcset="../images/footer-link1.png" class="img-link-block__img" alt="" width="55" height="36" ></amp-img>
+                        <a href="#" title="dummy title text" class="foot-link-set__link">The most important article that a 25-year The most important article that a 25-year</a>
+                      </div>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <div class="img-link-block">
+                        <amp-img srcset="../images/footer-link1.png" class="img-link-block__img" alt="" width="55" height="36" ></amp-img>
+                        <a href="#" title="dummy title text" class="foot-link-set__link">How much should be the adequate budget…</a>
+                      </div>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <div class="img-link-block">
+                        <amp-img srcset="../images/footer-link1.png" class="img-link-block__img" alt="" width="55" height="36" ></amp-img>
+                        <a href="#" title="dummy title text" class="foot-link-set__link">How is term insurance different from life…</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Governing Bodies</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">IRDAI</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Life Insurance Council</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Ombudsman</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Support</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Pay Now</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Grievance Redressal</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Do Not Call Registry</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Corporate Agent</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Advisory</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="foot-link-set">
+                <h4 class="foot-link-set__title">
+                  <a href="#" class="foot-link-set__title-link">Copyright &amp; Usage</a>
+                  <span class="icon icon-arrow"></span>
+                </h4>
+                <div class="foot-link-set__cont">
+                  <ul class="foot-link-set__list">
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Privacy Policy</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Terms of Use</a>
+                    </li>
+                    <li class="foot-link-set__item">
+                      <a href="#" title="dummy title text" class="foot-link-set__link">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </amp-accordion>
+            <div class="foot-link-socialset">
+              <h4 class="foot-link-socialset__title">
+                <a href="#" class="foot-link-set__title-link">Connect with us</a>
+              </h4>
+              <div class="foot-link-socialset__cont">
+                <ul class="foot-link-set__list foot-link-set__list--social">
+                  <li class="foot-link-set__item">
+                    <a href="#" title="dummy title text" class="foot-link-set__link">
+                      <span class="foot-link-set__icon icon icon-facebook"></span></a>
+                  </li>
+                  <li class="foot-link-set__item">
+                    <a href="#" title="dummy title text" class="foot-link-set__link">
+                      <span class="foot-link-set__icon icon icon-linkedIn"></span></a>
+                  </li>
+                  <li class="foot-link-set__item">
+                    <a href="#" title="dummy title text" class="foot-link-set__link">
+                      <span class="foot-link-set__icon icon icon-twitter"></span></a>
+                  </li>
+                  <li class="foot-link-set__item">
+                    <a href="#" title="dummy title text" class="foot-link-set__link">
+                      <span class="foot-link-set__icon icon icon-instagram"></span></a>
+                  </li>
+                  <li class="foot-link-set__item">
+                    <a href="#" title="dummy title text" class="foot-link-set__link">
+                      <span class="foot-link-set__icon icon icon-youtube"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="reg-office">
+            <h4 class="reg-office__title">Aditya Birla Sun Life Insurance Company Limited, Registered with Insurance Regulatory &amp; Development Authority of India (IRDAI) as Life Insurance Company.</h4>
+            <h4 class="reg-office__title">Registered Office:</h4>
+            <p class="reg-office__desc">One Indiabulls Centre Tower 1, 16th Floor, Jupiter Mill Compound, 841, Senapati Bapat Marg, Elphinstone Road, Mumbai - 400013. CIN: U99999MH2000PLC128110 Registration No. 109.</p>
+            <p class="reg-office__desc">Trade Logo "Aditya Birla Capital" displayed above is owned by ADITYA BIRLA MANAGEMENT CORPORATION PRIVATE LIMITED (Trademark Owner) and used by ADITYA BIRLA SUN LIFE INSURANCE COMPANY LIMITED (ABSLI) under the license.</p>
+            <p class="reg-office__desc">Aditya Birla Sun Life Insurance Company Limited, Registered with Insurance Regulatory &amp; Development Authority of India (IRDAI) as Life Insurance Company.</p>
+            <p class="reg-office__desc">For more details on risk factors, terms and conditions please read sales brochure carefully before concluding the sale.</p>
+          </div>
+          <div class="aware-block">
+            <h4 class="aware-block__title">BEWARE OF SPURIOUS / FRAUD PHONE CALLS!</h4>
+            <p class="aware-block__desc">IRDAI is not involved in activities like selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.</p>
+          </div>
+
+        </div>
+      </div>
+      <footer>
+        <div class="footer-bottom-wrapper dark-grey-bg">
+          <div class="upper-div">
+            <div class="footer-logo">
+              <a itemprop="url" href="/">
+                <amp-img src="../images/footer-logo.png" srcset="../images/footer-logo.png 750w,../images/footer-logo.png 1280w" alt="Footer Logo" width="130" height="30" noloading="" ></amp-img>
+              </a>
+            </div>
+          </div>
+          <div class="lower-div">
+            <div class="copyright">
+              <p class="caption">
+                <span>© 2019, Aditya Birla Capital Ltd.</span>
+                <span>All Rights Reserved.</span>
+              </p>
+            </div>
+            <div class="socialicons">
+              <div class="contacttext">
+                <p class="caption">Call us toll free:</p>
+                <span class="icon-phone icon"></span>
+                <p class="caption">
+                  <a href="tel:18002707000">1800 270 7000</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.query_status_card{
+    
+    .row1{
+
+        p{
+            font-size: 18px;
+            color:#3B3E40;
+            margin: 0px;
+        }
+
+        label{
+            font-size: 18px;
+            font-weight: 600;
+            color:$black;
+            margin-top: -10px;
+
+        }
+    }
+
+    .row2{
+
+        background-color: #f5f7fa;
+        padding: 20px 20px;
+    }
+}

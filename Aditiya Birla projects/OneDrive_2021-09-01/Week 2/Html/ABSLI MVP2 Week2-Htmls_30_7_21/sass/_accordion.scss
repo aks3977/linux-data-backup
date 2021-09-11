@@ -1,0 +1,108 @@
+// .accordion-header-wrapper{
+//     background: $l-grey;
+//     padding: 15px 20px;
+//     margin-top: 12px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     .accordion-header{
+//         margin: 0;
+//     }    
+//     .arrow-up{
+//         height: 16px;
+//         width: 16px;
+//         background: transparent url('../../img/icons/a-arrow-up.svg') 50% 50% no-repeat padding-box;
+//         display: inline-block;
+//         background-size: 14px;
+//     }
+//     .arrow-down{
+//         height: 16px;
+//         width: 16px;
+//         background: transparent url('../../img/icons/a-arrow-down.svg') 50% 50% no-repeat padding-box;
+//         display: none;
+//         background-size: 14px;
+//     }
+
+//     &.collapsed{
+//         .arrow-up{
+//             display: none;
+//         }
+//         .arrow-down{
+//             display: inline-block;
+//         }
+//     }
+// }
+
+// .accordion-body{
+    
+// }
+
+
+.accordion-header-wrapper{
+    background: $l-grey;    
+    padding: 10px 20px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.accordion-header-wrapper-frq{
+        background: transparent;
+        border-top: 1px solid $light-grey;        
+        margin-top: 0px;
+        padding: 15px 0;
+    }
+    .accordion-header{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        .count-wrapper{
+            display: inline-block;
+            background: $dark-grey;
+            border-radius: 50%;
+            color: #fff;
+            height:22px;
+            width: 22px;
+            font-size: 14px;
+            margin-left: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }    
+    .arrow-up{
+        height: 16px;
+        width: 16px;
+        background: transparent url('../../img/icons/a-arrow-up.svg') 50% 50% no-repeat padding-box;
+        display: inline-block;
+        background-size: 14px;
+    }
+    .arrow-down{
+        height: 16px;
+        width: 16px;
+        background: transparent url('../../img/icons/a-arrow-down.svg') 50% 50% no-repeat padding-box;
+        display: none;
+        background-size: 14px;
+    }
+
+    &.collapsed{
+        .arrow-up{
+            display: none;
+        }
+        .arrow-down{
+            display: inline-block;
+        }
+    }
+}
+
+.accordion-flush {
+    padding: 0 12px;
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.accordion-body{
+    @media screen and (max-width: 768px) {
+        padding: 10px 12px !important;
+    }
+}

@@ -1,0 +1,75 @@
+.tabs-div{
+    
+    
+
+}
+
+
+.tabs-div{
+    background-color: $white;
+    // padding: 16px 20px;
+    padding-top: 0px;
+    border-radius: 5px;
+
+    .nav-tabs{
+        border: none;
+        border-bottom: 1px #cdcece solid;
+        margin-top: 6px;
+        
+        
+
+        .nav-link{
+            border: 0px;
+            margin-bottom: 1px;
+            color: #6c7174;
+            font-size: 18px;
+            margin-right: 23px;
+        }
+
+        .nav-link.active{
+           border-bottom: 3px #c7222a solid;
+           color: #c7222a;
+
+        }
+    }
+
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
+    
+     
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+   
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ 
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    
+}

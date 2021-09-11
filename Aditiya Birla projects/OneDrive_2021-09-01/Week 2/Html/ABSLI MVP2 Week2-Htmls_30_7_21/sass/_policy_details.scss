@@ -1,0 +1,59 @@
+.cta-row{
+    margin: 16px 0 8px;
+    padding: 0 12px;
+}
+.policy-detail-card{
+    border-radius: 6px;
+    border: 1px solid $accent1;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.058);
+    padding: 16px 16px 8px;
+    .header-row{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $accent1;
+        padding: 0 8px;
+        .header{
+            font-family: "pf_handbook_probold";
+            width: 28%;
+        }
+        .header-big{
+            width: 34%;
+        }
+        .header-small{
+            width: 10%;
+        }
+    }
+    .detail-row{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid $light-grey2;
+        .detail{
+            width: 28%;
+            font-size: 18px;
+        }
+        .detail-big{
+            width: 34%;
+        }
+        .detail-small{
+            width: 10%;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &.add-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 250px;
+        padding: 16px;
+        .add-card-content-wrapper{
+            text-align: center;
+            .description-text{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }            
+        }
+    }
+}

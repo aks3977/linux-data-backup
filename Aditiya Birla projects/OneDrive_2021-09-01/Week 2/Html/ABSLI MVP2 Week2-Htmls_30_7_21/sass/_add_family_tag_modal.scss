@@ -1,0 +1,100 @@
+.modal-width-family-tag{
+    max-width: 736px !important;
+
+    .moda-family-tag-body{
+
+        padding: 40px;
+        
+    
+        h3{
+            color: $black;
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: -34px;
+        }
+
+        button{
+            width: 100%;
+            padding: 8px;
+        }
+
+
+        .family-policy-details{
+            background-color: #f7f6f6;
+            padding: 20px;
+            margin-bottom: 26px;
+            margin-top: 10px;
+
+            p{
+                color: #3B3E40;
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            label{
+                color: #000;
+                font-size: 18px;
+            }
+
+            select{
+                height: 46px;
+            }
+        }
+
+        .modal-cta{
+            button{
+                width: 100px;
+                padding: 10px !important;
+                height: 46px !important;
+                margin-left: 10px;
+                
+            }
+        }
+        
+    
+    }
+    
+    
+    .moda-family-tag-footer{
+        border: none !important;
+    }
+    
+
+
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .moda-family-tag-body{
+
+        padding: 20px !important;
+    }
+
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
+   
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+

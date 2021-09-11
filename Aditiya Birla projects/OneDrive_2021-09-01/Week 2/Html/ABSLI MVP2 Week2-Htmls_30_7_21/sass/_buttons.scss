@@ -1,0 +1,347 @@
+
+
+
+.btn-primary{
+    background-color: $capital-red;
+    border: 0px !important;
+    font-size: 18px;
+}
+
+.btn-primary:hover{
+    background-color: $capital-red!important;
+    outline: 0 !important;
+    border-color: $capital-dark-red !important;
+}
+
+.btn-primary:active{
+    background-color: $capital-dark-red!important;
+    border-color: $capital-dark-red !important;
+    outline: 0 !important;
+    
+}
+
+.btn-primary:focus{
+    background-color: $capital-dark-red!important;
+    border-color: $capital-dark-red !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+.btn-primary-lrg{
+    background-color: $capital-red;
+    border: 0px !important;
+    font-size: 18px;
+    color: $white;
+    padding: 10px 20px;
+}
+
+.btn-primary-lrg:hover{
+    background-color: $capital-red!important;
+    outline: 0 !important;
+    border-color: $capital-dark-red !important;
+    color: $white;
+}
+
+.btn-primary-lrg:active{
+    background-color: $capital-dark-red!important;
+    border-color: $capital-dark-red !important;
+    outline: 0 !important;
+    color: $white;
+    
+}
+
+.btn-primary-lrg:focus{
+    background-color: $capital-dark-red!important;
+    border-color: $capital-dark-red !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+
+
+
+.alert-secondary{
+    background-color: $l-grey;
+}
+
+
+.btn-outline-s{
+    border: 1px $capital-red solid;
+    padding: 4px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #c7222a;
+    border: 1px #c7222a solid;
+    margin-top: 3px;
+}
+
+.btn-outline-s:hover{
+    
+    background-color: $l-grey;
+    
+}
+
+.btn-outline-s-secondary{
+    border: 1px $capital-red solid;
+    padding: 4px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #6c7174;
+    border: 1px #6c7174 solid;
+    margin-top: 3px;
+}
+
+
+.btn-primary-s{
+
+    border: 1px $capital-red solid;
+    padding: 4px 10px;
+    font-size: 16px;
+    background-color: $capital-red;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.btn-primary-s:hover{
+
+    border: 1px $dark-red solid;
+    padding: 4px 10px;
+    font-size: 16px;
+    background-color: $dark-red;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.btn-primary-s:active{
+box-shadow: none;
+}
+
+.btn-primary-s:focus{
+    box-shadow: none;
+    }
+    
+
+
+.disabled-btn{
+    background-color: #cdcdcece !important;
+    color: #6c7174 !important;
+    border: 1px #cdcece solid !important;
+}
+
+.disabled-btn:active{
+box-shadow: none !important;
+}
+
+.disabled-btn:focus{
+    box-shadow: none !important;
+    
+    }
+    .btn-outline{
+        background-color: $white;
+        border: 1px $capital-red solid;
+        font-size: 18px;
+        color: $capital-red;
+        padding: 4px 20px;
+        &.active{
+            background: $capital-red;
+            color: $white;
+        }
+    }
+
+
+    .btn-outline:hover{
+        background-color: $capital-red !important;
+        outline: 0 !important;
+        border-color: $capital-red;
+        color: $white;
+    }
+
+    .btn-outline:active{
+        box-shadow: none;
+    }
+
+    .btn-outline:focus{
+        box-shadow: none;
+    }
+
+
+    .btn-outline-secondary{
+        background-color: $white;
+        border: 1px $black solid;
+        font-size: 18px;
+        color: $black;
+        padding: 4px 20px;
+        color: $black;
+    }
+
+
+    .btn-outline-secondary:hover{
+        background-color: $dark-grey;
+        outline: 0 !important;
+        border-color: $dark-grey;
+        color: $white;
+    }
+
+    .btn-outline-secondary:active{
+        box-shadow: none !important;
+        outline: none;
+    }
+
+    .btn-outline-secondary:focus{
+        box-shadow: none !important;
+        outline: none;
+    }
+
+
+
+    .btn-outline-secondary-lrg{
+        background-color: $white;
+        border: 1px $black solid;
+        font-size: 18px;
+        color: $black;
+        padding: 9px 20px;
+        color: $black;
+    }
+
+
+    .btn-outline-secondary-lrg:hover{
+        background-color: $dark-grey;
+        outline: 0 !important;
+        border-color: $dark-grey;
+        color: $white;
+    }
+
+    .btn-outline-secondary-lrg:active{
+        box-shadow: none !important;
+        outline: none;
+    }
+
+    .btn-outline-secondary-lrg:focus{
+        box-shadow: none !important;
+        outline: none;
+    }
+
+.btnBlockLabel{
+    font-size: 18px;
+    color: $dark-grey;
+    padding-bottom: 8px;
+}
+.radioBtnBlock {
+    display: flex;        
+    flex-wrap: wrap;
+    .custom-control {
+        padding: 0;
+        margin: 0 30px 20px 0;
+        label {
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid $capital-red;
+            border-radius: 4px;            
+            padding: 5px 25px;
+            line-height: 1.4;
+            color: $capital-red;
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        &.active{
+            label {
+                color: $white;
+                background: $capital-red;
+            }            
+        }
+    }    
+}
+
+.accordion-link-btn {
+    display: flex;
+    align-items: center;
+    width: 106px;
+    &.margr-24-mob0{
+        margin-right: 24px;
+        @media only screen and (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+    .btn-text-closed{
+        display: none;
+        padding-right: 4px;
+        color: $capital-red;
+    }
+    .btn-text-open{
+        display: block;
+        padding-right: 4px;
+    }
+    .arrow-up{
+        height: 16px;
+        width: 16px;
+        background: transparent url('../../img/icons/a-arrow-up.svg') 50% 50% no-repeat padding-box;
+        display: block;
+        background-size: 14px;
+    }
+    .arrow-down{
+        height: 16px;
+        width: 16px;
+        background: transparent url('../../img/icons/a-arrow-down-red.svg') 50% 50% no-repeat padding-box;
+        display: none;
+        background-size: 14px;        
+    }
+    &.collapsed{
+        .btn-text-closed{
+            display: block;
+        }
+        .btn-text-open{
+            display: none;
+        }
+        .arrow-up{
+            display: none;
+        }
+        .arrow-down{
+            display: block;
+        }
+    }
+}
+    
+.secondary-tab-menu {
+    .secondary-nav-tabs{    
+        margin: 12px 0px;
+        .nav-link{
+            border: 1px $dark-grey solid;
+            border-radius: 20px;
+            padding: 5px 25px;
+            font-size: 16px;
+            background-color: #fff;
+            color: #000000;
+            margin-right: 5px;
+        }
+
+        .nav-link.active{
+            color: #fff;
+            background-color: $dark-grey;
+        }
+    }
+}
+
+
+.icon-btn {
+    padding: 0;
+    img{
+        vertical-align: top;
+    }
+} 
+    
+
+.disabled-grey:disabled{
+    background: $light-grey;
+    border-color: $light-grey;
+    color: #000;
+}

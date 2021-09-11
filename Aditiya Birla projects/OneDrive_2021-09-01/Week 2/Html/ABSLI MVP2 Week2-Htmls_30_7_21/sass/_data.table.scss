@@ -1,0 +1,297 @@
+.data-table {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    &.in-element {
+        border-radius: 0;
+        border: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .data-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 24px;
+        &.highlight {
+            background: $l-grey;
+        }
+        &.bb {
+            border-bottom: 1px solid $light-grey2;
+        }
+        .info-item {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border: 1px solid $dark-grey;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+
+    .data-table-header {
+        background-color: $l-grey;
+        padding: 12px 20px;
+        border-radius: 5px 5px 0px 0px;
+        h4{
+            font-size: 20px;
+            font-family: "pf_handbook_probold";
+            margin: 0;
+        }
+    }
+    .data-table-body {
+        background-color: $white;
+        padding: 12px 8px;
+        border-radius: 5px;
+        .sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            width: 100%;
+            padding: 0px;
+            top: 0px;
+            z-index: 100;
+            background-color: $white;
+            box-shadow: none;
+            margin-bottom: 12px;
+        }
+        .m-pad{
+            padding: 0px !important;
+        }
+        .nav-tabs{
+          border: none;
+          border-bottom: 1px #cdcece solid;
+          margin-top: 6px;
+          padding: 0px 22px;
+          
+  
+          .nav-link{
+              border: 0px;
+              margin-bottom: 1px;
+              color: #6c7174;
+              font-size: 17px;
+              margin-right: 23px;
+          }
+  
+          .nav-link.active{
+             border-bottom: 3px #c7222a solid;
+             color: #c7222a;
+  
+          }
+        }        
+        .heading-row {
+            font-family: "pf_handbook_probold";
+            text-transform: uppercase;
+            font-size: 15px;
+            border-bottom: 1px solid $light-grey2;
+            padding: 0 12px 8px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .details-header{
+                width: 85%;
+                display: flex;                
+            }
+            .cta-header{
+                width: 15%;    
+            }
+            .col-header-spanxl{
+                width: 30%;
+                padding: 0 8px;
+            }
+            .col-header-spanlg{
+                width: 25%;
+                padding: 0 8px;
+            }
+            .col-header-spanmd{
+                width: 20%;
+                padding: 0 8px;
+            }
+            .col-header-spansm{
+                width: 15%;
+                padding: 0 8px;
+            }
+            .col-header-spanxs{
+                width: 10%;
+                padding: 0 8px;
+            }
+        }
+        .details-row {
+            border-bottom: 1px solid $light-grey2;
+            padding: 8px 12px;
+            font-size: 18px;
+            color: $dark-grey;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .details-wrapper{
+                display: flex;                    
+                width: 85%;                
+            }
+            .cta-wrapper{                    
+                width: 15%;
+                text-align: right;
+                img {
+                    padding-right: 12px;
+                }
+            }
+            .detail-row-spanxl{
+                width: 30%;
+                padding: 0 8px;
+            }
+            .detail-row-spanlg{
+                width: 25%;
+                padding: 0 8px;
+            }
+            .detail-row-spanmd {
+                width: 20%;
+                padding: 0 8px;
+            }
+            .detail-row-spansm {
+                width: 15%;
+                padding: 0 8px;
+            }
+            .detail-row-spanxs {
+                width: 10%;
+                padding: 0 8px;
+            }            
+        }
+        .policy-grid-row {
+            border-bottom: 1px solid $light-grey2;
+            .details-row {
+                border-bottom: none;
+                padding: 12px;
+                .cta-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+        &.mob-shadow{
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+            -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+            box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+            border-radius: 3px;
+        }
+        .data-row {            
+            padding: 10px 12px;
+            div:nth-child(2n) {
+                width: 25%;
+                text-align: right;
+            }
+        }
+
+        .data-table-header {
+            background-color: $white;
+            padding: 12px 20px;
+            border-radius: 0;            
+            border-bottom: 2px solid $light-grey;
+        }
+        .data-table-body {
+            border-radius: 0;
+            padding: 12px 16px;
+            .heading-row {
+                display: none;
+            }
+            .details-row {
+                border: 1px solid $light-grey2;
+                -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+                -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+                box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.23);
+                border-radius: 5px;
+                margin-bottom: 16px;
+                padding: 16px 12px;
+                font-size: 15px;
+                color: $dark-grey;
+                flex-direction: column;
+                .details-wrapper{
+                    display: flex;                    
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+                .cta-wrapper{
+                    margin-top: 12px;                   
+                    width: 100%;
+                    text-align: center;
+                    img {
+                        padding-right: 24px;
+                    }
+                    button {
+                        padding: 4px 48px;
+                        &.wmob-80{
+                            width: 80%;
+                            padding: 4px 0;
+                        }
+                    }
+                }
+                .detail-row-spanxl,
+                .detail-row-spanlg,
+                .detail-row-spanmd,
+                .detail-row-spansm,
+                .detail-row-spanxs {
+                    width: 50%;
+                    padding: 4px 0px;
+                    &:nth-child(2n) {
+                        padding-left: 8px;
+                    }
+                    &.w100 {
+                        width: 100%;
+                        &:nth-child(2n) {
+                            padding-left: 0;
+                        }
+                        .label {
+                            font-family: "pf_handbook_probold";
+                            text-transform: uppercase;
+                            color: $black;
+                        }
+                    }
+                }                
+            }
+            .policy-grid-row {
+                border: 1px solid $light-grey2;
+                border-radius: 5px;
+                padding: 0px;
+                .details-row {
+                    border: none;
+                    border-radius: 0px;
+                    margin-bottom: 0px;
+                    padding: 0px;
+                    font-size: 15px;
+                    color: $dark-grey;                    
+                    border-bottom: none;
+                    flex-direction: column;
+                    .details-wrapper {
+                        padding: 16px;
+                    }
+                    .cta-wrapper{                                                                                                
+                        border-top: 1px solid #cdcece;
+                        padding: 8px 0;
+                        button {
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

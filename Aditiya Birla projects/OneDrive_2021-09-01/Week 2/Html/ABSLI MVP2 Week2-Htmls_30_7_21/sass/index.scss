@@ -1,0 +1,60 @@
+@import './variables';
+@import './fonts';
+@import './base';
+@import './buttons';
+@import './layout';
+@import './extended';
+@import './mixins';
+
+
+
+// Modules
+@import './modules/header';
+@import './modules/login';
+@import './modules/modal';
+@import './modules/footer';
+@import './modules/customer_listing';
+@import './modules/cutomer-details';
+@import './modules/raise_query';
+@import './modules/frq';
+@import './modules/query_details';
+@import './modules/query_management_system';
+
+
+
+
+//Componenets
+@import './s_cards';
+@import './breadcrubs';
+@import './quick_links_card';
+@import './data_card';
+@import './filter_large';
+@import './forms';
+@import './custmr_de_name_card';
+@import './s_cards_large';
+@import './tab_control';
+@import './smart-card';
+@import './smart-card2';
+@import './accordion';
+@import './personal-details-card';
+@import './policy_grid_customer';
+@import './statement_box';
+@import './mt-cards';
+@import './chips';
+@import './add_family_tag_modal';
+@import './trouble_cards';
+@import './frq_box';
+@import './query_status_card';
+@import './tag';
+@import './advisor_profile';
+@import './select_input';
+@import './carousel_card';
+@import './data.table';
+
+
+
+
+// Major CSS
+@import './common';
+
+@import './media_query';

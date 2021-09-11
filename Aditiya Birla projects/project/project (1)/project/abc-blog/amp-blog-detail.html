@@ -1,0 +1,623 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title></title>
+    <link rel="canonical" href="">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+
+    <!-- Start Reset CSS (boilerplate) -->
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none;
+            }
+        </style>
+    </noscript>
+    <!-- End Reset CSS (boilerplate) -->
+
+    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <!-- Start Custom CSS -->
+    <style amp-custom="">
+        @font-face {
+            font-family: pfhandbookpro-regular;
+            src: url("../fonts/pf-handbook-pro/pfhandbookpro-regular-eot.eot");
+            src: url("../fonts/pf-handbook-pro/pfhandbookpro-regular-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-handbook-pro/pfhandbookpro-regular-woff2.woff2") format("woff2"), url("../fonts/pf-handbook-pro/pfhandbookpro-regular-woff.woff") format("woff"), url("../fonts/pf-handbook-pro/pfhandbookpro-regular-svg.svg#pfhandbookpro-regular") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            @font-face {
+                font-family: pfhandbookpro-regular;
+                src: url("../fonts/pf-handbook-pro/pfhandbookpro-regular-svg.svg#pfhandbookpro-regular") format("svg");
+            }
+        }
+
+        @font-face {
+            font-family: pfhandbookpro-bold;
+            src: url("../fonts/pf-handbook-pro/pfhandbookpro-bold-eot.eot");
+            src: url("../fonts/pf-handbook-pro/pfhandbookpro-bold-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-handbook-pro/pfhandbookpro-bold-woff2.woff2") format("woff2"), url("../fonts/pf-handbook-pro/pfhandbookpro-bold-woff.woff") format("woff"), url("../fonts/pf-handbook-pro/pfhandbookpro-bold-svg.svg#pfhandbookpro-bold") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            @font-face {
+                font-family: pfhandbookpro-bold;
+                src: url("../fonts/pf-handbook-pro/pfhandbookpro-bold-svg.svg#pfhandbookpro-bold") format("svg");
+            }
+        }
+
+        @font-face {
+            font-family: pfhandbookpro-light;
+            src: url("../fonts/pf-handbook-pro/pfhandbookpro-light-eot.eot");
+            src: url("../fonts/pf-handbook-pro/pfhandbookpro-light-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-handbook-pro/pfhandbookpro-light-woff2.woff2") format("woff2"), url("../fonts/pf-handbook-pro/pfhandbookpro-light-woff.woff") format("woff"), url("../fonts/pf-handbook-pro/pfhandbookpro-light-svg.svg#pfhandbookpro-light") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            @font-face {
+                font-family: pfhandbookpro-light;
+                src: url("../fonts/pf-handbook-pro/pfhandbookpro-light-svg.svg#pfhandbookpro-light") format("svg");
+            }
+        }
+
+        @font-face {
+            font-family: pfencoresanspro-reg;
+            src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-eot.eot");
+            src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-eot.eot?#iefix") format("embedded-opentype"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-woff2.woff2") format("woff2"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-woff.woff") format("woff"), url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-svg.svg#pfencoresanspro-reg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            @font-face {
+                font-family: pfencoresanspro-reg;
+                src: url("../fonts/pf-encore-sans-pro/pfencoresanspro-reg-svg.svg#pfencoresanspro-reg") format("svg");
+            }
+        }
+
+        @font-face {
+            font-family: font-icons;
+            src: url("../fonts/font-icons.eot");
+            src: url("../fonts/font-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/font-icons.woff2") format("woff2"), url("../fonts/font-icons.woff") format("woff"), url("../fonts/font-icons.svg#font-icons") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .icon:before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            content: "";
+            font-family: "font-icons";
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            line-height: 1;
+            speak: none;
+            text-transform: none;
+        }
+
+        .icon-home:before {
+            content: "";
+        }
+
+        .icon-login:before {
+            content: "";
+        }
+
+        .icon-arrow:before {
+            content: "";
+        }
+
+        .icon-phone:before {
+            content: "";
+        }
+#mobi-navigation.main-nav-active.active .utility-links{display:none}#mobi-navigation .menu-content .mobi-nav-wrapper .red-link span,#mobi-navigation .menu-content .mobi-nav-wrapper .red-link>a{color:#c7222a}#mobi-navigation .menu-content .mobi-nav-wrapper .yellow-link span,#mobi-navigation .menu-content .mobi-nav-wrapper .yellow-link>a{color:#d4ae69}#mobi-navigation .menu-content .mobi-nav-wrapper .green-link span,#mobi-navigation .menu-content .mobi-nav-wrapper .green-link>a{color:#969f6e}#mobi-navigation .menu-content .mobi-nav-wrapper .pink-link span,#mobi-navigation .menu-content .mobi-nav-wrapper .pink-link>a{color:#da9089}.mobi-nav-wrapper ul li a,.mobi-nav-wrapper ul li span{font-family:pfhandbookpro-bold,sans-serif;font-size:2.8rem;line-height:32px;text-transform:uppercase;color:#c7222a}footer .footer-bottom-wrapper .lower-div,footer .footer-bottom-wrapper .upper-div,main{padding-left:20px;padding-right:20px}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:pfhandbookpro-regular,sans-serif;font-size:1.8rem;line-height:20px;overflow-x:hidden}html{font-size:10px}.container-fluid{max-width:1400px}@media screen and (max-width:1200px){.container-fluid{max-width:1200px}}.pull-right{float:right}.outerpadding{padding-left:33px;padding-right:33px}@media screen and (max-width:1200px){.outerpadding{padding-left:25px;padding-right:25px}}@media screen and (max-width:1020px){.outerpadding{padding-left:0;padding-right:0}}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;overflow:hidden;position:absolute}.main-content{width:100%;clear:both;overflow-x:hidden;margin-bottom:35px}.float100{float:left;width:100%}.hide{display:none}img.pull-right{margin-left:15px;margin-bottom:15px}img{margin-bottom:15px;max-width:100%}:focus{outline:0}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:pfhandbookpro-light,sans-serif}.font44,.h1,h1{font-size:4.4rem;line-height:50px;margin-bottom:30px}@media screen and (max-width:1200px){.font44,.h1,h1{font-size:3.4rem;line-height:36px}}@media screen and (max-width:1020px){.font44,.h1,h1{font-size:2.8rem;line-height:32px;margin-bottom:15px}}@media screen and (max-width:768px){.font44,.h1,h1{font-size:3.6rem;line-height:41px;margin-bottom:15px}}.font34,.h2,h2{font-size:3.4rem;line-height:39px}@media screen and (max-width:1020px){.font34,.h2,h2{font-size:2.4rem;line-height:31px}}.font32,.h3,h3{font-size:3.2rem;line-height:36px}@media screen and (max-width:1020px){.font32,.h3,h3{font-size:2.2rem;line-height:22px}}.font28,.h4,h4{font-size:2.8rem;line-height:32px}.font24,.h5,h5{font-size:2.4rem;line-height:32px}.font18,p{font-size:1.8rem;line-height:20px;margin-bottom:10px}.font16,.small{font-size:1.6rem;line-height:1.8rem}.font14,small{font-size:1.4rem;line-height:1.8rem;margin-bottom:10px;display:block}a{font-family:pfhandbookpro-regular,sans-serif;font-size:1.8rem;line-height:20px;color:#c7222a;text-decoration:none}a:active,a:focus,a:hover{color:#c7222a;text-decoration:none;border-bottom:1px solid #c7222a}.padding48{padding-left:48px;padding-right:48px}ul{list-style:none;font-size:1.6rem;padding-left:18px}ul li{font-family:pfencoresanspro-reg,sans-serif;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.25;letter-spacing:normal;color:#6c7174;padding-bottom:10px;padding-top:10px}ul li::before{content:"\2022";color:#c7222a;font-weight:700;display:inline-block;width:1em;margin-left:-1em}ul li:last-child{padding-bottom:0}ul ul{padding-top:10px}ol{font-size:1.6rem;padding-left:18px}ol li{font-family:pfencoresanspro-reg,sans-serif;font-weight:400;font-style:normal;font-stretch:normal;line-height:1.25;letter-spacing:normal;color:#6c7174;padding-bottom:10px;padding-top:10px}ol ol{padding-top:10px}.breadcrumb{margin-bottom:22px;padding:0;background-color:transparent}.breadcrumb a{font-size:1.4rem;line-height:16px;color:#000;border-bottom-color:#000;margin-left:4px}.breadcrumb a:first-child{margin-left:0}.breadcrumb a:active,.breadcrumb a:focus,.breadcrumb a:hover{border-bottom-color:#000}.breadcrumb span{font-family:pfhandbookpro-bold,sans-serif;font-size:1.4rem;line-height:16px;color:#000;border-bottom:1px solid transparent;margin-right:0;margin-left:4px}@media screen and (max-width:1020px){.breadcrumb{margin-bottom:12px}}@media screen and (max-width:767px){.breadcrumb{margin-bottom:14px}}.blog-detail .author-tag{font-size:1.8rem;line-height:16px;font-family:pfhandbookpro-bold,sans-serif;color:#c7222a;margin-bottom:13px}@media screen and (max-width:1020px){.blog-detail .author-tag{font-size:1.6rem;line-height:16px;margin-bottom:-5px}}.banner-wrapper{min-height:280px;overflow:hidden;background-repeat:no-repeat;background-position:0 0;background-size:cover}.banner-content-wrapper{padding-left:20px;padding-right:20px;margin-top:60px;margin-bottom:40px}.dark-banner{margin-bottom:13px}.dark-banner .banner-content-wrapper *{color:#fff}.banner-content-wrapper .banner-subtitle{font-family:pfhandbookpro-regular,sans-serif;font-size:2.8rem;line-height:31px}.banner-content-wrapper .banner-category-tag{display:inline-block;padding:4px 11px 6px;background-color:#c7222a;text-transform:uppercase;border-radius:2px;margin-bottom:8px}.banner-content-wrapper .banner-category-tag.pink{background-color:#da9089}.banner-content-wrapper .banner-category-tag.red{background-color:#c7222a}.banner-content-wrapper .banner-category-tag.green{background-color:#969f6e}.banner-content-wrapper .banner-category-tag.yellow{background-color:#d4ae69}.banner-content-wrapper .banner-category-tag a{font-family:pfhandbookpro-bold,sans-serif;font-size:1.4rem;color:#fff;border-bottom:1px solid #fff}@media screen and (max-width:767px){.banner-content-wrapper .banner-category-tag{padding:0 6px 6px}.banner-content-wrapper .banner-category-tag a{font-family:pfhandbookpro-bold,sans-serif;font-size:1.2rem;line-height:14px}}.banner-content-wrapper .banner-utility-wrapper p{font-size:1.2rem;line-height:17px}.header-wrapper{padding-right:16px;padding-top:10px;padding-bottom:9px}.header-title:before{content:"";-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:font-icons;font-style:normal;font-variant:normal;font-weight:400;line-height:1;speak:none;text-transform:none;font-size:.9rem;right:5px;top:50%;position:absolute;margin-top:-2px}.dark-red-bg{background-color:#8b151b}.hamburger{font:inherit;display:inline-block;overflow:visible;margin:15px 0 0;cursor:pointer;transition-timing-function:linear;transition-duration:.15s;transition-property:opacity,filter;text-transform:none;color:inherit;border:0;background-color:transparent}.hamburger .hamburger-box{position:relative;display:inline-block;width:24px;height:18px}.hamburger.hamburger--elastic .hamburger-inner{top:2px;transition-timing-function:cubic-bezier(.68,-.55,.265,1.55);transition-duration:275ms}.hamburger.hamburger--elastic .hamburger-inner:before{top:8px;transition:opacity 125ms ease 275ms}.hamburger.hamburger--elastic .hamburger-inner:after{top:16px;transition:transform 275ms cubic-bezier(.68,-.55,.265,1.55)}.hamburger.hamburger--elastic.is-active .hamburger-inner{transition-delay:75ms;transform:translate3d(0,8px,0) rotate(135deg)}.hamburger.hamburger--elastic.is-active .hamburger-inner:before{transition-delay:0s;opacity:0}.hamburger.hamburger--elastic.is-active .hamburger-inner:after{transition-delay:75ms;transform:translate3d(0,-16px,0) rotate(-270deg)}.hamburger .hamburger-inner,.hamburger .hamburger-inner:after,.hamburger .hamburger-inner:before{position:absolute;width:24px;height:2px;transition-timing-function:ease;transition-duration:.15s;transition-property:transform;border-radius:1px;background-color:#fff}.hamburger .hamburger-inner:before{top:-10px}.hamburger .hamburger-inner::after{bottom:-10px}.hamburger .hamburger-inner:after,.hamburger .hamburger-inner:before{display:block;content:""}.header-title .header-title-arrow{right:4px;position:absolute;font-size:0;color:#fff;top:50%;margin-top:-3px;cursor:pointer}.header-title .header-title-arrow:before{content:"";-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:font-icons;font-style:normal;font-variant:normal;font-weight:400;line-height:1;speak:none;text-transform:none;font-size:.9rem}.header-wrapper .header-title{font-family:pfhandbookpro-bold,sans-serif;padding-left:21px;position:relative;padding-right:30px;display:inline-block;min-width:192px}.header-wrapper .header-title a{font-size:2.2rem;line-height:22px;color:#fff;font-family:pfhandbookpro-bold,sans-serif}.header-wrapper .header-title a:hover{border-bottom:none}.capital-red-bg{background-color:#c7222a}.ampstart-navbar-trigger{color:#fff}.top-header-wrapper{padding:14px 21px 9px;display:flex;justify-content:space-between}*{box-sizing:border-box}.utility-links{padding:17px 42px 19px 21px;display:table;width:100%}.utility-links .icon{font-size:2.5rem;display:table-cell;color:#fff;text-decoration:none;border-bottom:none;padding-bottom:0;text-align:center}.utility-links .icon-phone{text-align:center;border-left:1px solid rgba(255,255,255,.2);border-right:1px solid rgba(255,255,255,.2);padding-right:6px;padding-left:6px}.utility-links .icon-login{text-align:center}.menu-content-wrapper a:active,.menu-content-wrapper a:focus,.menu-content-wrapper a:hover{border-bottom:none}.close-menu{position:absolute;right:44px;top:13px}.menu-header{padding-bottom:5px;background-color:#c7222a;padding-top:16px;padding-left:21px}#mobi-navigation .menu-content *{color:#444749}#mobi-navigation .logo{margin-bottom:6px}#mobi-navigation .menu-content .pink-link>a{color:#da9089}.mobi-nav-wrapper ul li a{font-family:pfhandbookpro-bold,sans-serif;font-size:2.8rem;line-height:32px;text-transform:uppercase;color:#c7222a}.mobi-nav-wrapper>ul{margin-bottom:1rem}.mobi-nav-wrapper ul li ul li a{font-family:pfhandbookpro-regular,sans-serif;font-size:1.6rem;line-height:20px;text-transform:none;color:#444749}.mobi-nav-wrapper ul li.level1{padding:8px 0 0;margin-bottom:32px;clear:both;float:left;width:100%}.mobi-nav-wrapper ul li.level1:last-child{margin-bottom:22px}.mobi-nav-wrapper ul li:before{display:none}.mobi-nav-wrapper ul li ul{width:100%;float:left;padding-top:3px}.mobi-nav-wrapper ul{padding-left:0;float:left}.mobi-nav-wrapper{padding-bottom:0}#mobi-navigation .menu-content{margin:19px 30px 0}#mobi-navigation .menu-content .mobi-nav-wrapper .pink-link.level1::after{background-color:#da9089}#mobi-navigation .menu-content .mobi-nav-wrapper .green-link>a{color:#969f6e}#mobi-navigation .menu-content .mobi-nav-wrapper .yellow-link>a{color:#d4ae69}#mobi-navigation .menu-content .mobi-nav-wrapper .red-link>a{color:#c7222a}.mobi-nav-wrapper ul li{position:relative}.mobi-nav-wrapper ul li.level1:after{content:"";width:8px;height:100%;position:absolute;left:-30px;background-color:#c7222a;top:0;display:block}.mobi-nav-wrapper .green-link.level1::after{background-color:#969f6e}.mobi-nav-wrapper .yellow-link.level1::after{background-color:#d4ae69}.mobi-nav-wrapper .red-link.level1::after{background-color:#c7222a}.mobi-nav-wrapper ul li ul li{padding:10px 0 0;display:inline-block;width:50%;float:left}.mobi-footer-links{padding-top:10px}.mobi-footer-links,.mobi-top-navigation{border-top:2px solid #ddd;clear:both}.mobi-footer-links ul li:before,.mobi-top-navigation ul li:before{display:none}.mobi-footer-links ul li.active .icon-arrow::before{-ms-transform:rotate(180deg);transform:rotate(180deg);display:inline-block}.mobi-top-navigation{padding-bottom:15px;padding-top:15px}.mobi-footer-links ul,.mobi-top-navigation ul{padding-left:0;margin-bottom:8px;margin-top:0}.mobi-footer-links ul li,.mobi-top-navigation ul li{padding-bottom:2px;padding-top:5px}.mobi-footer-links .others-cat,.mobi-footer-links a,.mobi-top-navigation a{font-family:pfhandbookpro-regular,sans-serif;font-size:2rem;line-height:25.4px;cursor:pointer}.mobi-footer-links ul li ul{margin-left:20px;padding-top:7px}.mobi-footer-links ul li ul li a{font-size:1.8rem;line-height:20px}.mobi-footer-links .icon-arrow{font-size:1.4rem;margin:4px}.menu-footer{padding-left:40px;padding-right:30px;padding-bottom:14px;padding-top:26px;margin-top:18px;margin-bottom:0;background-color:#c7222a}.menu-footer p{font-family:pfencoresanspro-reg,sans-serif;font-size:1.6rem;line-height:24px;color:#fff;margin-top:0}.menu-footer p span{color:#fff}.mobile-menu-wrapper{right:25px;top:19px;position:absolute}.nav-menu-content{display:none}.main-nav-active .top-nav-menu-content{display:none}.main-nav-active .nav-menu-content{display:block}.main-nav-active .menu-footer{display:none}amp-sidebar{max-width:100%;width:100%;background-color:#fff}.footer-category-wrapper .category-title{padding-top:16px;padding-bottom:15px;display:none}.footer-category-wrapper .category-title:after{content:"";-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:font-icons;font-style:normal;font-variant:normal;font-weight:400;line-height:1;speak:none;text-transform:none;font-size:1.8rem;position:absolute;right:32px}.footer-category-wrapper{background-color:#fff;border-top:1px solid #f5f5f5}.footer-category-wrapper .category-archive-wrapper .category-title:before{content:"";background-color:#f5f5f5;height:1px;width:100%;position:absolute;left:0;right:0;margin-top:35px}.footer-category-wrapper .category-title{font-size:2rem;font-family:pfhandbookpro-bold,sans-serif;color:#c7222a}.footer-category-wrapper{padding-left:20px;padding-right:20px;margin-top:50px}footer .footer-bottom-wrapper{width:100%;float:left;overflow:hidden}footer .footer-logo{float:left;margin-right:10px}footer .footer-logo img{max-width:130px;height:auto}footer .footer-logo a{border-bottom:none}footer .upper-div{float:left;width:100%;padding:40px 0 0}@media screen and (max-width:1020px){footer .upper-div{border-bottom:none}}footer .upper-div .lcol{margin-left:64px;float:left}footer .upper-div ul{padding-left:0;margin-bottom:0}footer .upper-div ul li{margin-top:12px;padding:0}footer .upper-div ul li:first-child{margin-top:0}footer .upper-div ul li:before{display:none}footer .upper-div ul li a{color:#fff;font-family:pfencoresanspro-reg,sans-serif;font-size:1.6rem;line-height:24px}footer .upper-div ul li a:active,footer .upper-div ul li a:focus,footer .upper-div ul li a:hover{border-bottom-color:#fff}footer .upper-div ul+ul{margin-top:12px}@media screen and (max-width:767px){footer .upper-div{padding:32px 0 0}}footer .lower-div{display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:justify;justify-content:space-between;clear:both;padding:32px 0 22px}@media screen and (max-width:767px){footer .lower-div{display:block;float:left}}footer .lower-div .copyright p{color:#fff;font-family:pfencoresanspro-reg,sans-serif;font-size:1.6rem;line-height:24px;margin-top:0}@media screen and (max-width:1020px) and (min-width:768px){footer .lower-div .copyright p{margin-bottom:0}}footer .lower-div .socialicons ul{padding-left:0;margin-bottom:0;float:right}footer .lower-div .socialicons ul li{display:inline-block;padding:0 8px}footer .lower-div .socialicons ul li:before{display:none}footer .lower-div .socialicons ul li a{color:#fff}footer .lower-div .socialicons ul li a:active,footer .lower-div .socialicons ul li a:focus,footer .lower-div .socialicons ul li a:hover{border-bottom:none}footer .lower-div .socialicons ul li a .icon{color:#fff;font-size:2.2rem}@media screen and (max-width:767px){footer .lower-div .socialicons ul{display:none}}@media screen and (max-width:1020px){footer .lower-div .socialicons{display:none}}@media screen and (max-width:767px){footer .lower-div .socialicons{display:block}}@media screen and (max-width:1020px) and (min-width:768px){footer .lower-div{-ms-flex-pack:center;justify-content:center;padding:18px 0 33px}}@media screen and (max-width:767px){footer .lower-div{padding:20px 0}}footer .contacttext{float:left;margin-right:32px;color:#fff;display:-ms-flexbox;display:flex}footer .contacttext .caption{color:#fff;font-size:1.6rem;line-height:24px;font-family:pfhandbookpro-regular,sans-serif;margin-top:0}footer .contacttext .caption a{color:#fff}footer .contacttext .caption a:active,footer .contacttext .caption a:focus,footer .contacttext .caption a:hover{color:#fff;border-color:#fff}footer .contacttext .icon{font-size:2.2rem;color:#fff;margin:0 8px}.dark-grey-bg{background-color:#6c7174}@media screen and (max-width:1020px){footer .lcol{display:none}}@media screen and (max-width:1020px) and (min-width:768px){footer .upper-div{width:25%}footer .lower-div{width:75%;display:block;clear:none;float:left}footer .lower-div .socialicons{display:block;margin-top:10px}footer .lower-div .socialicons ul{display:none}}.show{display:block}.hide{display:none}.blog-detail p{margin-bottom:20px}
+    </style>
+    <!-- End Custom CSS -->
+</head>
+
+<body>
+    <header class="ampstart-headerbar">
+        <div class="top-header-wrapper capital-red-bg">
+            <div class="logo">
+                <a href="/">
+                    <amp-img src="../images/abc-logo-s.png"
+                        srcset="../images/abc-logo-s.png 750w,../images/abc-logo-s.png 1280w" alt="" noloading=""
+                        class="img-fluid img-right" width="200" height="56"></amp-img>
+                </a>
+            </div>
+            <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0"
+                class="ampstart-navbar-trigger">
+                <div class="mobile-menu-wrapper">
+                    <div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button"
+                        aria-controls="navigation" aria-expanded="false">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner">
+                                <span class="visuallyhidden">Menu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-wrapper dark-red-bg">
+            <div class="header-title">
+                <a href="https://www.google.com" class="font32">ABC of Money</a><span
+                    class="header-title-arrow ampstart-navbar-trigger" role="dropdown" aria-label="open sidebar"
+                    on="tap:header-sidebar.toggle,AMP.setState({myClass: 'main-nav-active active'})"
+                    tabindex="0">menuarrow</span>
+            </div>
+
+            <!--- <div role="button" class="header-title font32" aria-label="open sidebar"
+                on="tap:header-sidebar.toggle,AMP.setState({myClass: 'main-nav-active active'})" tabindex="0"
+                class="ampstart-navbar-trigger">ABC of Money</div>-->
+        </div>
+    </header>
+
+    <amp-sidebar id="header-sidebar" class="ampstart-sidebar" layout="nodisplay" side="right">
+        <div id="mobi-navigation" class="active" [class]="myClass">
+            <div class="close-menu">
+                <div role="button" aria-label="close sidebar"
+                    on="tap:header-sidebar.toggle,AMP.setState({myClass: 'active'})" tabindex="0"
+                    class="hamburger hamburger--elastic is-active ampstart-navbar-trigger items-start" tabindex="0"
+                    aria-label="Menu" role="button" aria-controls="navigation" aria-expanded="false">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner">
+                            <span class="visuallyhidden">Close</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-header">
+                <div class="logo">
+                    <a href="/">
+                        <amp-img src="../images/abc-logo-s.png"
+                            srcset="../images/abc-logo-s.png 750w,../images/abc-logo-s.png 1280w" alt="" noloading=""
+                            class="img-fluid img-right" width="200" height="56"></amp-img>
+                    </a>
+                </div>
+                <div class="utility-links">
+                    <a class="icon-home icon" href="javascript:;">
+                        <span class="visuallyhidden">home</span></a>
+                    <a class="icon-phone icon" href="javascript:;">
+                        <span class="visuallyhidden">telephone</span></a>
+                    <a class="icon-login icon" href="javascript:;">
+                        <span class="visuallyhidden">login</span></a>
+                </div>
+            </div>
+            <div class="menu-content-wrapper">
+                <div class="menu-content top-nav-menu-content">
+                    <div class="mobi-nav-wrapper">
+                        <ul>
+                            <li class="level1 has-children pink-link">
+                                <span title="Protecting">Protecting</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Life Insurance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Health Insurance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Multiply Wellness</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Motor Insurance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Travel Insurance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 has-children green-link">
+                                <span title="Investing">Investing</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Mutual Funds</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Wealth Management</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Porfolio Management</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Pension Funds</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Stocks and Securities</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Real Estate Investments</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 has-children yellow-link">
+                                <span title="Financing">Financing</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Home Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Personal Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">SME Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Loan Against Securities</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Real Estate Finance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 has-children red-link">
+                                <span title="Advising">Advising</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">MoneyForLife Planner</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">ABC of Money</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobi-top-navigation">
+                        <ul>
+                            <li>
+                                <a href="#" title="Corporates">Corporates</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Advisors">Advisors</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Customer Service">Customer Services</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Careers">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#" title="About us">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobi-footer-links">
+                        <ul>
+                            <li class="has-children">
+                                <span class="others-cat" role="dropdown" on="tap:AMP.setState({visible: !visible})"
+                                    tabindex=0>Others
+                                    <span class="icon-arrow icon">
+                                        <span class="visuallyhidden">arrow</span></span>
+                                </span>
+
+                                <ul [class]="visible ? 'show' : 'hide'" class="hide">
+                                    <li>
+                                        <a href="/about-us/our-solutions" title="Our Solutions">Our Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investor-relations" title="Investor Relations">Investor Relations</a>
+                                    </li>
+                                    <li>
+                                        <a href="/press-and-media" title="Press and Media">Press and Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about-us/our-businesses" title="Our Businesses">Our Businesses</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about-us/financial-achievements" title="Our Achievements">Our
+                                            Achievements</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about-us/csr-and-sustainability" title="CSR">CSR</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Key-Facts-On-Tax-Filing" title="ITR Filing">ITR Filing</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/branch-locator" title="Locate Us">Locate Us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/terms-and-conditions" title="Terms and Conditions">Terms and Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-content nav-menu-content">
+                    <div class="mobi-nav-wrapper">
+                        <ul class="main-navigation">
+                            <li class="level1 has-children red-link">
+                                <span title="Read about Money">Read about Money</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">ABC of Retirement Planning</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">ABC of Taxes</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">ABC of Personal Money</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">ABC of Calculators</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 has-children pink-link">
+                                <span title="Read about Protecting Solutions">Read about Protecting Solutions</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Life Insurance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Health Insurance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Multiply Wellness</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Motor Insurance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Travel Insurance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 has-children green-link">
+                                <span title="Read about Investing Solutions">Read about Investing Solutions</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Mutual Funds</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Stocks and Securities</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Wealth Management</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Portfolio Management Services</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Pension Funds</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Real Estate Investments</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 has-children yellow-link">
+                                <span title="Read about Financing Solutions">Read about Financing Solutions</span>
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Home Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Personal Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">SME Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Loan Against Securities</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="#">Real Estate Finance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-footer">
+                    <p>
+                        <span>© 2019, Aditya Birla Capital Ltd.</span>
+                        <span>All Rights Reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </amp-sidebar>
+
+    <div class="component banner-component dark-banner">
+        <div class="banner-wrapper" style="background-image:url(../images/content-banner-mobile.jpg)">
+            <div class="banner-content-wrapper">
+                <div class="banner-category-tag red-background">
+                    <a href="javascript:;">Money</a>
+                </div>
+                <div class="banner-subtitle">London-based Soldo has secured an e-money license from Ireland as a hedge
+                    against ‘crazy’ Brexit </div>
+                <div class="banner-utility-wrapper">
+                    <p>Posted on 21 January 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="component breadcrumb-component">
+    <div class="breadcrumb">
+        <a href="/">Home</a><span> > </span><a href="/">Articles</a><span> > </span><span>London-based Soldo has
+            secured an e-money license from Ireland as a hedge against ‘crazy’ Brexit</span>
+    </div>
+</div>
+        <section>
+            <article>
+                <div class="blog-detail">
+                    <p class="author-tag">Written By : John Doe</p>
+                    <p>Motivation is the key to positivity in our lives. If we were not motivated enough, we would just
+                        not have the will in us to go about our daily lives. Its motivation that helps us get through
+                        the most mundane things – motivation for working harder, motivation to have a healthy
+                        relationship, motivation to earn more, motivation to have a happy family. And yet sometimes we
+                        find ourselves lacking in motivation; I think we have all had days when getting out of bed to
+                        get ready to go to work seemed like a Herculean task. Sometimes lack of motivation can really
+                        bring people down, and hinder their efficiency and ability. This may lead to frustrations and
+                        further breakdown of communication between people. However, if you intercept this lack of
+                        motivation timely, you have help at hand. Go for hypnotherapy for motivation to get the zest in
+                        life back.</p>
+                    <amp-img src="https://picsum.photos/id/392/1428/855"
+                        srcset="https://picsum.photos/id/392/500/300 750w,https://picsum.photos/id/392/1428/855 1280w"
+                        alt="" noloading="" class="img-fluid img-right" width="500" height="300" layout="responsive">
+                    </amp-img>
+                    <p>Motivation is the key to positivity in our lives. If we were not motivated enough, we would just
+                        not have the will in us to go about our daily lives. Its motivation that helps us get through
+                        the most mundane things – motivation for working harder, motivation to have a healthy
+                        relationship, motivation to earn more, motivation to have a happy family. And yet sometimes we
+                        find ourselves lacking in motivation; I think we have all had days when getting out of bed to
+                        get ready to go to work seemed like a Herculean task. Sometimes lack of motivation can really
+                        bring people down, and hinder their efficiency and ability. This may lead to frustrations and
+                        further breakdown of communication between people. However, if you intercept this lack of
+                        motivation timely, you have help at hand. Go for hypnotherapy for motivation to get the zest in
+                        life back.</p>
+                    <p>Motivation is the key to positivity in our lives. If we were not motivated enough, we would just
+                        not have the will in us to go about our daily lives. Its motivation that helps us get through
+                        the most mundane things – motivation for working harder, motivation to have a healthy
+                        relationship, motivation to earn more, motivation to have a happy family. And yet sometimes we
+                        find ourselves lacking in motivation; I think we have all had days when getting out of bed to
+                        get ready to go to work seemed like a Herculean task. Sometimes lack of motivation can really
+                        bring people down, and hinder their efficiency and ability. This may lead to frustrations and
+                        further breakdown of communication between people. However, if you intercept this lack of
+                        motivation timely, you have help at hand. Go for hypnotherapy for motivation to get the zest in
+                        life back.</p>
+                    <p>Motivation is the key to positivity in our lives. If we were not motivated enough, we would just
+                        not have the will in us to go about our daily lives. Its motivation that helps us get through
+                        the most mundane things – motivation for working harder, motivation to have a healthy
+                        relationship, motivation to earn more, motivation to have a happy family. And yet sometimes we
+                        find ourselves lacking in motivation; I think we have all had days when getting out of bed to
+                        get ready to go to work seemed like a Herculean task. Sometimes lack of motivation can really
+                        bring people down, and hinder their efficiency and ability. This may lead to frustrations and
+                        further breakdown of communication between people. However, if you intercept this lack of
+                        motivation timely, you have help at hand. Go for hypnotherapy for motivation to get the zest in
+                        life back.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="component footer-category-wrapper light-white-grey-bg">
+        <div class="category-content-wrapper">
+            <div class="category-archive-wrapper">
+                <a href="#" class="category-title-link">
+                    <div class="category-title">Archives</div>
+                </a>
+            </div>
+            <div class="category-wrapper">
+                <a href="#" class="category-title-link">
+                    <div class="category-title">Categories</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom-wrapper dark-grey-bg">
+            <div class="upper-div">
+                <div class="footer-logo">
+                    <a itemprop="url" href="/">
+                        <amp-img src="../images/footer-logo.png"
+                            srcset="../images/footer-logo.png 750w,../images/footer-logo.png 1280w" alt="Footer Logo"
+                            width="130" height="30" noloading="" />
+                        </amp-img>
+                    </a>
+                </div>
+            </div>
+            <div class="lower-div">
+                <div class="copyright">
+                    <p class="caption">
+                        <span>© 2019, Aditya Birla Capital Ltd.</span>
+                        <span>All Rights Reserved.</span>
+                    </p>
+                </div>
+                <div class="socialicons">
+                    <div class="contacttext">
+                        <p class="caption">Call us toll free:</p>
+                        <span class="icon-phone icon"></span>
+                        <p class="caption">
+                            <a href="tel:18002707000">1800 270 7000</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

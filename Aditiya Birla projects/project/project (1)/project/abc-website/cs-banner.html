@@ -1,0 +1,1841 @@
+
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Horizontal Integration View Engine 
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+
+    <!-- Static App Icons -->
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <link rel="stylesheet" href="../stylesheets/main-abc-website.css">
+    <script src="../javascripts/vendor.js"></script>
+    
+</head>
+
+<body class="abc-website">
+    <div class="visuallyhidden">
+        <a href="#maincontent">skip to main content</a>
+    </div>
+    <header>
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <!-- Top Global Navigation for website Placeholder Start-->
+                    <!-- Top Global Nav Starts -->
+<div class="row top-global-nav">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+        <div class="top-bg pull-right">
+            <ul class="nav header-dropdown" id="header-dropdown">
+
+
+                <li id="lang-topmenu" class="scnd_center language__dropdown">
+    <a href="#" title="Language">
+        <!-- Active Language Placeholder Starts  -->
+        <!-- *  NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon -->
+        <span class="language__icon language__icon--english"> </span>English
+        <span class="icon-arrow icon">
+            <!-- Active Language PlaceHolder Ends -->
+
+            <span class="visuallyhidden">arrow</span></span></a>
+    <span id="line" class="vertical-line"></span>
+
+    <ul class="dropdown-menu" id="lang-childmenu"
+        style="display: none; width: 21.7rem !important ; right: unset !important">
+        <ul class="col-section-container">
+            <li class="level1">
+                <ul class="list-unstyled" style="padding: 0px">
+
+                    <!-- Content Managed Language List Options structure STARTS-->
+                    <!-- 
+                        *   NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon
+                        **  Also note that the list items in the Mobile verstion have slightly diffrent classes than the desktop version
+                        *** Also note the data-default-language data attribute its an important flag as per Jatin's requirement.
+
+                    -->
+
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="true">
+                            <span class="language__icon language__icon--english"></span>
+                            English
+                        </a>
+                    </li>
+
+                    <!-- Language List Options Structure ENDS -->
+
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--hindi"></span>
+                            Hindi
+                        </a>
+                    </li>
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--tamil"></span>
+                            Tamil
+                        </a>
+                    </li>
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--telegu"></span>
+                            Telegu
+                        </a>
+                    </li>
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--kannada"></span>
+                            Kannada
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+</li>
+
+                <li id="personal-topmenu" class="selected-menu">
+                    <a href="#" title="Corporates">Personal</a>
+                    <span></span>
+                </li>
+                <li id="corporate-topmenu" class="scnd_center ">
+                    <a href="#" title="Corporates">Corporates <span class="icon-arrow icon">
+                            <span class="visuallyhidden">arrow</span></span></a>
+                    <span id="line" class="vertical-line"></span>
+                    <ul class="dropdown-menu" id="corporate-childmenu" style="display:none;">
+
+                        <ul class="col-section-container">
+                            <li class="level1 pink-link-section">
+                                <span class="pink-link-heading">Protecting</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a
+                                            href="https://corporategeneralinsurance.adityabirlacapital.com/products/overview">Corporate
+                                            General Insurance </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://lifeinsurance.adityabirlacapital.com/group-insurance/overview">Group
+                                            Life
+                                            Insurance </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://www.adityabirlacapital.com/healthinsurance/#!/group-health-insurance-products">Group
+                                            Health Insurance </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 green-link-section">
+                                <span class="green-link-heading">Investing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a
+                                            href="https://privateequity.adityabirlacapital.com/Pages/Individual/Funds-Under-Management/Overview.aspx">Private
+                                            Equity </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://mutualfund.adityabirlacapital.com/investor-solution-corporate">Mutual
+                                            Funds </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://stocksandsecurities.adityabirlacapital.com/">Stock and
+                                            Securities </a>
+                                    </li>
+
+                                    <li class="level2">
+                                        <a href="https://portfoliomanagementservices.adityabirlacapital.com/">Portfolio
+                                            Management
+                                            Services </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://pensionfund.adityabirlacapital.com/">Pension Funds </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 yellow-link-section">
+                                <span class="yellow-link-heading">Financing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a
+                                            href="https://corporatefinance.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">Corporate
+                                            Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://mortgagefinance.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">Mortgage
+                                            Finance </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://loanagainstsecurities.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">Loans
+                                            Against Securities </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://dcmandsyndication.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">DCM
+                                            &amp; Loan Syndication </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 red-link-section">
+                                <span class="red-link-heading">Advising</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://advising.adityabirlacapital.com/money-for-life-planner">MoneyforLife
+                                            Planner </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://www.adityabirlacapital.com/abc-of-money">ABC of Money </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </ul>
+
+                </li>
+                <li id="advisor-topmenu" class="scnd_center">
+                    <a href="#" title="Corporates">Advisors <span class="icon-arrow icon">
+                            <span class="visuallyhidden">arrow</span></span></a>
+                    <ul class="dropdown-menu" id="advisor-childmenu" style="display: none;">
+
+                        <ul class="col-section-container">
+                            <li class="level1 pink-link-section">
+                                <span class="pink-link-heading">Protecting</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://lipartners.adityabirlacapital.com/New/">Life Insurance
+                                            Advisors</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://www.adityabirlacapital.com/healthinsurance/#!/hs-our-network">Health
+                                            Insurance Advisors </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 green-link-section">
+                                <span class="green-link-heading">Investing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://mf.adityabirlacapital.com/Pages/Advisor/Advisor-Portal.aspx">Mutual
+                                            Funds Advisors </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://stocksandsecurities.adityabirlacapital.com/partner">Stocks
+                                            &amp; Securities Advisors </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 yellow-link-section">
+                                <span class="yellow-link-heading">Financing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://abfl.adityabirlacapital.com/partners/">Financing Advisors</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 red-link-section">
+                                <span class="red-link-heading">Advising</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://select.adityabirlacapital.com/Forms_Birla/LandingPage.aspx">Select
+                                            Advisor</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Top Global Nav Ends -->
+                    <!-- Top Global Navigation for website Placeholder Ends -->
+                    <div class="top-header-wrapper capital-red-bg">
+                        <!-- Logo Starts -->
+                        <div class="logo">
+  <a href="/">
+    <picture class="">
+      <source media="(min-width: 1021px)" srcset="../images/abc-logo.png" />
+      <source
+        media="(min-width: 768px) and (max-width: 1020px)"
+        srcset="../images/abc-logo-m.png, ../images/abc-logo-m.png 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="../images/abc-logo-s.png, ../images/abc-logo-s.png 2x"
+      />
+      <img src="../images/abc-logo.png" alt="ABCL - Blog" />
+    </picture>
+  </a>
+</div>
+
+                        <!-- Logo Ends -->
+                        <!-- Main Navigation Starts -->
+                        <div class="top-menu">
+  <ul>
+    <li class="level1 has-children pink-link">
+      <span title="Protecting">Protecting</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">Life Insurance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Multiply Wellness</a>
+        </li>
+        <li class="level2">
+          <a href="#">Health Insurance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Travel Insurance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Motor Insurance</a>
+        </li>
+      </ul>
+    </li>
+    <li class="level1 has-children green-link">
+      <span title="Investing">Investing</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">Mutual Funds</a>
+        </li>
+        <li class="level2">
+          <a href="#">Pension Funds</a>
+        </li>
+        <li class="level2">
+          <a href="#">Wealth Management</a>
+        </li>
+        <li class="level2">
+          <a href="#">Stocks and Securities</a>
+        </li>
+        <li class="level2">
+          <a href="#">Porfolio Management</a>
+        </li>
+        <li class="level2">
+          <a href="#">Real Estate Investments</a>
+        </li>
+      </ul>
+    </li>
+    <li class="level1 has-children yellow-link">
+      <span title="Financing">Financing</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">Home Finance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Loan Against Securities</a>
+        </li>
+        <li class="level2">
+          <a href="#">Personal Finance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Real Estate Finance</a>
+        </li>
+        <li class="level2">
+          <a href="#">SME Finance</a>
+        </li>
+      </ul>
+    </li>
+    <li class="level1 has-children advising-red-link red-link">
+      <span title="Advising">Advising</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">MoneyForLife Planner</a>
+        </li>
+        <li class="level2">
+          <a href="#">ABC of Money</a>
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+</div>
+
+                        <!-- Main Navigation Ends -->
+                        <!-- Utility Link Starts -->
+                        <div class="top-right-wrapper">
+  <span class="top-right-item phone-link" style="display: none;">
+    <a href="tel:1800-270-7000">
+      <span class="iconText"> 1800-270-7000</span>
+      <span class="icon-phone icon">
+        <span class="visuallyhidden">telephone</span>
+      </span>
+    </a>
+  </span>
+
+  <span class="top-right-item home-link">
+    <a href="https://abcscstg.com">
+      <span class="iconText">Home</span>
+      <span class="icon-home icon">
+        <span class="visuallyhidden">
+          Home
+        </span>
+      </span>
+    </a>
+  </span>
+  <span class="top-right-item dashboard-link">
+    <a href="#">
+      <span class="iconText">Dashboard</span>
+    </a>
+  </span>
+  <ul class="dashboard-list">
+    <li class="loggedin-item dropdown">
+      <a href="#" data-toggle="dropdown" aria-expanded="false" data-display="static">
+        <span class="divicon  cust-log-ico-mob-user">RP</span>
+        <span class="icon icon-arrow"></span>
+      </a>
+      <ul class="login-dropdowm dropdown-menu" id="myDropdown">
+        <div class="arrow_up" style="right: 20.5px;"></div>
+        <li class="fst_ele">
+          <a href="#">Change Email Address</a>
+        </li>
+        <li>
+          <a href="#">Change Mobile Number</a>
+        </li>
+        <li>
+          <a href="#">Change One ID Password</a>
+        </li>
+        <li class="last_child">
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="utility-links hide">
+  <a class="icon-home icon" href="https://abcscstg.com">
+    <span class="visuallyhidden">home</span>
+  </a>
+  <a class="icon-phone icon" href="tel:1800-270-7000">
+    <span class="visuallyhidden">telephone</span>
+  </a>
+  <a class="icon loggedin-name" href="#">
+    <span class="dashboard-list">
+      <span class="loggedin-item">
+        <span class="divicon  cust-log-ico-mob-user">RP</span>
+      </span>
+    </span>
+  </a>
+</div>
+
+                        <!-- Utility Link Ends -->
+
+                        <!-- language switcher mobile Starts -->
+                        <ul class="nav header-dropdown" id="lang-mobile-dropdown">
+    <li id="lang-topmenu-mobile" class="scnd_center" style="background-color: transparent !important;padding-top: 2px;">
+        <a href="#" title="Language" style="border:none !important">
+            <!-- Active Language Placeholder Starts  -->
+            <!-- 
+                *  NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon
+                ** Also note that the Placeholder in the Mobile verstion has slightly diffrent classes than the desktop version
+            -->
+
+            <span class="language__icon language__icon__mobile language__icon--english"></span>
+            <span class="language__selected" style="margin-right:1rem;">English</span>
+            <!-- Active Language PlaceHolder Ends -->
+
+            <span class="icon-arrow icon" style="color: white !important;">
+                <span class="visuallyhidden">arrow</span></span></a>
+
+        <ul class="dropdown-menu" id="lang-childmenu-mobile"
+            style="display: none;width:21.7rem !important ;left: unset !important;top: 110%;right: -20% !important;">
+            <ul class="col-section-container lang-childmenu-mobile-dropdown">
+                <li class="level1" style="width: unset;">
+                    <ul class="list-unstyled" style="padding: 0px;">
+
+                        <!-- Content Managed Language List Options structure STARTS-->
+                        <!-- 
+                            *   NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon
+                            **  Also note that the list items in the Mobile verstion have slightly diffrent classes than the desktop version
+                            *** Also note the data-default-language data attribute its an important flag as per Jatin's requirement.
+
+                        -->
+
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="true">
+                                <span class="language__icon language__icon__mobile language__icon--english"></span>
+                                English
+                            </a>
+                        </li>
+
+                        <!-- Language List Options Structure ENDS -->
+
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+                                <span class="language__icon language__icon__mobile language__icon--hindi"></span>
+                                Hindi
+
+                            </a>
+                        </li>
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+
+                                <span class="language__icon language__icon__mobile language__icon--tamil"></span>
+                                Tamil
+
+                            </a>
+                        </li>
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+
+                                <span class="language__icon language__icon__mobile language__icon--telegu"></span>
+                                Telegu
+
+                            </a>
+                        </li>
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+
+                                <span class="language__icon language__icon__mobile language__icon--kannada"></span>
+                                Kannada
+
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </ul>
+
+    </li>
+
+</ul>
+                        <!-- language switcher mobile Ends -->
+                    </div>
+                    <!-- Utility Link Starts -->
+                    <div class="primary-nav primary-nav--website wb-header-pink-bg">
+    <div class="col-md-12">
+        <ul class="primary-nav__list">
+            <li class="primary-nav__title">
+                <a href="javascript:void(0);" class="bold" class="">Life Insurance</a>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);" class="">All Insurance <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="javascript:void(0);">Term Insurance <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Life Shield Plan</a></li>
+                            <li><a href="#">ABSLI Income Shield Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Retirement Plan <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Empower Pension Plan</a></li>
+                            <li><a href="#">ABSLI Immediate Annuity Plan</a></li>
+                            <li><a href="#">ABSLI Empower Pension- SP Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Wealth with Protection Plans <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Wealth Max Plan</a></li>
+                            <li><a href="#">ABSLI Wealth Secure Plan</a></li>
+                            <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                            <li><a href="#">ABSLI Fortune Elite Plan</a></li>
+                            <li><a href="#">ABSLI Wealth Aspire Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Savings with protection <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI SecurePlus Plan</a></li>
+                            <li><a href="#">ABSLI Vision MoneyBack Plus Plan</a></li>
+                            <li><a href="#">ABSLI Vision LifeIncome Plan</a></li>
+                            <li><a href="#">ABSLI Savings Plan</a></li>
+                            <li><a href="#">ABSLI Vision LifeSecure Plan</a></li>
+                            <li><a href="#">ABSLI Income Assured Plan</a></li>
+                            <li><a href="#">ABSLI Vision Endowment Plus Plan</a></li>
+                            <li><a href="#">ABSLI Guaranteed Milestone Plan</a></li>
+                            <li><a href="#">ABSLI - Jeevan Bachat Plan</a></li>
+                            <li><a href="#">ABSLI Monthly Income Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Child Plans <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Empower Pension Plan</a></li>
+                            <li><a href="#">ABSLI Immediate Annuity Plan</a></li>
+                            <li><a href="#">ABSLI Empower Pension- SP Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Health Insurance <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Empower Pension Plan</a></li>
+                            <li><a href="#">ABSLI Immediate Annuity Plan</a></li>
+                            <li><a href="#">ABSLI Empower Pension- SP Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Group Insurance <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li class="primary-nav__subtitle"><a href="javascript:void(0);">Protection Solutions</a></li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Employer Employee <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Term Life & Riders</a></li>
+                                    <li><a href="#">Group Income Replacement</a></li>
+                                    <li><a href="#">Flexible Benefits - Voluntary</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Non Employer Employee <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Term Life</a></li>
+                                    <li><a href="#">Group Income Replacement</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Credit Life <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Asset Assure</a></li>
+                                    <li><a href="#">Group Bima Yojna</a></li>
+                                    <li><a href="#">ABSLI Group Smart Select</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__subtitle">
+                                <a href="javascript:void(0);">Retirement Solutions</a>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Gratuity <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Traditional -CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                    <li><a href="#">ULIP - GULP</a></li>
+                                    <li><a href="#">GVPP</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Leave Encashment <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Traditional -CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                    <li><a href="#">ULIP - GULP</a></li>
+                                    <li><a href="#">GVPP</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">PRMBS <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Traditional -CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Superannuation <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                    <li><a href="#">Assured Pension (DB)</a></li>
+                                    <li><a href="#">Superannuation (DC)</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Group Annuity <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Immediate Annuity</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">Calculators <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">Human Life Value Calculator</a></li>
+                    <li><a href="#">Retirement Calculator</a></li>
+                    <li><a href="#">Wealth Calculator</a></li>
+                    <li><a href="#">Child Calculator</a></li>
+                    <li><a href="#">Health Insurance Calculator</a></li>
+                    <li><a href="#">Tax Savings Calculator</a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">About Us <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">Public Disclosure</a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">Our Funds <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">NAV Performance</a></li>
+                    <li><a href="#">ABSLI DigiShield Plan</a></li>
+                    <li><a href="#">ABSLI UltimaTerm</a></li>
+                    <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                    <li><a href="#">ABSLI Vision Star Plan</a></li>
+                    <li><a href="#">ABSLI Cancer Shield Plan </a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">How Do I? <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">File a Claim</a></li>
+                    <li><a href="#">Manage Your Policy</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Articles & Blogs</a></li>
+                    <li><a href="#">Download Forms</a></li>
+                    <li><a href="#">Insurance Dictionary</a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__other-link">
+                <a href="javascript:void(0);" class="bold" class="">Pay Premium</a>
+            </li>
+            <li class="primary-nav__other-link primary-nav__other-link--typ2">
+                <a href="javascript:void(0);" class="bold" class="">Track Application</a>
+            </li>
+            <li class="primary-nav__link primary-nav__link--search">
+                <a href="#" class="bold primary-nav__link--search-btn"><span class="icon icon-seach"></span></a>
+                <form class="abc-form abc-form--search">
+                    <div class="form-group form-group--search">
+                        <div class="input-group input-group--search">
+                            <input type="hidden" id="searchPageUrl" value="/" />
+                            <input type="hidden" value="True" id="isOnSearchPage" />
+                            <input type="hidden" value="/" id="homePageUrl" />
+                            <input type="hidden" class="search-term-hidden" id="select-search-header-hidden" placeholder="Search" name="searchTermFreeText">
+                            <input type="text" class="form-control form-group__placeholder" id="select-search-header" placeholder="Search" name="searchTerm">
+                            <span class="input-group-addon input-group-addon--clear"><span class="icon icon-cancel"></span></span>
+                            <span class="input-group-btn">
+                                <button class="btn icon-btn" type="button"><span class="icon icon-seach"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li class="primary-nav__other-link primary-nav__other-hamburger">
+                <a href="javascript:void(0);" class="bold wb-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Utility Link Ends -->
+
+                    <!-- website mobile Navigation <Start> -->
+                    <div class="mobile-menu-wrapper">
+    <div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation"
+        aria-expanded="true/false">
+        <div class="hamburger-box">
+            <div class="hamburger-inner">
+                <span class="visuallyhidden">Menu</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobi-navigation">
+    <div class="close-menu">
+        <div class="hamburger hamburger--elastic is-active" tabindex="0" aria-label="Menu" role="button"
+            aria-controls="navigation" aria-expanded="true/false">
+            <div class="hamburger-box">
+                <div class="hamburger-inner">
+                    <span class="visuallyhidden">Close</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-header">
+        <div class="logo"></div>
+        <div class="utility-links"></div>
+    </div>
+    <div class="menu-content-wrapper">
+        <div class="primary-nav__mobileasd">
+            <div class="primary-nav__mobile">
+                <ul class="">
+                    <li class="primary-nav__mobile--headline bold">
+                        <span>About Us</span><i class="fa fa-close primary-nav__close"></i>
+                    </li>
+                    <li data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <a>Board of Directors <span class="icon-arrow icon"></span></a>
+                        <ul id="collapseTwo" class="collapse primary-nav__collapse" aria-labelledby="headingOne">
+                            <li><a href="#">ABSLI DigiShield Plan</a></li>
+                            <li><a href="#">ABSLI UltimaTerm</a></li>
+                            <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                            <li><a href="#">ABSLI Vision Star Plan</a></li>
+                            <li><a href="#">ABSLI Cancer Shield Plan </a></li>
+                        </ul>
+                    </li>
+                    <li data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <a>Board of Directors <span class="icon-arrow icon"></span></a>
+                        <ul id="collapse2" class="collapse primary-nav__collapse" aria-labelledby="headingOne">
+                            <li><a href="#">ABSLI DigiShield Plan</a></li>
+                            <li><a href="#">ABSLI UltimaTerm</a></li>
+                            <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                            <li><a href="#">ABSLI Vision Star Plan</a></li>
+                            <li><a href="#">ABSLI Cancer Shield Plan </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="primary-nav__mobile primary-nav__mobile--footer">
+                    <p>
+                        <span>© 2019, Aditya Birla Capital Ltd.</span>
+                        <span>All Rights Reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="mobi-nav-wrapper"></div>
+            <div class="mobi-top-navigation">
+                <ul>
+                    <li>
+                        <a href="#" title="Corporates">Corporates</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Advisors">Advisors</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Customer Service">Customer Services</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Careers">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" title="About us">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobi-footer-links">
+                <ul>
+                    <li class="has-children">
+                        <a href="javascript:;">Others</a>
+                        <span class="icon-arrow icon">
+                            <span class="visuallyhidden">arrow</span></span>
+                        <ul>
+                            <li>
+                                <a href="/about-us/our-solutions" target="" title="Our Solutions">Our Solutions</a>
+                            </li>
+                            <li>
+                                <a href="/investor-relations" target="" title="Investor Relations">Investor
+                                    Relations</a>
+                            </li>
+                            <li>
+                                <a href="/press-and-media" target="" title="Press and Media">Press and Media</a>
+                            </li>
+
+                            <li>
+                                <a href="/about-us/our-businesses" target="" title="Our Businesses">Our Businesses</a>
+                            </li>
+                            <li>
+                                <a href="/about-us/financial-achievements" target="" title="Our Achievements">Our
+                                    Achievements</a>
+                            </li>
+                            <li>
+                                <a href="/about-us/csr-and-sustainability" target="" title="CSR">CSR</a>
+                            </li>
+                            <li>
+                                <a href="/Key-Facts-On-Tax-Filing" target="" title="ITR Filing">ITR Filing</a>
+                            </li>
+
+                            <li>
+                                <a href="/branch-locator" target="" title="Locate Us">Locate Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" target="" title="Privacy Policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" target="" title="Terms and Conditions">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer brand-capital-red-bg">
+            <p>
+                <span>© 2019, Aditya Birla Capital Ltd.</span>
+                <span>All Rights Reserved.</span>
+            </p>
+        </div>
+    </div>
+</div>
+                    <!-- website Mobile Navigation <End> -->
+
+
+                    <!--company info start-->
+                    <div class="company-info website-brown-bg">
+    <h4 class="company-info__desc">Aditya Birla Sun Life Insurance Company LTD.</h4>
+</div>
+                    <!--company info end-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="loading"></div>
+<!-- The Modal -->
+<div class="modal fade" id="modal-popup">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-subscribe">
+    <form
+        action="/formbuilder?fxb.FormItemId=e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f&amp;fxb.HtmlPrefix=fxb.58b4c895-39fe-49bd-bd98-61a72f397f90"
+        data-ajax="true" data-ajax-method="Post" data-ajax-mode="replace-with"
+        data-ajax-success="$.validator.unobtrusive.parse('#fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f');$.fxbFormTracker.parse('#fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f');"
+        data-ajax-update="#fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f"
+        data-sc-fxb="e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f" enctype="multipart/form-data"
+        id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f" method="post"
+        novalidate="novalidate"><input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_FormSessionId"
+            name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.FormSessionId" type="hidden"
+            value="ca4515c7-c36a-4c19-b434-6751d30e3bb0"><input name="__RequestVerificationToken" type="hidden"
+            value="lwppq3ugH7PgO6rUifZmZKPuF4UkFtHMFq248HlOMeQnMZEf-rUY7hGW_iXWoNuIPIAxdwr6UB52QKlGd12RQrF0HYJDYimOxsTj9IOSvkM1"><input
+            id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_FormItemId"
+            name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.FormItemId" type="hidden"
+            value="e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f"><input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_PageItemId"
+            name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.PageItemId" type="hidden"
+            value="9f9780c8-03ad-454d-9ea2-1b62e90aff92">
+        <div data-sc-field-key="7E385E33474A490A9A91708B77A0D7FC" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_79ae9147-eea4-44ca-ba3d-9959bbc161c4"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="79ae9147-eea4-44ca-ba3d-9959bbc161c4"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_79ae9147-eea4-44ca-ba3d-9959bbc161c4__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[79ae9147-eea4-44ca-ba3d-9959bbc161c4].ItemId"
+                type="hidden" value="79ae9147-eea4-44ca-ba3d-9959bbc161c4"><label
+                for="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_79ae9147-eea4-44ca-ba3d-9959bbc161c4__Value"
+                class="">First Name</label>
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_79ae9147-eea4-44ca-ba3d-9959bbc161c4__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[79ae9147-eea4-44ca-ba3d-9959bbc161c4].Value"
+                class="valid" type="text" value="" maxlength="50" placeholder="" data-sc-tracking="True"
+                data-sc-field-name="FirstName" data-sc-field-key="D5F2B11AB1124C1188A86A86E6EEB158">
+            <span class="field-validation-valid"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[79ae9147-eea4-44ca-ba3d-9959bbc161c4].Value"
+                data-valmsg-replace="true"></span><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4].ItemId"
+                type="hidden" value="8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4"><label
+                for="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4__Value"
+                class="">Last Name</label>
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4].Value"
+                class="valid" type="text" value="" maxlength="50" placeholder="" data-sc-tracking="True"
+                data-sc-field-name="LastName" data-sc-field-key="DED2020154894E47B356761F11E349B1">
+            <span class="field-validation-valid"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4].Value"
+                data-valmsg-replace="true"></span>
+        </div>
+        <div data-sc-field-key="2E7EDF2D420342CF9CB7E5FC8CC90808" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_b0575e0c-ef0a-4716-98f2-e5d7679c6049"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="b0575e0c-ef0a-4716-98f2-e5d7679c6049"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[b0575e0c-ef0a-4716-98f2-e5d7679c6049].ItemId"
+                type="hidden" value="b0575e0c-ef0a-4716-98f2-e5d7679c6049"><label
+                for="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value"
+                class="">Email</label>
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[b0575e0c-ef0a-4716-98f2-e5d7679c6049].Value"
+                class="input-validation-error" type="email" value="" maxlength="50" placeholder=""
+                data-sc-tracking="True" data-sc-field-name="Email" data-sc-field-key="6101735ADD78418F95118FC76B5BBA74"
+                data-val-required="Email is required." data-val-regex="Email contains an invalid email address."
+                data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,17}$" data-val="true"
+                aria-required="true"
+                aria-describedby="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value-error"
+                aria-invalid="true">
+            <span class="field-validation-error"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[b0575e0c-ef0a-4716-98f2-e5d7679c6049].Value"
+                data-valmsg-replace="true"><span
+                    id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value-error"
+                    class="">Email is required.</span></span>
+        </div>
+        <div data-sc-field-key="E0289695ED5E4A24AC2DCE2A768C7FB7" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_3df7d549-924f-4ba0-bd3e-00a2517ed756"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="3df7d549-924f-4ba0-bd3e-00a2517ed756"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_3df7d549-924f-4ba0-bd3e-00a2517ed756__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].ItemId"
+                type="hidden" value="3df7d549-924f-4ba0-bd3e-00a2517ed756"><label class="">Interest</label>
+            <input type="hidden"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value">
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{EE3B89AB-3F9E-44FD-B050-AAEBCA93613A}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8" data-val-ischecked="Interest is required."
+                    data-val="true" aria-required="true" class="input-validation-error"
+                    aria-describedby="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value-error">404
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{33CAD3BB-D973-452B-8EC8-E071F62DB03A}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Financing Solutions
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{256BE665-4439-42B5-AC16-EC90D8265495}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Investing Solutions
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{A35BD6AA-1878-4398-96C3-9C855D324CB0}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Money
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{A4B7F5EA-A223-4226-8869-C254F39C125C}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Protecting Solutions
+            </label>
+            <span class="field-validation-error"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                data-valmsg-replace="true"><span
+                    id="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value-error"
+                    class="">Interest is required.</span></span>
+        </div>
+        <div data-sc-field-key="43ACDEA8DDE04B10A914DF7320933CED" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_8feb10bb-5991-4e91-a45f-1a721e3a5478"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="8feb10bb-5991-4e91-a45f-1a721e3a5478"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8feb10bb-5991-4e91-a45f-1a721e3a5478__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].ItemId"
+                type="hidden" value="8feb10bb-5991-4e91-a45f-1a721e3a5478"><label class="">Frequency </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    checked="" value="{16DD02A6-F8D1-4431-8BA3-499A0C62BE09}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Daily
+            </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    value="{BFD3F256-8632-43A3-ACE5-ED7AD09695D8}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Fortnightly
+            </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    value="{AB468C84-F084-41DB-B0CF-09B0077AF586}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Weekly
+            </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    value="{66C935DE-147D-492B-903A-7580885D337C}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Monthly
+            </label>
+            <span class="field-validation-valid"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                data-valmsg-replace="true"></span>
+        </div>
+        <div data-sc-field-key="AD6BBDF161994E4F8B45A4058A07EC57" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_1e442633-1bb8-4082-9970-9cc1b1befc85"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="1e442633-1bb8-4082-9970-9cc1b1befc85"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_1e442633-1bb8-4082-9970-9cc1b1befc85__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[1e442633-1bb8-4082-9970-9cc1b1befc85].ItemId"
+                type="hidden" value="1e442633-1bb8-4082-9970-9cc1b1befc85"> <input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_1e442633-1bb8-4082-9970-9cc1b1befc85__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[1e442633-1bb8-4082-9970-9cc1b1befc85].Value"
+                type="hidden" value="1" data-sc-tracking="True" data-sc-field-name="IsActive"
+                data-sc-field-key="79E68A62A7E0495097879ECB7F65FB79">
+
+
+            <input value="Subscribe" type="submit" class="frm-subscribe"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba"
+                data-sc-field-key="C61E8D94819544FABF39153C94F88854">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_NavigationButtons"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.NavigationButtons" type="hidden"
+                value="e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba" type="hidden"
+                value="1">
+        </div>
+        <script type="text/javascript">
+            (function ($) {
+                var $formEl = $("form[data-sc-fxb='e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f']");
+                if ($formEl.length && typeof $formEl.init_fxbConditions === 'function') {
+                    var options = {};
+                    $formEl.init_fxbConditions(options);
+                }
+            })(jQuery)
+        </script>
+    </form>
+    <div id="frm-loading" class="hide"></div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-popup-dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="password-protected-wrapper">
+    <form action="">
+        <div class="error-msg">Password is incorrect. Redirecting to Home Page.</div>
+        <div>
+            <label>Password</label>
+            <input type="password"/>
+        </div>
+        <div>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+</div>
+      </div>
+    </div>
+  </div>
+</div>  <div class="banner">
+  <div
+    class="banner__wrapper hero-banner banner__wrapper--v2"
+    data-d="https://abcscstg.com/-/media/abc/images/hero-b/protecting-pillar-page-hero.jpg"
+    data-m="https://abcscstg.com/-/media/abc/images/hero-b/protectingpillar_hero_m.jpg"
+  >
+    <div class="container-fluid">
+      <div class="outerpadding">
+        <div class="row">
+          <div class="col-lg-11 col-md-12 col-sm-12 offset-lg-1">
+            <div class="banner__content banner__content--v2">
+              <span class="banner__label protecting-bg"
+                >protecting solutions</span
+              >
+              <h1 class="banner__title banner__title--bold">
+                Are you confident of protecting things you value?
+              </h1>
+              <a href="#" class="button button-primary">Get Advice</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+    <div class="main-content main-content--website">
+        <a class="visuallyhidden" name="maincontent" id="mainContent"></a>
+
+        
+<div class="container-fluid">
+    <div class="outerpadding">
+        <!-- contact us Start -->
+        <div class="cs-banner">
+    <h1 class="cs-banner__h1">H1 Tag</h1>
+    <h2 class="cs-banner__title">Manage claims</h2>
+    <p class="cs-banner__p">At ABSLI, our dedicated team of expert claim assessors ensure that the claims process is handled in an easy manner for the family of the life insured.</p>
+    <strong class="cs-banner__highlight">99.02%</strong>
+    <p class="cs-banner__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+        <!-- contact us end -->
+    </div>
+</div>
+
+
+
+    </div>
+
+    <div class="wb-footer">
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="foot-link-wrap">
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Term Insurance <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Life Shield Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Income Shield Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">(ULIP) Wealth with <br> Protection Plans <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Max Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Secure Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Assure Plus</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Fortune Elite Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Aspire Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Savings with protection <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI SecurePlus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision MoneyBack Plus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision LifeIncome Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Savings Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision LifeSecure Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Income Assured Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision Endowment Plus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Guaranteed Milestone Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI - Jeevan Bachat Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Monthly Income Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Group Insurance <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <h5 class="foot-link-set__sub-title">Protection Solution</h5>
+                            <ul class="foot-link-set__list foot-link-set__list--sub">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Employer Employee</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Non Employer Employee</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Credit Life</a>
+                                </li>
+                            </ul>
+                            <h5 class="foot-link-set__sub-title">Retirement Solution</h5>
+                            <ul class="foot-link-set__list foot-link-set__list--sub">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Gratuity</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Leave Encashment</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">PRMBS</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Superannuation</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Group Anuity</a>
+                                </li>
+                            </ul>
+                            <a href="#" title="dummy title text" class="foot-link-set__link foot-link-set__link--bold">Group Anuity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Retirement Plan <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Empower Pension Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Immediate Annuity Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Empower Pension- SP Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Health Insurance <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Cancer Shield Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI CritiShield Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Hospital Plus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Aspire Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Child Plans <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision Star Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Discontinued Plans <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Ultima</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Ultima</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Pay Premium <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Initial</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Renewal</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Loan Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Insurance Calculators <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Human Life Value Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Retirement Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Wealth Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Child Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Health Insurance Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Tax Savings Calculator</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">About Us <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Who Are We</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Company Profile</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Public Disclosure</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Our Funds <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">NAV Performance</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Fund Portfolio & Benchmark</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Market Outlook</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">How Do I? <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Manage My Policy</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Manage Claims</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Register for One ABD ID</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Download Forms</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">FAQs</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Read Articles</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Contact Us</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Feedback</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Dictionary</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Quick Links <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Download Policy Contract</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Contact Salahkar</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Premium Paid Certificate</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">SI Registration</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Tax Benefits</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Unclaimed Amount</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Riders</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Rural</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">NRI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Public Disclosure <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">RDAI Circular</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">NAV Formula</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">IRDAI Consumer Education</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Environmental Management System</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"> IRDAI Public Notice on Spurious Phone Calls and Fictitious/Fraudulent Offers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Tax Planning <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list foot-link-set__list--tax">
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">Choosing term insurance the right way. The most important article that a 25-year</a>
+                                    </div>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">The most important article that a 25-year The most important article that a 25-year</a>
+                                    </div>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">How much should be the adequate budget…</a>
+                                    </div>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">How is term insurance different from life…</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Governing Bodies <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">IRDAI</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Life Insurance Council</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Ombudsman</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Support <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Pay Now</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Grievance Redressal</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Do Not Call Registry</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Corporate Agent</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Advisory</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Copyright & Usage <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Privacy Policy</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Terms of Use</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-socialset">
+                        <h4 class="foot-link-socialset__title">
+                            <a href="#" class="foot-link-set__title-link">Connect with us</a>
+                        </h4>
+                        <div class="foot-link-socialset__cont">
+                            <ul class="foot-link-set__list foot-link-set__list--social">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-facebook"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-linkedIn"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-twitter"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-instagram"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-youtube"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg-office">
+                <h4 class="reg-office__title">Aditya Birla Sun Life Insurance Company Limited, Registered with Insurance Regulatory & Development Authority of India (IRDAI) as Life Insurance Company.</h4>
+                <h4 class="reg-office__title">Registered Office:</h4>
+                <p class="reg-office__desc">One Indiabulls Centre Tower 1, 16th Floor, Jupiter Mill Compound, 841, Senapati Bapat Marg, Elphinstone Road, Mumbai - 400013. CIN: U99999MH2000PLC128110 Registration No. 109.</p>
+                <p class="reg-office__desc">Trade Logo "Aditya Birla Capital" displayed above is owned by ADITYA BIRLA MANAGEMENT CORPORATION PRIVATE LIMITED (Trademark Owner) and used by ADITYA BIRLA SUN LIFE INSURANCE COMPANY LIMITED (ABSLI) under the license.</p>
+                <p class="reg-office__desc">Aditya Birla Sun Life Insurance Company Limited, Registered with Insurance Regulatory & Development Authority of India (IRDAI) as Life Insurance Company.</p>
+                <p class="reg-office__desc">For more details on risk factors, terms and conditions please read sales brochure carefully before concluding the sale.</p>
+            </div>
+            <div class="aware-block">
+                <h4 class="aware-block__title">BEWARE OF SPURIOUS / FRAUD PHONE CALLS!</h4>
+                <p class="aware-block__desc">IRDAI is not involved in activities like selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom-wrapper brand-dark-grey top-white divider">
+            <div class="container-fluid">
+                <div class="outerpadding">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="upper-div">
+                                <div class="footer-container">
+                                    <div class="footer-container__logo">
+                                        <!-- Footer Logo <start> -->
+                                        <div class="footer-logo">
+                                            <a itemprop="url" href="/">
+                                                <img src="../images/footer-logo.png" alt="Footer Logo" width="217" height="50" disablewebedit="False" />
+                                            </a>
+                                        </div>
+                                        <!-- Footer Logo <end> -->
+                                    </div>
+                                    <div class="footer-container__links">
+                                        <!-- Footer Navigation Col-1 <start> -->
+                                        <div class="lcol">
+                                            <ul>
+                                                <li>
+                                                    <a href="/about-us/our-solutions" target="" title="Our Solutions">Our Solutions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/investor-relations" target="" title="Investor Relations">Investor Relations</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/press-and-media" target="" title="Press and Media">Press and Media</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Footer Navigation Col-1 <end>-->
+                                        <!-- Footer Navigation Col-2 <start> -->
+                                        <div class="lcol">
+                                            <ul>
+                                                <li>
+                                                    <a href="/about-us/our-businesses" target="" title="Our Businesses">Our Businesses</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/about-us/financial-achievements" target="" title="Our Achievements">Our Achievements</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" title="CSR">CSR</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Footer Navigation Col-2 <end> -->
+                                        <!-- Footer Navigation Col-3 <start> -->
+                                        <div class="lcol footerLinkWrap">
+                                            <ul class="footer-link">
+                                                <li>
+                                                    <a href="" target="" title="Locat Us">Locat Us</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/privacy-policy" target="" title="Privacy Policy">Privacy Policy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/terms-and-conditions" target="" title="Terms and Conditions">Terms and Conditions</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Footer Navigation Col-3 <end> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-div">
+                                <!-- caption <start> -->
+                                <div class="copyright">
+                                    <p class="caption">
+                                        <span>&copy; 2019, Aditya Birla Capital Ltd.</span>
+                                        <span>All Rights Reserved.</span>
+                                    </p>
+                                </div>
+                                <!-- caption <end> -->
+                                <!-- Social Media Links <start> -->
+                                <div class="socialicons">
+                                    <div class="contacttext">
+                                        <p class="caption">Call us toll free:</p>
+                                        <span class="icon-phone icon"></span>
+                                        <p class="caption">
+                                            <a href="tel:18002707000">1800 270 7000</a>
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <span class="icon-facebook icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" target="_blank">
+                                                <span class="icon-instagram icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" target="_blank">
+                                                <span class="icon-linkedIn icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:;" target="_blank">
+                                                <span class="icon-twitter icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" target="_blank">
+                                                <span class="icon-youtube icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Social Media Links <end> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    </div>
+    <input type="hidden" value="10" id="pageSize" />
+    <input type="hidden" value="8" id="totalNoPages" />
+    <input type="hidden" value="8" id="currentPageNo" />
+
+    <!-- TypeKit Example -->
+    <script src="https://use.typekit.net/knq5crg.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f196998ccf303001257b54c&product=
+custom-share-buttons' async='async'></script>
+    <script src="../javascripts/Custompagination.js"></script>
+    <script src="../javascripts/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../javascripts/equalHeight.js"></script>
+
+    
+</body>
+
+</html>

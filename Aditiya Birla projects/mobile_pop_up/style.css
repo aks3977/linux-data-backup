@@ -1,0 +1,653 @@
+:root {
+    --support-red: #c7222a;
+    --dark-taupe: #6a4742;
+    --investing: #d4ae69;
+    --dirt-brown: #695934;
+    --financing-shade: #3e593c;
+    --support-yellow: #f7a500;
+    --inactive-grey: #6d7278;
+    --support-red: #8b151b;
+    --white: #fff;
+    --dark-grey: #6c7174;
+    --dirt-brown-two: #7f3a34;
+    --black: #000;
+    --light-grey: #d8d8d8;
+    --white-grey: #f1f3f6;
+    --grey-blue: #617382;
+    --bluey-grey: #8898a5;
+    --black: #000;
+    --white: #fff;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--black);
+}
+
+.popup{
+    position: fixed;
+    /* top: 50%;
+    left:50%; */
+    bottom: 0px;
+    /* transform: translate(-50%,-50%); */
+    display: none;
+}
+
+.contentBox{
+    position: relative;
+    width: 100vw;
+    height:200px;
+    /* padding-left: 15px; */
+    /* padding-top: 15px; */
+    background-color: #fff;
+    /* border-radius: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.content-header{
+    /* width: 100vw; */
+    text-align: center;
+}
+.content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.logoandname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logoandname h3{
+    margin-left: 10px;
+}
+
+a{
+    color:red;
+}
+/* button{
+    margin-right: 10px;
+    width: 90px;
+    background-color: rgb(237, 90, 107);
+    border-radius: 20px;
+    color: white;
+    border: 1px solid black;
+} */
+
+.continue{
+    width: 90px;
+    background-color: rgb(248, 248, 248);;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: rgb(79, 79, 79);
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    /* .container{
+        box-sizing: border-box;
+    } */
+    .popup{
+        /* position: fixed; */
+        width: 768px;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+    .contentBox{
+        position:fixed;
+        max-height:560px;
+        width: 100%;
+        border-top-left-radius: 17.1px;
+        border-top-right-radius: 17.1px;
+        background-color: var(--white);
+    
+
+    }
+
+
+    .content-header{
+        height: 135px;
+        background-color: var(--white-grey);
+        border-radius:17.1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .content-header span{
+        width: 302px;
+        height: 55px;
+        font-family: PFHandbookPro;
+        font-size: 48px;
+        white-space: nowrap;
+
+    }
+
+    .content1{
+        /* width: 768px; */
+        margin-top: 64px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .first{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .img-box{
+        margin-left: 40px;
+        width: 80px;
+        height: 80px;
+        background-color: var(--support-red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img-box1{
+        margin-left: 40px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8.5px;
+        background-color: #dee0e2;
+
+
+
+
+    }
+
+    .img-box1 img{
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+
+    .second-row{
+        margin-top: 56px;
+    }
+
+    .content1-logo{
+        width: 80px;
+        height: 80px;
+        background-color: var(--support-red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8.5px;
+        margin-left: 48px;
+
+
+    }
+
+    .content1-logo img{
+        width: 48px;
+        height: 52px;
+        object-fit: contain;
+    }
+
+    .name{
+        width: 207px;
+        height: 46px;
+        font-family: PFHandbookPro;
+        font-size: 40px;
+        font-weight: 500;
+        color: var(--black);
+        white-space: nowrap;
+        margin-left: 40px;
+        /* margin-top: 20px; */
+        object-fit: contain;
+        /* margin-right: 86px;  */
+        box-sizing: border-box;
+
+
+    }
+    .name-logo{
+        display: flex;
+    }
+
+    .open-btn{
+        width: 256px;
+        height: 80px;
+        font-size: 32px;
+        background-color: var(--support-yellow);
+        border-radius: 8.5px;
+        /* margin-right: 51px; */
+        /* margin-left: 86px; */
+        color: var(--black);
+        font-family: PFHandbookPro;
+
+
+
+    }
+
+    .content2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 56px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100vw;
+
+    }
+    .content2-logo{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dee0e2;
+        border-radius: 8.5px;
+        /* margin-left: 48px; */
+
+    }
+    .name2{
+        width: 131px;
+        height: 49px;
+        font-family: PFHandbookPro;
+        font-size: 42.7px;
+        font-weight: 500;
+        color: var(--black);
+        margin-left: 40px;
+        margin-right: 162px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+
+    }
+    
+    .content2-logo img{
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+    .continue-btn{
+        width: 256px;
+        height: 80px;
+        font-size: 32px;
+        background-color: white;
+        border-radius: 8.5px;
+        margin-right: 51px;
+        font-family: PFHandbookPro;
+        color: var(--black);
+
+    }
+
+    
+}
+
+    /* @media only screen and (max-width: 576px) { */
+        /* body{
+            max-width: 576px;
+        } */
+        /* body{
+            min-width: 100%;
+        } */
+        /* .popup{ */
+            /* position: fixed; */
+            /* width: 576px;
+            object-fit: contain;
+            box-sizing: border-box;
+        } */
+
+        /* .contentBox{
+            height:448px;
+            width: 100vw;
+            border-top-left-radius: 12.8px;
+            border-top-right-radius: 12.8px;
+
+            background-color: var(--white);
+        
+    
+        }
+
+        .content-header{
+            height: 94px;
+            background-color: var(--white-grey);
+            border-radius: 12.8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    
+        }
+
+        .content-header span{
+            width: 252px;
+            height: 46px;
+            font-family: PFHandbookPro;
+            font-size: 40px;
+            white-space: nowrap;
+    
+        }
+
+        .content1{
+            /* width: 768px; */
+            /* margin-top: 48.8px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            width: 100vw;
+        /* } */ 
+
+        /* .content1-logo{
+            width: 64px;
+            height: 64px;
+            background-color: var(--support-red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6.4px;
+            margin-left: 38.4px;
+    
+    
+        }
+
+        .content1-logo img{
+            width: 38px;
+            height: 42px;
+            object-fit: contain;
+
+        }
+
+        .name{
+            width: 166px;
+            height: 36px;
+            font-family: PFHandbookPro;
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--black);
+            white-space: nowrap;
+            margin-left: 26px;
+            margin-top: 20px;
+            object-fit: contain;
+            margin-right: 51px; 
+            box-sizing: border-box;
+    
+    
+        }
+
+        .open-btn{
+            width: 192px;
+            height: 64px;
+            font-size: 24px;
+            background-color: var(--support-yellow);
+            border-radius: 6.4px;
+            margin-right: 38.6px; */
+            /* margin-left: 86px; */
+            /* color: var(--black);
+            font-family: PFHandbookPro;
+    
+    
+    
+        }
+
+        .content2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 51.2px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            width: 100vw;
+
+        }
+
+        .content2-logo{
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dee0e2;
+            border-radius: 6.4px;
+            margin-left: 38.4px;
+    
+        }
+
+        .name2{
+            width: 98px;
+            height: 36  px;
+            font-family: PFHandbookPro;
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--black);
+            margin-left: 26px;
+            margin-right: 119px;
+            margin-top: 20px;
+            box-sizing: border-box;
+    
+    
+        }
+
+        .content2-logo img{
+            width: 51px;
+            height: 51px;
+            object-fit: contain;
+        }
+
+        .continue-btn{
+            width: 192px;
+            height: 64px;
+            font-size: 24px;
+            border-radius: 6.4px;
+            margin-right: 38.6px;
+            /* margin-left: 86px; */
+            /* color: var(--black);
+            font-family: PFHandbookPro;
+
+        }
+    }
+ */
+    /* @media only screen and (max-width: 360px) {
+        body{
+            min-width: 100%;
+        }
+        .popup{
+            width: 360px;
+            object-fit: contain;
+            box-sizing: border-box; */
+        /* }
+
+        .contentBox{
+            height:280px;
+            width: 100vw;
+            border-top-left-radius: 8px;
+            border-top-left-radius: 8px;
+            background-color: var(--white);
+
+        
+    
+        }
+
+        .content-header{
+            height: 59px;
+            background-color: var(--white-grey);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    
+        } */
+
+        /* .content-header span{
+            width: 151px;
+            height: 27px;
+            font-family: PFHandbookPro;
+            font-size: 24px;
+            white-space: nowrap;
+    
+        }
+ */
+        /* .content1{ */
+            /* width: 768px; */
+            /* margin-top: 32px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            width: 100vw;
+        }
+
+        .content1-logo{
+            width: 40px;
+            height: 40px;
+            background-color: var(--support-red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            margin-left: 24px;
+    
+    
+        }
+
+        .content1-logo img{
+            width: 24px;
+            height: 26px;
+            object-fit: contain;
+
+        }
+
+        .name{
+            width: 104px;
+            height: 23px;
+            font-family: PFHandbookPro;
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--black);
+            white-space: nowrap;
+            margin-left: 16px;
+            margin-top: 15px;
+            object-fit: contain;
+            margin-right: 32px; 
+            box-sizing: border-box;
+    
+    
+        }
+
+        .open-btn{
+            width: 120px;
+            height: 40px;
+            font-size: 16px;
+            background-color: var(--support-yellow);
+            border-radius: 4px;
+            margin-right: 24px; */
+            /* margin-left: 86px; */
+            /* color: var(--black);
+            font-family: PFHandbookPro;
+    
+    
+    
+        }
+
+        .content2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 32px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            width: 100vw;
+
+        }
+
+        .content2-logo{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dee0e2;
+            border-radius: 4px;
+            margin-left: 24px;
+    
+        }
+
+        .name2{
+            width: 62px;
+            height: 23px;
+            font-family: PFHandbookPro;
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--black);
+            margin-left: 16px;
+            margin-right: 74px;
+            margin-top: 15px;
+            box-sizing: border-box;
+    
+    
+        }
+
+        .content2-logo img{
+            width: 27px;
+            height: 27px;
+            object-fit: contain;
+        }
+
+        .continue-btn{
+            width: 120px;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-right: 24px; */
+            /* margin-left: 86px; */
+            /* color: var(--black);
+            font-family: PFHandbookPro;
+        }
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+

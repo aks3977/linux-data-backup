@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/32px/Tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.980957,7.10595703 C17.7843674,6.90936739 17.4683518,6.92231297 17.2832517,7.12592313 L10.125,15 L6.73456576,11.6095658 C6.53598308,11.4109831 6.21857357,11.4064264 6.01904297,11.605957 L5.60595703,12.019043 C5.40936739,12.2156326 5.41219997,12.5372 5.60059798,12.725598 L9.77440202,16.899402 C9.96803194,17.0930319 10.274703,17.0872793 10.4631102,16.8824889 L18.4118898,8.24251111 C18.5986229,8.03954033 18.5935736,7.71857357 18.394043,7.51904297 L17.980957,7.10595703 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Form/01Text-field/05Validated" transform="translate(-298.000000, -17.000000)">
+            <g id="Icon/32px/Tick" transform="translate(293.000000, 10.000000)">
+                <rect id="Icon-BG" x="0" y="0" width="24" height="24"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Check" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

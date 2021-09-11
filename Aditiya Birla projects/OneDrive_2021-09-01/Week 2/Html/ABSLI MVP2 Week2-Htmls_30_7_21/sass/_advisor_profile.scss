@@ -1,0 +1,221 @@
+body {
+    background-color: #fff;
+}
+.sample-header {
+    padding: 25px !important;
+    .logo-section {
+        img {
+            width: 165px;
+        }
+    }
+}
+.col.advisor-tabsection {
+    margin: 0 auto;
+    max-width: 770px;
+    .black-icon{
+        padding-right: 4px;
+    }
+    .active .black-icon{     
+        filter: invert(1)!important;  
+     }
+    .nav-link img{
+        margin-top: -5px;
+    }
+    .secondary-nav-tabs .nav-link.active {
+        background-color: #c7222a;
+        border: none;
+    }
+    .secondary-tab-menu .secondary-nav-tabs {
+        margin: 2px 0px;
+    }
+    .secondary-tab-menu .secondary-nav-tabs .nav-link {
+        border: 1px #b3b3b3 solid;
+    }
+    .prfoile {
+        position: relative;
+        p {
+            font-size: 19px;
+        }
+        img {
+            border-radius: 50%;
+        }
+        .profiletext h1 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33px;
+            span {
+                color: #6c7174;
+            }
+        }
+        .profile_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #c7222a4d;
+            border: 1px solid #ccc2c2;
+            border-radius: 4px;
+            margin: 0 auto;
+            max-width: 445px;
+            padding: 12px 15px;
+            .text {
+                padding-left: 20px;
+                text-align: left;
+            }
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                
+                span {
+                    color: #6c7174;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .table-section {
+        width: 720px;
+        border: 1px solid #cecece;
+        box-shadow: 0px 3px 6px #00000029;
+        margin-top: 25px;
+        border-radius: 4px;
+        h1 {
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .table-content {
+            padding: 10px 0px;
+            .row {
+                border-bottom: 1px dotted #e2cfcf;
+                padding: 10px 10px;
+                p {
+                    margin-bottom: 0;
+                    font-size: 18px;
+                    color: #6c7174;
+                    b {
+                        color: #000;                       
+                        font-weight: 500;
+                    }
+                }
+            }
+            .greenicon p {
+                color: green !important;
+                span {
+                    position: absolute;
+                    top: 3px;
+                    left: 39px;
+                }
+            }
+            .optbtn {
+                padding: 2px 18px;
+            }
+           
+        }
+    }
+    .security_tab {
+        h1 {
+            font-size: 20px;
+        }
+        .table-section {
+            margin-top: 0px;
+        }
+        .red-text {
+            color: red !important;
+        }
+    }
+    .fa {
+        padding-right: 3px;
+    }
+}
+.accordion {
+    a.btn.btn-link {
+        font-size: 18px;
+        color: #6c7174;
+        text-decoration: none;
+        padding-left: 0;
+    }
+    .highlight i {
+        transform: rotate(180deg);
+    }
+    .card-header i {
+        font-size: 25px;
+        position: absolute;
+        top: 15px;
+        right: 1rem;
+        color: red;
+        background-color: #7fffd400;
+    }
+}
+
+
+.brdr-radius-0{
+    border-radius: 0px !important;
+}
+
+
+.profile-picture{
+    position: relative;
+    width: 80px;
+    margin: auto;
+
+    .edit-icon{
+        position: absolute;
+        top: 5px;
+        right: -18px;
+        cursor: pointer;
+    }
+}
+
+
+.prof-upload-txt{
+
+    p{
+        color: #000;
+        font-size: 16px;
+        line-height: 13px;
+        margin-top: 20px;
+        
+
+        label{
+            color: #6c7174;
+        }
+    }
+}
+
+.profile-img-update{
+
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    li a{
+        color: $capital-red;
+        font-size: 18px;
+        text-decoration: underline;
+
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.optout{
+    color: $capital-red;
+}
+ 
+//Mdia Queries
+@media (max-width: 768px) {
+    .table-section {
+        width: auto !important;
+    }
+    .wrap-custom{
+         flex-wrap: nowrap!important;       
+    }
+}

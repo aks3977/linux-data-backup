@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75.278" height="19.205" viewBox="0 0 75.278 19.205">
+  <g id="Group_4994" data-name="Group 4994" transform="translate(-665.948 -1041.448)">
+    <text id="Loading" transform="translate(692.226 1055.106)" fill="#6c7174" font-size="17" font-family="PFHandbookPro-Regular, PF Handbook Pro"><tspan x="0" y="0">Loading</tspan></text>
+    <g id="Group_4993" data-name="Group 4993" transform="translate(665.948 1041.448)">
+      <path id="Path_12961" data-name="Path 12961" d="M45.612,2.5A1.122,1.122,0,0,0,44.5,3.612V6.826a1.112,1.112,0,0,0,2.224,0V3.612A1.122,1.122,0,0,0,45.612,2.5Z" transform="translate(-36.009 -2.5)" fill="#6c7174"/>
+      <path id="Path_12962" data-name="Path 12962" d="M16.72,15.143a1.115,1.115,0,0,0-1.577,1.577L17.428,19A1.123,1.123,0,0,0,19,19a1.135,1.135,0,0,0,0-1.577Z" transform="translate(-12.333 -12.333)" fill="#6c7174"/>
+      <path id="Path_12963" data-name="Path 12963" d="M7.938,45.612A1.122,1.122,0,0,0,6.826,44.5H3.612a1.112,1.112,0,0,0,0,2.224H6.826A1.109,1.109,0,0,0,7.938,45.612Z" transform="translate(-2.5 -36.009)" fill="#6c7174"/>
+      <path id="Path_12964" data-name="Path 12964" d="M17.428,63.273l-2.284,2.264a1.135,1.135,0,0,0,0,1.577,1.123,1.123,0,0,0,1.577,0L19,64.83a1.135,1.135,0,0,0,0-1.577A1.116,1.116,0,0,0,17.428,63.273Z" transform="translate(-12.333 -50.719)" fill="#6c7174"/>
+      <path id="Path_12965" data-name="Path 12965" d="M45.612,70.6A1.122,1.122,0,0,0,44.5,71.712v3.214a1.112,1.112,0,0,0,2.224,0V71.712A1.109,1.109,0,0,0,45.612,70.6Z" transform="translate(-36.009 -56.833)" fill="#6c7174"/>
+      <path id="Path_12966" data-name="Path 12966" d="M64.82,63.343a1.115,1.115,0,0,0-1.577,1.577L65.528,67.2a1.123,1.123,0,0,0,1.577,0,1.135,1.135,0,0,0,0-1.577Z" transform="translate(-50.71 -50.789)" fill="#6c7174"/>
+      <path id="Path_12967" data-name="Path 12967" d="M74.926,44.5H71.712a1.112,1.112,0,0,0,0,2.224h3.214a1.112,1.112,0,0,0,0-2.224Z" transform="translate(-56.833 -36.009)" fill="#6c7174"/>
+      <path id="Path_12968" data-name="Path 12968" d="M64.112,19.228A1.1,1.1,0,0,0,64.9,18.9l2.284-2.284a1.115,1.115,0,0,0-1.577-1.577l-2.264,2.3a1.135,1.135,0,0,0,0,1.577A1.085,1.085,0,0,0,64.112,19.228Z" transform="translate(-50.789 -12.254)" fill="#6c7174"/>
+    </g>
+  </g>
+</svg>

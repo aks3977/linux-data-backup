@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="352" height="328" viewBox="0 0 352 328">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#DA9089" d="M174.978 0L352 103 0 103zM0 110H352V171H0z"/>
+        <path fill="#E2A7A2" d="M0 177H352V238H0z"/>
+        <path fill="#EDC9C6" d="M0 244H352V304H0zM9.562 328L0 319 352 319 342.438 328"/>
+        <text fill="#0C0C0C" font-family="Lato-Regular, Lato" font-size="14">
+            <tspan x="134.878" y="62">Maximisation </tspan> <tspan x="100.529" y="79">of Policy Holders Wealth</tspan>
+        </text>
+        <text fill="#0C0C0C" font-family="Lato-Regular, Lato" font-size="14">
+            <tspan x="110.448" y="147">Quality with Liquidity</tspan>
+        </text>
+        <text fill="#0C0C0C" font-family="Lato-Regular, Lato" font-size="14">
+            <tspan x="106.367" y="214">Long Term Qrientation</tspan>
+        </text>
+        <text fill="#0C0C0C" font-family="Lato-Regular, Lato" font-size="14">
+            <tspan x="139.029" y="281">Consistency</tspan>
+        </text>
+    </g>
+</svg>

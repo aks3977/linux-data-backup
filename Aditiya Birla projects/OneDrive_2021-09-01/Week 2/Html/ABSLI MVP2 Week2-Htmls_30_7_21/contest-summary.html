@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Contest Summary</title>
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/custom/index.css">
+<style>
+	.arrow-up{
+        height: 11px!important;
+        width: 11px!important;
+        background: transparent url('../../img/icons/a-arrow-up.svg') 50% 50% no-repeat padding-box;
+        display: block;
+        background-size: 11px!important;
+		margin-top: 2px!important;
+    }
+    .arrow-down{
+        height: 11px!important;
+        width: 11px!important;
+        background: transparent url('../../img/icons/a-arrow-down-red.svg') 50% 50% no-repeat padding-box;
+        display: none;
+        background-size: 11px!important;  
+		margin-top: 2px!important;
+    }
+	.btn-text-closed{
+        display: none;
+        padding-right: 8px!important;
+        color: $capital-red;
+    }
+    .btn-text-open{
+        display: block;
+        padding-right: 10px!important;
+    }
+	</style>
+
+</head>
+
+<body>
+  <header>
+    <div class="sample-header">
+    </div>
+  </header>
+  <main class="bg-white " role="main">
+    <div class="breadcrubs-div shadow-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li>Home</li>
+              <li><img src="./assets/img/icons/breadcrumbs-arrow.png"></li>
+              <li>My Self</li>
+              <li><img src="./assets/img/icons/breadcrumbs-arrow.png"></li>
+              <li class="active-li">Contest Summary</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Heading Starts  -->
+      <div class="row">
+        <div class="col page-header-wrapper-nochange mb-0">
+          <h1 class="p-header"><img src="./assets/img/icons/back-arrow.svg">Contest Summary</h1>
+          <div class="as-on-date-wrapper">
+            <span>As on:</span>
+            <span>18-dec-2020</span>
+          </div>
+        </div>
+      </div>
+      <!-- Heading Ends  -->      
+      <div class="customer-card-wrapper mt-3">
+        <div class="customer-card w48 shadow-normal d-flex align-items-center pos-rel">
+          <div class="category-div">
+            <p class="float-right">Running <img src="./assets/img/icons/clock-orange.svg"></p>
+          </div>
+          <div class="icon-circle">
+            <img src="./assets/img/icons/rnr-red.svg" alt="">
+          </div>
+          <div class="subtext pl-3">            
+            <div class="text-bold font20">March Lucky 1000</div>
+            <div class="font18 d-flex"><img src="./assets/img/icons/s-date-icon.svg"> &nbsp Mar 01 2021 to Mar 31 2021</div>
+          </div>
+        </div>
+        <div class="customer-card w48 shadow-normal detail-wrapper-block">
+          <div class="detail-wrapper">
+            <div class="font18 dark-grey-text">
+              Reward Achieved
+            </div>
+            <div class="font20 line-ht-11">
+              Level-2 Mobile
+            </div>
+          </div>
+          <div class="detail-wrapper">
+            <div class="font18 dark-grey-text">
+              Reward for Next Slab
+            </div>
+            <div class="font20 line-ht-11">
+              Level-3 Laptop
+            </div>
+          </div>
+          <div class="detail-wrapper">
+            <div class="font18 dark-grey-text">
+              Final Reward
+            </div>
+            <div class="font20 line-ht-11">
+              1 cr Cash Bonanza / Trip to Europe
+            </div>
+          </div>
+          <div class="detail-wrapper">
+            <div class="font18 dark-grey-text">
+              Enrolment Needed
+            </div>
+            <div class="font20 line-ht-11">
+              Yes
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-div mt-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="sidebar">
+              <ul class="nav nav-tabs h-scroll-s " id="myTab" role="tablist">
+                <li class="nav-item w-50-p" role="presentation">
+                  <a class="nav-link active" id="achievement-on-issuance-tab" data-toggle="tab" href="#achievement_on_issuance" role="tab" aria-controls="achievement_on_issuance" aria-selected="true">Achievement on Issuance</a>
+                </li>
+                <li class="nav-item w-50-p" role="presentation">
+                  <a class="nav-link" id="reward-achieved-tab" data-toggle="tab" href="#reward_achieved" role="tab" aria-controls="reward_achieved" aria-selected="false">Reward Achieved</a>
+                </li>  
+                <li class="nav-item w-50-p" role="presentation">
+                  <a class="nav-link" id="policywise-details-tab" data-toggle="tab" href="#policywise_details" role="tab" aria-controls="policywise_details" aria-selected="false">Policywise Details</a>
+                </li>                              
+              </ul>
+            </div>
+            <div class="col-lg-12 pad-0">
+              <div class="tab-content" id="myTabContent">
+                <!-- All Content Starts Here -->
+                <div class="tab-pane fade show active my-3" id="achievement_on_issuance" role="tabpanel" aria-labelledby="1">
+                  <div class="text-right mb-3">
+                    <button class="btn btn-primary-s">View Contest Details</button>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">First Year Premium</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold">234500</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-red">50000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">No. of Policies</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold">20</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-red">10</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">First Year Commission</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold">334500</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-red">4000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">Persistency</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold text-green">100%</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-green">Achieved</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade my-3" id="reward_achieved" role="tabpanel" aria-labelledby="1">
+                  <div class="text-right mb-3">
+                    <button class="btn btn-primary-s">View Contest Details</button>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">First Year Premium</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold">234500</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-red">50000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">No. of Policies</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold">20</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-red">10</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">First Year Commission</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold">334500</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-red">4000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card-div-lrge p-summary shadow-normal m-left-0">
+                        <p class="px-2">Persistency</p>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Achievement</div>
+                          <div class="font17 text-bold text-green">100%</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2 px-2">
+                          <div class="font17 text-brown">Shortfall for Next Slab</div>
+                          <div class="font17 text-bold text-green">Achieved</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade my-3" id="policywise_details" role="tabpanel" aria-labelledby="1">
+                  <div class="text-right mb-3">
+                    <button class="btn btn-primary-s">View Contest Details</button>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 p-mob-0">
+                      <div class="data-table">
+                        <div class="data-table-header">
+                          <h4>Policy Wise Details</h4>
+                        </div>
+                        <div class="data-table-body">                          
+                          <div class="heading-row">
+                            <div class="details-header">
+                              <div class="col-header-spanlg">
+                                Applicatio Id
+                              </div>
+                              <div class="col-header-spanlg">
+                                Policy Owner Name
+                              </div>
+                              <div class="col-header-spanlg">
+                                Date of Login
+                              </div>
+                              <div class="col-header-spanlg">
+                                Modal Basic Premium (Without GST)
+                              </div>
+                            </div>                  
+                            <div class="cta-header"></div>                
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="details-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Applicatio Id</div>
+                                  <div class="mobile-black-text">M70930789</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Owner Name</div>
+                                  <div class="mobile-black-text">Vijayaragavan</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Date of Login</div>
+                                  <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Modal Basic Premium (Without GST)</div>
+                                  <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row collapse more-details-wrapper pb-2" id="collapseExample1">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div mt-0">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Date of Issuance<br><span>DD-MMM-YYYY</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Plan Name<br><span>Lorem ipsum dolor sit amet</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>First Year Premium<br><span>₹ XX,XXX</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>WFYP<br><span>₹ XX,XXX</span></p>          
+                                    </div>        
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <p>Remarks<br><span>Lorem ipsum is placeholder text commonly</span></p>          
+                                    </div>                                    
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>View Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="details-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Applicatio Id</div>
+                                  <div class="mobile-black-text">M70930789</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Owner Name</div>
+                                  <div class="mobile-black-text">Vijayaragavan</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Date of Login</div>
+                                  <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Modal Basic Premium (Without GST)</div>
+                                  <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row collapse more-details-wrapper pb-2" id="collapseExample2">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div mt-0">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Date of Issuance<br><span>DD-MMM-YYYY</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Plan Name<br><span>Lorem ipsum dolor sit amet</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>First Year Premium<br><span>₹ XX,XXX</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>WFYP<br><span>₹ XX,XXX</span></p>          
+                                    </div>        
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <p>Remarks<br><span>Lorem ipsum is placeholder text commonly</span></p>          
+                                    </div>                                    
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>View Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="details-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Applicatio Id</div>
+                                  <div class="mobile-black-text">M70930789</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Owner Name</div>
+                                  <div class="mobile-black-text">Vijayaragavan</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Date of Login</div>
+                                  <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Modal Basic Premium (Without GST)</div>
+                                  <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row collapse more-details-wrapper pb-2" id="collapseExample3">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div mt-0">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Date of Issuance<br><span>DD-MMM-YYYY</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Plan Name<br><span>Lorem ipsum dolor sit amet</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>First Year Premium<br><span>₹ XX,XXX</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>WFYP<br><span>₹ XX,XXX</span></p>          
+                                    </div>        
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <p>Remarks<br><span>Lorem ipsum is placeholder text commonly</span></p>          
+                                    </div>                                    
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>View Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="details-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Applicatio Id</div>
+                                  <div class="mobile-black-text">M70930789</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Owner Name</div>
+                                  <div class="mobile-black-text">Vijayaragavan</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Date of Login</div>
+                                  <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Modal Basic Premium (Without GST)</div>
+                                  <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row collapse more-details-wrapper pb-2" id="collapseExample4">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div mt-0">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Date of Issuance<br><span>DD-MMM-YYYY</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Plan Name<br><span>Lorem ipsum dolor sit amet</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>First Year Premium<br><span>₹ XX,XXX</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>WFYP<br><span>₹ XX,XXX</span></p>          
+                                    </div>        
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <p>Remarks<br><span>Lorem ipsum is placeholder text commonly</span></p>          
+                                    </div>                                    
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>View Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="details-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Applicatio Id</div>
+                                  <div class="mobile-black-text">M70930789</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Owner Name</div>
+                                  <div class="mobile-black-text">Vijayaragavan</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Date of Login</div>
+                                  <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Modal Basic Premium (Without GST)</div>
+                                  <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row collapse more-details-wrapper pb-2" id="collapseExample5">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div mt-0">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Date of Issuance<br><span>DD-MMM-YYYY</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Plan Name<br><span>Lorem ipsum dolor sit amet</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>First Year Premium<br><span>₹ XX,XXX</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>WFYP<br><span>₹ XX,XXX</span></p>          
+                                    </div>        
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <p>Remarks<br><span>Lorem ipsum is placeholder text commonly</span></p>          
+                                    </div>                                    
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>View Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>                     
+                          <div class="row mt-3">
+                            <div class="col-md-12">
+                              <p class="text-center"><img src="./assets/img/icons/n_loading.svg"></p>
+                            </div>
+                          </div>
+                        </div>            
+                      </div>          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="modal fade" id="tds-certificate-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="premium-payment-receipt-modal" aria-hidden="true">
+        <div class="modal-dialog width-800">
+          <div class="modal-content">
+            <div class="modal-header brdr-none">              
+              <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body padding-1y-2x">
+              <h3 class="bold">TDS Certificate</h3>
+              <hr>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="font16 pb-1">Select Financial Year</div>
+                  <div class="select-box w-100">
+                    <select class="w-100">
+                      <option value="" disabled>Select Year</option>
+                      <option>MM-YYYY</option>
+                      <option>MM-YYYY</option>
+                      <option>MM-YYYY</option>
+                      <option selected>Request for Older Statements</option>
+                    </select>
+                  </div>
+                </div>                
+                <div class="col-md-5 col-12 py-1 my-mob-2">
+                  <div class="m-minus-15">
+                    <div class="font16 pb-1">Select Older Year</div>
+                    <div class="select-box w-100">
+                      <select class="w-100">
+                        <option value="" disabled>Select Year</option>                        
+                        <option selected>FY YYYY</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="content-wrapper mt-4 shadow-normal">
+                <div class="details-table">
+                  <div class="details-header-flex">
+                    <div class="w40 mobw50">
+                      <div>
+                        Quarter Number
+                      </div>
+                    </div>
+                    <div class="w60 mobw50">
+                      <div>
+                        Statement Period
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="details-row-flex">
+                    <div class="w40 mobw50 d-flex">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" checked>
+                        <label class="custom-control-label" for="customControlValidation1"></label>
+                      </div>
+                      <div>
+                        Q4
+                      </div>
+                    </div>
+                    <div class="w60 mobw50">
+                      <div>
+                        MMM-MMM
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-row-flex">
+                    <div class="w40 mobw50 d-flex">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked">
+                        <label class="custom-control-label" for="customControlValidation2"></label>
+                      </div>
+                      <div>
+                        Q2
+                      </div>
+                    </div>
+                    <div class="w60 mobw50">
+                      <div>
+                        MMM-MMM
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-row-flex">
+                    <div class="w40 mobw50 d-flex">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked">
+                        <label class="custom-control-label" for="customControlValidation3"></label>
+                      </div>
+                      <div>
+                        Q2
+                      </div>
+                    </div>
+                    <div class="w60 mobw50">
+                      <div>
+                        MMM-MMM
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-row-flex">
+                    <div class="w40 mobw50 d-flex">
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked">
+                        <label class="custom-control-label" for="customControlValidation4"></label>
+                      </div>
+                      <div>
+                        Q1
+                      </div>
+                    </div>
+                    <div class="w60 mobw50">
+                      <div>
+                        MMM-MMM
+                      </div>
+                    </div>
+                  </div>                                                                                         
+                </div>
+              </div>
+              <div class="text-right py-4">
+                <button class="btn btn-outline-secondary mr-3" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary">Raise Request</button>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="sample-footer">
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/vendor/bootstrap.min.js"></script>
+  <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

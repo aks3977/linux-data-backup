@@ -1,0 +1,22 @@
+.tag-wrapper{
+    padding: 8px 12px;
+    border-bottom: 1px solid $light-grey;
+    display: flex;    
+    .tag{
+        background: $l-grey;
+        padding: 4px 12px;
+        display: flex;
+        align-items: center;
+        margin: 0 8px;
+        div{
+            padding-right: 12px;
+        }
+        span{
+            vertical-align: text-top;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        border-bottom: none;        
+        padding: 16px 12px;
+    }
+}

@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Commission List</title>
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/custom/index.css">
+</head>
+
+<body>
+  <header>
+    <div class="sample-header">
+    </div>
+  </header>
+  <main class="bg-white " role="main">
+    <div class="breadcrubs-div shadow-sm mobile-exclude">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li>Home</li>
+              <li><img src="./assets/img/icons/breadcrumbs-arrow.png"></li>
+              <li>Commission List</li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Heading Starts  -->
+      <div class="row">
+        <div class="col page-header-wrapper-nochange">
+          <h1 class="p-header"><img src="./assets/img/icons/back-arrow.svg">Commissions</h1>          
+        </div>
+        <img class="mobile-only mr-3" src="./assets/img/icons/filter-mobile-icon.svg" alt="filter" data-toggle="modal" data-target="#bottom_modal_success">
+      </div>
+      <!-- Heading Ends  -->
+      <div class="f_Div_outer">
+        <div class="f_Div_c1 d-none d-lg-block">
+          <div class="filter-div-l shadow-normal">
+            <div class="filter_header">
+              <div class="row">
+                <div class="col-lg-12 filter_sub_heading">
+                  <h2 class="d-flex align-items-center"><img src="./assets/img/icons/filter.svg">Filter (1)</h2>
+                </div>
+              </div>
+            </div>
+            <div class="filter_body">                            
+              <div class="row">
+                <div class="col-lg-12 filter_sub_check_box_row">                  
+                  <h3>Commission Date</h3>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dateRadio" id="flexRadioDefault1" value="active">
+                    <label class="form-check-label" for="flexRadioDefault1">MTD</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dateRadio" id="flexRadioDefault2" value="lapsed">
+                    <label class="form-check-label" for="flexRadioDefault2">YTD</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dateRadio" id="flexRadioDefault3" value="active">
+                    <label class="form-check-label" for="flexRadioDefault3">Custom</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 ">
+                      <span class="font-12">FROM DATE</span>
+                      <div class="date-box">
+                        <input type="date" class="form-control data-search-box" id="search" aria-describedby="data-search" placeholder="dd/mm/yyyy" min="2016-07-14">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 ">
+                      <span class="font-12">TO DATE</span>
+                      <div class="date-box">
+                        <input type="date" class="form-control data-search-box" id="search" aria-describedby="data-search" placeholder="dd/mm/yyyy" min="2016-07-14">
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="filter-footer">
+              <div class="row">
+                <div class="col-lg-12">
+                  <button type="button" class="btn btn-outline-s-secondary">Reset</button> <button type="button"
+                    class="btn btn-primary-s mrgn-0 disabled-btn" disabled>Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="f_Div_c2">
+          <div class="data-card">
+            <div class="data_card_body">
+              <div class="search-bar-wrapper">
+                <div class="search-bar">
+                  <img class="search-icon" src="./assets/img/icons/search-bx.svg">
+                  <input type="text" class="form-control search-box" id="search"
+                    aria-describedby="data-search"
+                    placeholder="Search by Payout Cycle Name">
+                </div>                    
+                <button type="button" class="btn btn-primary-s px-4 m-0">Search</button>
+              </div>
+              <div class="row">
+                <div class="col-md-12 pad-0">                  
+                  <div class="tab-content m-pad-normal" id="myTabContent">
+                    <!-- All Content Starts Here -->
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="today">
+                      <div class="row">
+                        <div class="col-md-12 p-mob-0">
+                          <div class="data-table in-element">                            
+                            <div class="data-table-body">
+                              <div class="heading-row">
+                                <div class="details-header">
+                                  <div class="col-header-spanxl">
+                                    Payout Cycle
+                                  </div>
+                                  <div class="col-header-spanmd">
+                                    Payment Date
+                                  </div>
+                                  <div class="col-header-spanxl">
+                                    Amount Paid
+                                  </div>
+                                  <div class="col-header-spanmd">
+                                    UTR No
+                                  </div>
+                                </div>                  
+                                <div class="cta-header"></div>                
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="details-row">
+                                <div class="details-wrapper">
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Payout Cycle</div>
+                                    <div class="mobile-black-text">Lorem ipsum is placeholder text</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">Payment Date</div>
+                                    <div class="mobile-black-text">DD-MMM-YYYY</div>
+                                  </div>
+                                  <div class="detail-row-spanxl">
+                                    <div class="label mobile-only">Amount Paid</div>
+                                    <div class="mobile-black-text">₹ 1,50,000.00</div>
+                                  </div>
+                                  <div class="detail-row-spanmd">
+                                    <div class="label mobile-only">UTR No</div>
+                                    <div class="mobile-black-text">XXXXXXXXXX</div>
+                                  </div>                  
+                                </div>
+                                <div class="cta-wrapper">                    
+                                  <img src="./assets/img/icons/download.svg" alt="">
+                                  <button class="btn btn-outline-s">View Details</button>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-12">
+                                  <p class="text-center"><img src="./assets/img/icons/n_loading.svg"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- Today Content Ends Here -->
+                    <!-- Active Content Starts Here -------------------------------------------------------------------------------- -->
+                    <div class="tab-pane fade" id="active" role="tabpanel" aria-labelledby="next-week">
+                      <h1>2</h1>
+                    </div><!-- Active Week Content Ends Here -->
+                    <!-- Fav Content Starts Here ------------------------------------------------------------------------------------------------>
+                    <div class="tab-pane fade" id="fav" role="tabpanel" aria-labelledby="later">
+                      <h1>3</h1>
+                    </div><!-- Fav Content Ends Here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/vendor/bootstrap.min.js"></script>
+  <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

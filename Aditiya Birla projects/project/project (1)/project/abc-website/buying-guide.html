@@ -1,0 +1,2984 @@
+
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Horizontal Integration View Engine 
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+
+    <!-- Static App Icons -->
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <link rel="stylesheet" href="../stylesheets/main-abc-website.css">
+    <script src="../javascripts/vendor.js"></script>
+    
+</head>
+
+<body class="abc-website">
+    <div class="visuallyhidden">
+        <a href="#maincontent">skip to main content</a>
+    </div>
+    <header>
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <!-- Top Global Navigation for website Placeholder Start-->
+                    <!-- Top Global Nav Starts -->
+<div class="row top-global-nav">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+        <div class="top-bg pull-right">
+            <ul class="nav header-dropdown" id="header-dropdown">
+
+
+                <li id="lang-topmenu" class="scnd_center language__dropdown">
+    <a href="#" title="Language">
+        <!-- Active Language Placeholder Starts  -->
+        <!-- *  NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon -->
+        <span class="language__icon language__icon--english"> </span>English
+        <span class="icon-arrow icon">
+            <!-- Active Language PlaceHolder Ends -->
+
+            <span class="visuallyhidden">arrow</span></span></a>
+    <span id="line" class="vertical-line"></span>
+
+    <ul class="dropdown-menu" id="lang-childmenu"
+        style="display: none; width: 21.7rem !important ; right: unset !important">
+        <ul class="col-section-container">
+            <li class="level1">
+                <ul class="list-unstyled" style="padding: 0px">
+
+                    <!-- Content Managed Language List Options structure STARTS-->
+                    <!-- 
+                        *   NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon
+                        **  Also note that the list items in the Mobile verstion have slightly diffrent classes than the desktop version
+                        *** Also note the data-default-language data attribute its an important flag as per Jatin's requirement.
+
+                    -->
+
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="true">
+                            <span class="language__icon language__icon--english"></span>
+                            English
+                        </a>
+                    </li>
+
+                    <!-- Language List Options Structure ENDS -->
+
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--hindi"></span>
+                            Hindi
+                        </a>
+                    </li>
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--tamil"></span>
+                            Tamil
+                        </a>
+                    </li>
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--telegu"></span>
+                            Telegu
+                        </a>
+                    </li>
+                    <li class="level2">
+                        <a href="#" class="language__item" data-deafult-language="false">
+                            <span class="language__icon language__icon--kannada"></span>
+                            Kannada
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+</li>
+
+                <li id="personal-topmenu" class="selected-menu">
+                    <a href="#" title="Corporates">Personal</a>
+                    <span></span>
+                </li>
+                <li id="corporate-topmenu" class="scnd_center ">
+                    <a href="#" title="Corporates">Corporates <span class="icon-arrow icon">
+                            <span class="visuallyhidden">arrow</span></span></a>
+                    <span id="line" class="vertical-line"></span>
+                    <ul class="dropdown-menu" id="corporate-childmenu" style="display:none;">
+
+                        <ul class="col-section-container">
+                            <li class="level1 pink-link-section">
+                                <span class="pink-link-heading">Protecting</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a
+                                            href="https://corporategeneralinsurance.adityabirlacapital.com/products/overview">Corporate
+                                            General Insurance </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://lifeinsurance.adityabirlacapital.com/group-insurance/overview">Group
+                                            Life
+                                            Insurance </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://www.adityabirlacapital.com/healthinsurance/#!/group-health-insurance-products">Group
+                                            Health Insurance </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 green-link-section">
+                                <span class="green-link-heading">Investing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a
+                                            href="https://privateequity.adityabirlacapital.com/Pages/Individual/Funds-Under-Management/Overview.aspx">Private
+                                            Equity </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://mutualfund.adityabirlacapital.com/investor-solution-corporate">Mutual
+                                            Funds </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://stocksandsecurities.adityabirlacapital.com/">Stock and
+                                            Securities </a>
+                                    </li>
+
+                                    <li class="level2">
+                                        <a href="https://portfoliomanagementservices.adityabirlacapital.com/">Portfolio
+                                            Management
+                                            Services </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://pensionfund.adityabirlacapital.com/">Pension Funds </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 yellow-link-section">
+                                <span class="yellow-link-heading">Financing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a
+                                            href="https://corporatefinance.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">Corporate
+                                            Finance</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://mortgagefinance.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">Mortgage
+                                            Finance </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://loanagainstsecurities.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">Loans
+                                            Against Securities </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a
+                                            href="https://dcmandsyndication.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx">DCM
+                                            &amp; Loan Syndication </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 red-link-section">
+                                <span class="red-link-heading">Advising</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://advising.adityabirlacapital.com/money-for-life-planner">MoneyforLife
+                                            Planner </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://www.adityabirlacapital.com/abc-of-money">ABC of Money </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </ul>
+
+                </li>
+                <li id="advisor-topmenu" class="scnd_center">
+                    <a href="#" title="Corporates">Advisors <span class="icon-arrow icon">
+                            <span class="visuallyhidden">arrow</span></span></a>
+                    <ul class="dropdown-menu" id="advisor-childmenu" style="display: none;">
+
+                        <ul class="col-section-container">
+                            <li class="level1 pink-link-section">
+                                <span class="pink-link-heading">Protecting</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://lipartners.adityabirlacapital.com/New/">Life Insurance
+                                            Advisors</a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://www.adityabirlacapital.com/healthinsurance/#!/hs-our-network">Health
+                                            Insurance Advisors </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 green-link-section">
+                                <span class="green-link-heading">Investing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://mf.adityabirlacapital.com/Pages/Advisor/Advisor-Portal.aspx">Mutual
+                                            Funds Advisors </a>
+                                    </li>
+                                    <li class="level2">
+                                        <a href="https://stocksandsecurities.adityabirlacapital.com/partner">Stocks
+                                            &amp; Securities Advisors </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 yellow-link-section">
+                                <span class="yellow-link-heading">Financing</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://abfl.adityabirlacapital.com/partners/">Financing Advisors</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level1 red-link-section">
+                                <span class="red-link-heading">Advising</span>
+                                <ul class="list-unstyled">
+                                    <li class="level2">
+                                        <a href="https://select.adityabirlacapital.com/Forms_Birla/LandingPage.aspx">Select
+                                            Advisor</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Top Global Nav Ends -->
+                    <!-- Top Global Navigation for website Placeholder Ends -->
+                    <div class="top-header-wrapper capital-red-bg">
+                        <!-- Logo Starts -->
+                        <div class="logo">
+  <a href="/">
+    <picture class="">
+      <source media="(min-width: 1021px)" srcset="../images/abc-logo.png" />
+      <source
+        media="(min-width: 768px) and (max-width: 1020px)"
+        srcset="../images/abc-logo-m.png, ../images/abc-logo-m.png 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="../images/abc-logo-s.png, ../images/abc-logo-s.png 2x"
+      />
+      <img src="../images/abc-logo.png" alt="ABCL - Blog" />
+    </picture>
+  </a>
+</div>
+
+                        <!-- Logo Ends -->
+                        <!-- Main Navigation Starts -->
+                        <div class="top-menu">
+  <ul>
+    <li class="level1 has-children pink-link">
+      <span title="Protecting">Protecting</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">Life Insurance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Multiply Wellness</a>
+        </li>
+        <li class="level2">
+          <a href="#">Health Insurance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Travel Insurance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Motor Insurance</a>
+        </li>
+      </ul>
+    </li>
+    <li class="level1 has-children green-link">
+      <span title="Investing">Investing</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">Mutual Funds</a>
+        </li>
+        <li class="level2">
+          <a href="#">Pension Funds</a>
+        </li>
+        <li class="level2">
+          <a href="#">Wealth Management</a>
+        </li>
+        <li class="level2">
+          <a href="#">Stocks and Securities</a>
+        </li>
+        <li class="level2">
+          <a href="#">Porfolio Management</a>
+        </li>
+        <li class="level2">
+          <a href="#">Real Estate Investments</a>
+        </li>
+      </ul>
+    </li>
+    <li class="level1 has-children yellow-link">
+      <span title="Financing">Financing</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">Home Finance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Loan Against Securities</a>
+        </li>
+        <li class="level2">
+          <a href="#">Personal Finance</a>
+        </li>
+        <li class="level2">
+          <a href="#">Real Estate Finance</a>
+        </li>
+        <li class="level2">
+          <a href="#">SME Finance</a>
+        </li>
+      </ul>
+    </li>
+    <li class="level1 has-children advising-red-link red-link">
+      <span title="Advising">Advising</span>
+      <span class="icon-arrow icon">
+        <span class="visuallyhidden">arrow</span></span
+      >
+      <ul>
+        <li class="level2">
+          <a href="#">MoneyForLife Planner</a>
+        </li>
+        <li class="level2">
+          <a href="#">ABC of Money</a>
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+</div>
+
+                        <!-- Main Navigation Ends -->
+                        <!-- Utility Link Starts -->
+                        <div class="top-right-wrapper">
+  <span class="top-right-item phone-link" style="display: none;">
+    <a href="tel:1800-270-7000">
+      <span class="iconText"> 1800-270-7000</span>
+      <span class="icon-phone icon">
+        <span class="visuallyhidden">telephone</span>
+      </span>
+    </a>
+  </span>
+
+  <span class="top-right-item home-link">
+    <a href="https://abcscstg.com">
+      <span class="iconText">Home</span>
+      <span class="icon-home icon">
+        <span class="visuallyhidden">
+          Home
+        </span>
+      </span>
+    </a>
+  </span>
+  <span class="top-right-item dashboard-link">
+    <a href="#">
+      <span class="iconText">Dashboard</span>
+    </a>
+  </span>
+  <ul class="dashboard-list">
+    <li class="loggedin-item dropdown">
+      <a href="#" data-toggle="dropdown" aria-expanded="false" data-display="static">
+        <span class="divicon  cust-log-ico-mob-user">RP</span>
+        <span class="icon icon-arrow"></span>
+      </a>
+      <ul class="login-dropdowm dropdown-menu" id="myDropdown">
+        <div class="arrow_up" style="right: 20.5px;"></div>
+        <li class="fst_ele">
+          <a href="#">Change Email Address</a>
+        </li>
+        <li>
+          <a href="#">Change Mobile Number</a>
+        </li>
+        <li>
+          <a href="#">Change One ID Password</a>
+        </li>
+        <li class="last_child">
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="utility-links hide">
+  <a class="icon-home icon" href="https://abcscstg.com">
+    <span class="visuallyhidden">home</span>
+  </a>
+  <a class="icon-phone icon" href="tel:1800-270-7000">
+    <span class="visuallyhidden">telephone</span>
+  </a>
+  <a class="icon loggedin-name" href="#">
+    <span class="dashboard-list">
+      <span class="loggedin-item">
+        <span class="divicon  cust-log-ico-mob-user">RP</span>
+      </span>
+    </span>
+  </a>
+</div>
+
+                        <!-- Utility Link Ends -->
+
+                        <!-- language switcher mobile Starts -->
+                        <ul class="nav header-dropdown" id="lang-mobile-dropdown">
+    <li id="lang-topmenu-mobile" class="scnd_center" style="background-color: transparent !important;padding-top: 2px;">
+        <a href="#" title="Language" style="border:none !important">
+            <!-- Active Language Placeholder Starts  -->
+            <!-- 
+                *  NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon
+                ** Also note that the Placeholder in the Mobile verstion has slightly diffrent classes than the desktop version
+            -->
+
+            <span class="language__icon language__icon__mobile language__icon--english"></span>
+            <span class="language__selected" style="margin-right:1rem;">English</span>
+            <!-- Active Language PlaceHolder Ends -->
+
+            <span class="icon-arrow icon" style="color: white !important;">
+                <span class="visuallyhidden">arrow</span></span></a>
+
+        <ul class="dropdown-menu" id="lang-childmenu-mobile"
+            style="display: none;width:21.7rem !important ;left: unset !important;top: 110%;right: -20% !important;">
+            <ul class="col-section-container lang-childmenu-mobile-dropdown">
+                <li class="level1" style="width: unset;">
+                    <ul class="list-unstyled" style="padding: 0px;">
+
+                        <!-- Content Managed Language List Options structure STARTS-->
+                        <!-- 
+                            *   NOTE: Please take care of the CLASS `language_icon--<Language name>` in the span bellow as it is responsible for propper icon
+                            **  Also note that the list items in the Mobile verstion have slightly diffrent classes than the desktop version
+                            *** Also note the data-default-language data attribute its an important flag as per Jatin's requirement.
+
+                        -->
+
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="true">
+                                <span class="language__icon language__icon__mobile language__icon--english"></span>
+                                English
+                            </a>
+                        </li>
+
+                        <!-- Language List Options Structure ENDS -->
+
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+                                <span class="language__icon language__icon__mobile language__icon--hindi"></span>
+                                Hindi
+
+                            </a>
+                        </li>
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+
+                                <span class="language__icon language__icon__mobile language__icon--tamil"></span>
+                                Tamil
+
+                            </a>
+                        </li>
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+
+                                <span class="language__icon language__icon__mobile language__icon--telegu"></span>
+                                Telegu
+
+                            </a>
+                        </li>
+                        <li class="level2">
+                            <a href="#" class="language__item" data-deafult-language="false">
+
+                                <span class="language__icon language__icon__mobile language__icon--kannada"></span>
+                                Kannada
+
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </ul>
+
+    </li>
+
+</ul>
+                        <!-- language switcher mobile Ends -->
+                    </div>
+                    <!-- Utility Link Starts -->
+                    <div class="primary-nav primary-nav--website wb-header-pink-bg">
+    <div class="col-md-12">
+        <ul class="primary-nav__list">
+            <li class="primary-nav__title">
+                <a href="javascript:void(0);" class="bold" class="">Life Insurance</a>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);" class="">All Insurance <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="javascript:void(0);">Term Insurance <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Life Shield Plan</a></li>
+                            <li><a href="#">ABSLI Income Shield Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Retirement Plan <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Empower Pension Plan</a></li>
+                            <li><a href="#">ABSLI Immediate Annuity Plan</a></li>
+                            <li><a href="#">ABSLI Empower Pension- SP Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Wealth with Protection Plans <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Wealth Max Plan</a></li>
+                            <li><a href="#">ABSLI Wealth Secure Plan</a></li>
+                            <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                            <li><a href="#">ABSLI Fortune Elite Plan</a></li>
+                            <li><a href="#">ABSLI Wealth Aspire Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Savings with protection <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI SecurePlus Plan</a></li>
+                            <li><a href="#">ABSLI Vision MoneyBack Plus Plan</a></li>
+                            <li><a href="#">ABSLI Vision LifeIncome Plan</a></li>
+                            <li><a href="#">ABSLI Savings Plan</a></li>
+                            <li><a href="#">ABSLI Vision LifeSecure Plan</a></li>
+                            <li><a href="#">ABSLI Income Assured Plan</a></li>
+                            <li><a href="#">ABSLI Vision Endowment Plus Plan</a></li>
+                            <li><a href="#">ABSLI Guaranteed Milestone Plan</a></li>
+                            <li><a href="#">ABSLI - Jeevan Bachat Plan</a></li>
+                            <li><a href="#">ABSLI Monthly Income Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Child Plans <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Empower Pension Plan</a></li>
+                            <li><a href="#">ABSLI Immediate Annuity Plan</a></li>
+                            <li><a href="#">ABSLI Empower Pension- SP Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Health Insurance <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li><a href="#">ABSLI Empower Pension Plan</a></li>
+                            <li><a href="#">ABSLI Immediate Annuity Plan</a></li>
+                            <li><a href="#">ABSLI Empower Pension- SP Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav__link primary-nav__link--level2 primary-nav__link--has-subchild primary-nav__link--has-child">
+                        <a href="#">Group Insurance <span class="icon-arrow icon"></span></a>
+                        <ul>
+                            <li class="primary-nav__subtitle"><a href="javascript:void(0);">Protection Solutions</a></li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Employer Employee <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Term Life & Riders</a></li>
+                                    <li><a href="#">Group Income Replacement</a></li>
+                                    <li><a href="#">Flexible Benefits - Voluntary</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Non Employer Employee <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Term Life</a></li>
+                                    <li><a href="#">Group Income Replacement</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Credit Life <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Asset Assure</a></li>
+                                    <li><a href="#">Group Bima Yojna</a></li>
+                                    <li><a href="#">ABSLI Group Smart Select</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__subtitle">
+                                <a href="javascript:void(0);">Retirement Solutions</a>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Gratuity <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Traditional -CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                    <li><a href="#">ULIP - GULP</a></li>
+                                    <li><a href="#">GVPP</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Leave Encashment <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Traditional -CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                    <li><a href="#">ULIP - GULP</a></li>
+                                    <li><a href="#">GVPP</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">PRMBS <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Traditional -CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Superannuation <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">CAP</a></li>
+                                    <li><a href="#">CAT</a></li>
+                                    <li><a href="#">Assured Pension (DB)</a></li>
+                                    <li><a href="#">Superannuation (DC)</a></li>
+                                </ul>
+                            </li>
+                            <li class="primary-nav__link primary-nav__link--level3 primary-nav__link--has-subchild primary-nav__link--has-child">
+                                <a href="#">Group Annuity <span class="icon-arrow icon"></span></a>
+                                <ul>
+                                    <li><a href="#">Group Immediate Annuity</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">Calculators <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">Human Life Value Calculator</a></li>
+                    <li><a href="#">Retirement Calculator</a></li>
+                    <li><a href="#">Wealth Calculator</a></li>
+                    <li><a href="#">Child Calculator</a></li>
+                    <li><a href="#">Health Insurance Calculator</a></li>
+                    <li><a href="#">Tax Savings Calculator</a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">About Us <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">Public Disclosure</a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">Our Funds <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">NAV Performance</a></li>
+                    <li><a href="#">ABSLI DigiShield Plan</a></li>
+                    <li><a href="#">ABSLI UltimaTerm</a></li>
+                    <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                    <li><a href="#">ABSLI Vision Star Plan</a></li>
+                    <li><a href="#">ABSLI Cancer Shield Plan </a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__link primary-nav__link--level1 primary-nav__link--has-child">
+                <a href="javascript:void(0);">How Do I? <span class="icon-arrow icon"></span></a>
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">File a Claim</a></li>
+                    <li><a href="#">Manage Your Policy</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Articles & Blogs</a></li>
+                    <li><a href="#">Download Forms</a></li>
+                    <li><a href="#">Insurance Dictionary</a></li>
+                </ul>
+            </li>
+            <li class="primary-nav__other-link">
+                <a href="javascript:void(0);" class="bold" class="">Pay Premium</a>
+            </li>
+            <li class="primary-nav__other-link primary-nav__other-link--typ2">
+                <a href="javascript:void(0);" class="bold" class="">Track Application</a>
+            </li>
+            <li class="primary-nav__link primary-nav__link--search">
+                <a href="#" class="bold primary-nav__link--search-btn"><span class="icon icon-seach"></span></a>
+                <form class="abc-form abc-form--search">
+                    <div class="form-group form-group--search">
+                        <div class="input-group input-group--search">
+                            <input type="hidden" id="searchPageUrl" value="/" />
+                            <input type="hidden" value="True" id="isOnSearchPage" />
+                            <input type="hidden" value="/" id="homePageUrl" />
+                            <input type="hidden" class="search-term-hidden" id="select-search-header-hidden" placeholder="Search" name="searchTermFreeText">
+                            <input type="text" class="form-control form-group__placeholder" id="select-search-header" placeholder="Search" name="searchTerm">
+                            <span class="input-group-addon input-group-addon--clear"><span class="icon icon-cancel"></span></span>
+                            <span class="input-group-btn">
+                                <button class="btn icon-btn" type="button"><span class="icon icon-seach"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li class="primary-nav__other-link primary-nav__other-hamburger">
+                <a href="javascript:void(0);" class="bold wb-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Utility Link Ends -->
+
+                    <!-- website mobile Navigation <Start> -->
+                    <div class="mobile-menu-wrapper">
+    <div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation"
+        aria-expanded="true/false">
+        <div class="hamburger-box">
+            <div class="hamburger-inner">
+                <span class="visuallyhidden">Menu</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobi-navigation">
+    <div class="close-menu">
+        <div class="hamburger hamburger--elastic is-active" tabindex="0" aria-label="Menu" role="button"
+            aria-controls="navigation" aria-expanded="true/false">
+            <div class="hamburger-box">
+                <div class="hamburger-inner">
+                    <span class="visuallyhidden">Close</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-header">
+        <div class="logo"></div>
+        <div class="utility-links"></div>
+    </div>
+    <div class="menu-content-wrapper">
+        <div class="primary-nav__mobileasd">
+            <div class="primary-nav__mobile">
+                <ul class="">
+                    <li class="primary-nav__mobile--headline bold">
+                        <span>About Us</span><i class="fa fa-close primary-nav__close"></i>
+                    </li>
+                    <li data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <a>Board of Directors <span class="icon-arrow icon"></span></a>
+                        <ul id="collapseTwo" class="collapse primary-nav__collapse" aria-labelledby="headingOne">
+                            <li><a href="#">ABSLI DigiShield Plan</a></li>
+                            <li><a href="#">ABSLI UltimaTerm</a></li>
+                            <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                            <li><a href="#">ABSLI Vision Star Plan</a></li>
+                            <li><a href="#">ABSLI Cancer Shield Plan </a></li>
+                        </ul>
+                    </li>
+                    <li data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <a>Board of Directors <span class="icon-arrow icon"></span></a>
+                        <ul id="collapse2" class="collapse primary-nav__collapse" aria-labelledby="headingOne">
+                            <li><a href="#">ABSLI DigiShield Plan</a></li>
+                            <li><a href="#">ABSLI UltimaTerm</a></li>
+                            <li><a href="#">ABSLI Wealth Assure Plus</a></li>
+                            <li><a href="#">ABSLI Vision Star Plan</a></li>
+                            <li><a href="#">ABSLI Cancer Shield Plan </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="primary-nav__mobile primary-nav__mobile--footer">
+                    <p>
+                        <span>© 2019, Aditya Birla Capital Ltd.</span>
+                        <span>All Rights Reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="mobi-nav-wrapper"></div>
+            <div class="mobi-top-navigation">
+                <ul>
+                    <li>
+                        <a href="#" title="Corporates">Corporates</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Advisors">Advisors</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Customer Service">Customer Services</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Careers">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" title="About us">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobi-footer-links">
+                <ul>
+                    <li class="has-children">
+                        <a href="javascript:;">Others</a>
+                        <span class="icon-arrow icon">
+                            <span class="visuallyhidden">arrow</span></span>
+                        <ul>
+                            <li>
+                                <a href="/about-us/our-solutions" target="" title="Our Solutions">Our Solutions</a>
+                            </li>
+                            <li>
+                                <a href="/investor-relations" target="" title="Investor Relations">Investor
+                                    Relations</a>
+                            </li>
+                            <li>
+                                <a href="/press-and-media" target="" title="Press and Media">Press and Media</a>
+                            </li>
+
+                            <li>
+                                <a href="/about-us/our-businesses" target="" title="Our Businesses">Our Businesses</a>
+                            </li>
+                            <li>
+                                <a href="/about-us/financial-achievements" target="" title="Our Achievements">Our
+                                    Achievements</a>
+                            </li>
+                            <li>
+                                <a href="/about-us/csr-and-sustainability" target="" title="CSR">CSR</a>
+                            </li>
+                            <li>
+                                <a href="/Key-Facts-On-Tax-Filing" target="" title="ITR Filing">ITR Filing</a>
+                            </li>
+
+                            <li>
+                                <a href="/branch-locator" target="" title="Locate Us">Locate Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" target="" title="Privacy Policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" target="" title="Terms and Conditions">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer brand-capital-red-bg">
+            <p>
+                <span>© 2019, Aditya Birla Capital Ltd.</span>
+                <span>All Rights Reserved.</span>
+            </p>
+        </div>
+    </div>
+</div>
+                    <!-- website Mobile Navigation <End> -->
+
+
+                    <!--company info start-->
+                    <div class="company-info website-brown-bg">
+    <h4 class="company-info__desc">Aditya Birla Sun Life Insurance Company LTD.</h4>
+</div>
+                    <!--company info end-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="loading"></div>
+<!-- The Modal -->
+<div class="modal fade" id="modal-popup">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-subscribe">
+    <form
+        action="/formbuilder?fxb.FormItemId=e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f&amp;fxb.HtmlPrefix=fxb.58b4c895-39fe-49bd-bd98-61a72f397f90"
+        data-ajax="true" data-ajax-method="Post" data-ajax-mode="replace-with"
+        data-ajax-success="$.validator.unobtrusive.parse('#fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f');$.fxbFormTracker.parse('#fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f');"
+        data-ajax-update="#fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f"
+        data-sc-fxb="e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f" enctype="multipart/form-data"
+        id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f" method="post"
+        novalidate="novalidate"><input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_FormSessionId"
+            name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.FormSessionId" type="hidden"
+            value="ca4515c7-c36a-4c19-b434-6751d30e3bb0"><input name="__RequestVerificationToken" type="hidden"
+            value="lwppq3ugH7PgO6rUifZmZKPuF4UkFtHMFq248HlOMeQnMZEf-rUY7hGW_iXWoNuIPIAxdwr6UB52QKlGd12RQrF0HYJDYimOxsTj9IOSvkM1"><input
+            id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_FormItemId"
+            name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.FormItemId" type="hidden"
+            value="e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f"><input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_PageItemId"
+            name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.PageItemId" type="hidden"
+            value="9f9780c8-03ad-454d-9ea2-1b62e90aff92">
+        <div data-sc-field-key="7E385E33474A490A9A91708B77A0D7FC" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_79ae9147-eea4-44ca-ba3d-9959bbc161c4"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="79ae9147-eea4-44ca-ba3d-9959bbc161c4"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_79ae9147-eea4-44ca-ba3d-9959bbc161c4__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[79ae9147-eea4-44ca-ba3d-9959bbc161c4].ItemId"
+                type="hidden" value="79ae9147-eea4-44ca-ba3d-9959bbc161c4"><label
+                for="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_79ae9147-eea4-44ca-ba3d-9959bbc161c4__Value"
+                class="">First Name</label>
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_79ae9147-eea4-44ca-ba3d-9959bbc161c4__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[79ae9147-eea4-44ca-ba3d-9959bbc161c4].Value"
+                class="valid" type="text" value="" maxlength="50" placeholder="" data-sc-tracking="True"
+                data-sc-field-name="FirstName" data-sc-field-key="D5F2B11AB1124C1188A86A86E6EEB158">
+            <span class="field-validation-valid"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[79ae9147-eea4-44ca-ba3d-9959bbc161c4].Value"
+                data-valmsg-replace="true"></span><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4].ItemId"
+                type="hidden" value="8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4"><label
+                for="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4__Value"
+                class="">Last Name</label>
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4].Value"
+                class="valid" type="text" value="" maxlength="50" placeholder="" data-sc-tracking="True"
+                data-sc-field-name="LastName" data-sc-field-key="DED2020154894E47B356761F11E349B1">
+            <span class="field-validation-valid"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8217e0c8-67e6-43d1-a4a2-4a9fbf1badc4].Value"
+                data-valmsg-replace="true"></span>
+        </div>
+        <div data-sc-field-key="2E7EDF2D420342CF9CB7E5FC8CC90808" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_b0575e0c-ef0a-4716-98f2-e5d7679c6049"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="b0575e0c-ef0a-4716-98f2-e5d7679c6049"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[b0575e0c-ef0a-4716-98f2-e5d7679c6049].ItemId"
+                type="hidden" value="b0575e0c-ef0a-4716-98f2-e5d7679c6049"><label
+                for="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value"
+                class="">Email</label>
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[b0575e0c-ef0a-4716-98f2-e5d7679c6049].Value"
+                class="input-validation-error" type="email" value="" maxlength="50" placeholder=""
+                data-sc-tracking="True" data-sc-field-name="Email" data-sc-field-key="6101735ADD78418F95118FC76B5BBA74"
+                data-val-required="Email is required." data-val-regex="Email contains an invalid email address."
+                data-val-regex-pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,17}$" data-val="true"
+                aria-required="true"
+                aria-describedby="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value-error"
+                aria-invalid="true">
+            <span class="field-validation-error"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[b0575e0c-ef0a-4716-98f2-e5d7679c6049].Value"
+                data-valmsg-replace="true"><span
+                    id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_b0575e0c-ef0a-4716-98f2-e5d7679c6049__Value-error"
+                    class="">Email is required.</span></span>
+        </div>
+        <div data-sc-field-key="E0289695ED5E4A24AC2DCE2A768C7FB7" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_3df7d549-924f-4ba0-bd3e-00a2517ed756"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="3df7d549-924f-4ba0-bd3e-00a2517ed756"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_3df7d549-924f-4ba0-bd3e-00a2517ed756__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].ItemId"
+                type="hidden" value="3df7d549-924f-4ba0-bd3e-00a2517ed756"><label class="">Interest</label>
+            <input type="hidden"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value">
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{EE3B89AB-3F9E-44FD-B050-AAEBCA93613A}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8" data-val-ischecked="Interest is required."
+                    data-val="true" aria-required="true" class="input-validation-error"
+                    aria-describedby="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value-error">404
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{33CAD3BB-D973-452B-8EC8-E071F62DB03A}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Financing Solutions
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{256BE665-4439-42B5-AC16-EC90D8265495}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Investing Solutions
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{A35BD6AA-1878-4398-96C3-9C855D324CB0}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Money
+            </label>
+            <label>
+                <input type="checkbox"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                    value="{A4B7F5EA-A223-4226-8869-C254F39C125C}" data-sc-tracking="True" data-sc-field-name="Interest"
+                    data-sc-field-key="80B64891C6134A71A81A99963C66F0B8">Protecting Solutions
+            </label>
+            <span class="field-validation-error"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value"
+                data-valmsg-replace="true"><span
+                    id="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[3df7d549-924f-4ba0-bd3e-00a2517ed756].Value-error"
+                    class="">Interest is required.</span></span>
+        </div>
+        <div data-sc-field-key="43ACDEA8DDE04B10A914DF7320933CED" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_8feb10bb-5991-4e91-a45f-1a721e3a5478"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="8feb10bb-5991-4e91-a45f-1a721e3a5478"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_8feb10bb-5991-4e91-a45f-1a721e3a5478__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].ItemId"
+                type="hidden" value="8feb10bb-5991-4e91-a45f-1a721e3a5478"><label class="">Frequency </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    checked="" value="{16DD02A6-F8D1-4431-8BA3-499A0C62BE09}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Daily
+            </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    value="{BFD3F256-8632-43A3-ACE5-ED7AD09695D8}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Fortnightly
+            </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    value="{AB468C84-F084-41DB-B0CF-09B0077AF586}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Weekly
+            </label>
+            <label>
+                <input type="radio"
+                    name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                    value="{66C935DE-147D-492B-903A-7580885D337C}" data-sc-tracking="True"
+                    data-sc-field-name="Frequency" data-sc-field-key="97A2CE31148642A6A54393CE53397CFF">Monthly
+            </label>
+            <span class="field-validation-valid"
+                data-valmsg-for="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[8feb10bb-5991-4e91-a45f-1a721e3a5478].Value"
+                data-valmsg-replace="true"></span>
+        </div>
+        <div data-sc-field-key="AD6BBDF161994E4F8B45A4058A07EC57" class="">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_Index_1e442633-1bb8-4082-9970-9cc1b1befc85"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields.Index" type="hidden"
+                value="1e442633-1bb8-4082-9970-9cc1b1befc85"><input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_1e442633-1bb8-4082-9970-9cc1b1befc85__ItemId"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[1e442633-1bb8-4082-9970-9cc1b1befc85].ItemId"
+                type="hidden" value="1e442633-1bb8-4082-9970-9cc1b1befc85"> <input
+                id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_Fields_1e442633-1bb8-4082-9970-9cc1b1befc85__Value"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.Fields[1e442633-1bb8-4082-9970-9cc1b1befc85].Value"
+                type="hidden" value="1" data-sc-tracking="True" data-sc-field-name="IsActive"
+                data-sc-field-key="79E68A62A7E0495097879ECB7F65FB79">
+
+
+            <input value="Subscribe" type="submit" class="frm-subscribe"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba"
+                data-sc-field-key="C61E8D94819544FABF39153C94F88854">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_NavigationButtons"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.NavigationButtons" type="hidden"
+                value="e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba">
+            <input id="fxb_58b4c895-39fe-49bd-bd98-61a72f397f90_e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba"
+                name="fxb.58b4c895-39fe-49bd-bd98-61a72f397f90.e7bdc6ce-7aa8-4a8e-b4c7-64693bd506ba" type="hidden"
+                value="1">
+        </div>
+        <script type="text/javascript">
+            (function ($) {
+                var $formEl = $("form[data-sc-fxb='e1847f9d-a7e6-4b9d-b4b6-ff3b6319b42f']");
+                if ($formEl.length && typeof $formEl.init_fxbConditions === 'function') {
+                    var options = {};
+                    $formEl.init_fxbConditions(options);
+                }
+            })(jQuery)
+        </script>
+    </form>
+    <div id="frm-loading" class="hide"></div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-popup-dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="password-protected-wrapper">
+    <form action="">
+        <div class="error-msg">Password is incorrect. Redirecting to Home Page.</div>
+        <div>
+            <label>Password</label>
+            <input type="password"/>
+        </div>
+        <div>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+</div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <div class="main-content main-content--website">
+        <a class="visuallyhidden" name="maincontent" id="mainContent"></a>
+
+        
+<div class="container-fluid">
+    <div class="outerpadding">
+        <div class="spacer-breakpoint divider m-b-24 m-b-lg-24 m-b-md-24 m-b-sm-24 m-b-xs-24" style="height: 0px; width: 100%;"></div>
+        <!-- website breadcrumb Start -->
+        <div class="website-breadcrumb">
+    <nav class="breadcrum-comp">
+        <a href="#" class="breadcrum-comp__link" title="dummy title text">Homepage</a>
+        <a href="#" class="breadcrum-comp__link" title="dummy title text">Explore Plan</a>
+        <a href="#" class="breadcrum-comp__link" title="dummy title text">LifeShield Plan</a>
+    </nav>
+</div>
+        <!-- website breadcrumb end -->
+        <div class="spacer-breakpoint divider m-b-10 m-b-lg-10 m-b-md-10 m-b-sm-10 m-b-xs-10" style="height: 0px; width: 100%;"></div>
+
+
+        <div class="bg-nav">
+    <h1 class="bg-nav__title">Buying Guide</h1>
+    <div class="bg-nav__nav">
+        <div class="bg-nav__nav-item">
+            <a href="#understand-ulip" class="bg-nav__nav-link bg-nav__nav-link--active">Understand ULIPs - Why & How</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#ulip-benefits" class="bg-nav__nav-link">ULIP Benefits</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#why-ulip" class="bg-nav__nav-link">Why Choose ABSLI’s ULIP Plans</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#manage-ulip" class="bg-nav__nav-link">How to Manage ULIP Funds</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#ulip-products" class="bg-nav__nav-link">ULIP Products</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#ulip-types" class="bg-nav__nav-link">Types of ULIPs</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#ulip-things" class="bg-nav__nav-link">Things to Consider Before Buying ULIPs </a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#buying-tips" class="bg-nav__nav-link">Buying Tips</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#articles" class="bg-nav__nav-link">Articles</a>
+        </div>
+        <div class="bg-nav__nav-item">
+            <a href="#faqs" class="bg-nav__nav-link">FAQs</a>
+        </div>
+    </div>
+    <ul class="bg-nav__cont-wrap">
+        <li class="bg-nav__cont-item" id="understand-ulip">
+            <div class="cat-pro-banner cat-pro-banner--typ-details cat-pro-banner--typ-dark">
+                <div class="cat-pro-banner__info">
+                    <h1 class="cat-pro-banner__title">Wealth with Protection Solution</h1>
+                    <div class="read-wrap cat-pro-banner__read-wrap">
+                        <h4 class="cat-pro-banner__second-title cat-pro-banner__second-title--regular">Enjoy double benefits of wealth creation and protection in a single solution!</h4>
+                        <p class="cat-pro-banner__desc">It’s no secret that we all want to grow our wealth to achieve life goals, isn’t it?</p>
+                        <p class="cat-pro-banner__desc">Wealth with protection solution, also known as Unit-Linked Insurance Plan (ULIP) not only helps you to compound your wealth but simultaneously provides life cover in a single plan. Weaving your insurance and investment needs in
+                            the same product, you can customize a ULIP plan as per your needs.</p>
+                    </div>
+                    <div class="read-wrap cat-pro-banner__read-wrap">
+                        <h4 class="cat-pro-banner__second-title cat-pro-banner__second-title--regular">What is Wealth with Protection Solution?</h4>
+                        <p class="cat-pro-banner__desc">A two-in-one plan, ULIP, offers you life cover as well the opportunity to invest in capital markets to grow your money. An insurance cum investment product, you can customize a ULIP plan as per your needs.</p>
+                        <p class="cat-pro-banner__desc">Giving you the best of both worlds — insurance and investment — in ULIP, a portion of the premium goes towards providing life cover, while another is invested in various underlying funds. These funds could be equity, debt or both.
+                            You can choose the funds based on your risk-taking capacity and life goals you want to achieve, including children’s higher education, their marriage and your retirement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-breakpoint divider m-b-64 m-b-lg-64 m-b-md-64 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="why-buy wb-tab-grey-bg">
+    <div class="title-wrap why-buy__title-wrap">
+        <h2 class="title-wrap__title">Why Should You Buy ULIPs?</h2>
+    </div>
+    <div class="why-buy__cont-wrap">
+        <ul class="benefits-list why-buy__list">
+            <li class="benefits-list__item benefits benefits--mobile-v2 why-buy__item">
+                <span class="benefits__icon icon icon-u-market-link wb-light-brown-clr"></span>
+                <span class="benefits__title benefits__title--typ2">Market-linked returns</span>
+                <span class="benefits__desc">Get an opportunity to benefit from the capital markets as a part of the premium paid is invested in the fund of your choice, equity, debt or hybrid, to generate returns</span>
+            </li>
+            <li class="benefits-list__item benefits benefits--mobile-v2 why-buy__item wb-light-brown-clr">
+                <span class="benefits__icon icon icon-u-investment"></span>
+                <span class="benefits__title benefits__title--typ2">Investment and insurance in the same product</span>
+                <span class="benefits__desc">Hit two birds with one stone as your investment and protection needs are taken care of by a single product, and you don’t need to buy two separate products for them. </span>
+            </li>
+            <li class="benefits-list__item benefits benefits--mobile-v2 why-buy__item wb-light-brown-clr">
+                <span class="benefits__icon icon icon-u-flexibility"></span>
+                <span class="benefits__title benefits__title--typ2">Flexibility to choose from a range of funds, thus diversifying your investment</span>
+                <span class="benefits__desc">Get the flexibility to choose from a range of funds as per your risk tolerance, thus diversifying your investments across asset classes. The non-performance of one fund/asset class is made up for by another</span>
+            </li>
+            <li class="benefits-list__item benefits benefits--mobile-v2 why-buy__item wb-light-brown-clr">
+                <span class="benefits__icon icon icon-tax-benefit"></span>
+                <span class="benefits__title benefits__title--typ2">Tax Benefits</span>
+                <span class="benefits__desc">Premiums paid towards ULIP Plan are eligible for tax deduction up to Rs. 1.5 lakhs under section 80C of the Income Tax Act, 1961. In case of your death during the policy term, the pay-out received is tax-exempt under section 10 (10D). Tax benefits are subject to changes in tax laws </span>
+            </li>
+            <li class="benefits-list__item benefits benefits--mobile-v2 why-buy__item wb-light-brown-clr">
+                <span class="benefits__icon icon icon-u-financial-security"></span>
+                <span class="benefits__title benefits__title--typ2">Financial security for your goals</span>
+                <span class="benefits__desc">Secure your financial goals and interest of your dependents in one shot. While the life cover protects the financial interest of your loved ones in your absence, disciplined and sustained investment help you accumulate the desired corpus for your life goals.</span>
+            </li>
+        </ul>
+        <button class="button button-link why-buy__button-link why-buy__button-link--read-more hide">Read More</button>
+        <button class="button button-link why-buy__button-link why-buy__button-link--read-less">Read Less</button>
+    </div>
+</div>
+            <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="tips tips--typ-full">
+    <div class="title-wrap tips__title-wrap">
+        <h2 class="title-wrap__title">How ULIP Works?</h2>
+    </div>
+    <ul class="tips__list">
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">Working of a Unit-Linked Insurance Plan is pretty simple.The insurer invests a part of the premium you have paid in shares or bonds, and the rest is invested in providing life cover.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">Once you pay the premium, there are several more investors who invest in the same portfolio. The insurer further pools this money and after deducting the expenses, invests in the fund chosen by you. It could be either equity, balanced
+                    or debt funds. The total sum of money is further divided into units.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">The insurance company allocated these units to each investor in accordance to the amount invested. This unit value is called NAV or Net Asset Value. The units NAV either increase or decrease based on the market value. On maturity of the
+                    plan, the insurer pays the fund value to the investors depending upon the market value. In case of your death, the insurer pays your beneficiary higher than the fund value or available fund value.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">Do you know ULIPs also allow you to switch between equities and debt and vice-versa if you wish to do so. If equity markets are not doing well, you can switch to debt to preserve your gains. On the other hand, if you have a high-risk tolerance,
+                    you can move from debt to equity. This flexibility has made ULIP policies highly popular.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="ulip-benefits">
+            <div class="info-banner wb-tab-grey-bg bg-nav__info-banner">
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="info-banner__wrap">
+                <span class="info-banner__icon icon icon-calc bg-nav__info-banner-icon"></span>
+                <!-- provision for img -->
+                <!-- <span class="info-banner__icon"><img src="../images/award1.png" alt="dummy alt text" title="dummy title text"></span> -->
+                <div class="info-banner__title-wrap">
+                    <h2 class="info-banner__title">Human Life Value Calculator</h2>
+                    <p class="info-banner__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsu dolor sit amet.</p>
+                </div>
+                <div class="info-banner__action-wrap">
+                    <button class="button button-brown wb-protecting-shade-bg">Calculate Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="video-blog-wrap video-blog-wrap--v2">
+    <div class="video-blog video-blog--v2" data-url="https://www.youtube.com/embed/eJ70_Xj3W-U">
+        <!-- <div class="video-blog__img-wrap video-blog__img-wrap--novideo"> -->
+        <div class="video-blog__img-wrap ">
+            <img src="../images/video-blog.png" alt="dummy alt text" class="video-blog__img">
+            <span class="video-blog__icon icon icon-video"></span>
+            <a href="#" title="dummy title text" class="video-blog__link"></a>
+            <iframe class="video-blog__iframe" src="https://www.youtube.com/embed/eJ70_Xj3W-U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+            <div class="spacer-breakpoint divider m-b-30 m-b-lg-30 m-b-md-30 m-b-sm-10 m-b-xs-10" style="height: 0px; width: 100%;"></div>
+            <div class="benefits-ulip">
+    <div class="title-wrap benefits-ulip__title-wrap">
+        <h2 class="title-wrap__title">ULIP Benefits</h2>
+    </div>
+    <ul class="benefits-list benefits-ulip__list">
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <!-- image provision instead of icon -->
+            <!-- <span class="benefits__icon wb-light-brown-clr">
+                        <img src="../images/award1.png" alt="dummy alt text" title="dummy title text">
+                    </span> -->
+            <span class="benefits__icon wb-light-brown-clr icon icon-u-long-term-goals"></span>
+            <span class="benefits__title benefits__title--typ2">Build a corpus for long-term goals with dedicated savings and investments </span>
+            <span class="benefits__desc">With disciplined savings and investments, ULIPs help you build a sizeable corpus for essential long-term goals such as children’s higher education, their marriage and your retirement. By paying premiums on a regular basis, you can easily plan and finance your long-term objectives.</span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon wb-light-brown-clr icon icon-u-life-cover"></span>
+            <span class="benefits__title benefits__title--typ2">Life cover</span>
+            <span class="benefits__desc">Have you thought what will happen to your family members and dependents in your absence? A Unit-Linked Insurance Plan offers life cover which protects your family from financial difficulties arising in your absence.</span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon wb-light-brown-clr icon icon-u-investment-flexibility"></span>
+            <span class="benefits__title benefits__title--typ2">Investment flexibility</span>
+            <span class="benefits__desc">Who doesn’t want flexibility in investment? ULIPs give you complete control over your money and the way you want to invest it. It gives you the option to switch between funds, which means you can move from equity to debt to hybrid funds, as per your choice.</span>
+            <span class="benefits__desc">Also, you have the option to choose the fund where you want your future premiums to be redirected. At the same time, in case of an emergency, it allows you to withdraw your money partially, and in case you have surplus funds, you can invest them up and above your existing investments</span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon wb-light-brown-clr icon icon-tax-benefit"></span>
+            <span class="benefits__title benefits__title--typ2">Tax benefits</span>
+            <span class="benefits__desc">Buying a ULIP policy also helps you lower your tax outgo. Premiums paid towards ULIP Plan are eligible for tax deduction up to Rs. 1.5 lakhs under section 80C of the Income Tax Act, 1961.</span>
+            <span class="benefits__desc">In case of your death during the policy term, the pay-out received is tax-exempt under section 10 (10D). The tax benefits are subject to changes in the tax laws. You are advised to consult your tax advisor for the same. </span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon wb-light-brown-clr icon icon-joint-shield"></span>
+            <span class="benefits__title benefits__title--typ2">Higher growth potential </span>
+            <span class="benefits__desc">Buying ULIPs offer higher growth potential as you get a chance to invest in capital markets. This, in turn, helps you to accumulate funds and address goals such as buying a house, purchasing your dream car or fund your child’s higher education, among others.</span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon wb-light-brown-clr icon icon-u-rewards"></span>
+            <span class="benefits__title benefits__title--typ2">Rewards for staying investing for the long term</span>
+            <span class="benefits__desc">This is another benefit of buying a ULIP policy. If you stay invested for the long-term, your money grows through guaranteed additions offered by the insurance company in different forms such as loyalty additions and wealth boosters.</span>
+        </li>
+    </ul>
+    <button class="button button-link benefits-ulip__button-link benefits-ulip__button-link--read-more hide">Read More</button>
+    <button class="button button-link benefits-ulip__button-link benefits-ulip__button-link--read-less ">Read Less</button>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="why-ulip">
+
+            <script src="../javascripts/quickServicesFunctions.js"></script>
+
+<div class="lead-form lead-form--typ2 bg-nav__lead-form">
+
+    <div class="lead-form__container ">
+        <div class="lead-form__title-wrap">
+            <h2 class="lead-form__title">Haven’t found what you’re looking for?</h2>
+        </div>
+        <div class="lead-form__wrap bg-nav__lead-form-wrap">
+            <form class="abc-form abc-form--lead" id="lead-form-2">
+                <div class="form-group form-group--no">
+                    <div class="input-group input-group--v2 disabled">
+                        <span class="input-group-addon">+91</span>
+                        <input type="text" name="mobileno2" class="form-control form-group__placeholder only-number" id="mobile-no-2" data-msg-required="This field is required" data-msg-minlength="Please enter a valid Mobile number." placeholder="Enter your mobile number" maxlength="10"
+                        />
+                        <span class="input-group-btn">
+                                    <button class="btn icon-btn btn-sumbit-inpt submit-num" type="button"><span class="icon icon-right-arrow"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group form-group--email hide">
+                    <div class="input-group input-group--v2 disabled">
+                        <input type="text" name="email2" class="form-control form-group__placeholder" id="email-2" placeholder="Enter your email address" />
+                        <span class="input-group-btn">
+                                    <button class="btn icon-btn btn-sumbit-inpt submit-email" type="button"><span class="icon icon-right-arrow"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group form-group--name hide">
+                    <div class="input-group input-group--v2 disabled">
+                        <input type="text" name="name2" class="form-control form-group__placeholder" id="call-name-2" placeholder="Enter your full name" />
+                        <span class="input-group-btn">
+                                    <button class="btn icon-btn btn-sumbit-inpt submit-lead" type="button"><span class="icon icon-right-arrow"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group form-group--tnc hide">
+                    <div class="form-check typ2">
+                        I agree to the Terms of Usage and Privacy Policy and authorize Aditya Birla Sun Life Insurance Company Limited and its associates to call/SMS/Email/WhatsApp me.
+                        <input class="form-check-input" name="tnc2" type="checkbox" id="tnc-2" />
+                        <label class="form-check-label checkmark capital-checkbox"></label>
+                        <button class="button button-brown wb-protecting-shade-bg disabled act-btn submit-agree" type="button">Call Me</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="lead-form__thanks-msg hide">
+        <span class="lead-form__icon icon icon-tick"></span>
+        <!-- <div class="lead-form__icon-wrap">
+                    <img src="/images/award1.png" alt="done" title="done" class="lead-form__img">
+                </div> -->
+        <div class="lead-form__info-wrap">
+            <p class="lead-form__statement">
+                <span class="lead-form__statement--lg-text">Thank you for your details.</span> We will reach out to you shortly.
+            </p>
+            <p class="lead-form__statement">
+                <span class="lead-form__statement--lg-text">1800-270-7000</span> or reach out to us on this number.
+            </p>
+        </div>
+    </div>
+
+</div>
+            <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="info-card">
+    <div class="title-wrap">
+        <h2 class="title-wrap__title">Why Choose ABSLI’s ULIP Plans?</h2>
+        <p class="title-wrap__desc">Our ULIP plans are designed to offer you comprehensive protection, instil a disciplined savings habit and invest in a planned manner to accumulate wealth for essential life goals.</p>
+    </div>
+    <div class="info-card__wrap info-card__wrap--typ3">
+        <div class="info-card__item">
+            <div class="info-card__tile">
+                <h3 class="info-card__title">Flexibility</h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Our plans offer you flexibility to add top-ups as per your savings. Also, basis your risk appetite, you have the flexibility to choose from various investment options with our plans to meet your investment needs.</p>
+                </div>
+                <span class="info-card__icon icon icon-b2"></span>
+                <!-- providion for img -->
+                <!-- <span class="info-card__icon"><img src="../images/award1.png" alt="dummy alt text" title="dummy title text"></span> -->
+            </div>
+        </div>
+        <div class="info-card__item">
+            <div class="info-card__tile">
+                <h3 class="info-card__title">Partial Withdrawals</h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Our plans enable you to partially withdraw the amount from your funds in case of any emergency.</p>
+                </div>
+                <span class="info-card__icon icon icon-partial-withdrawals"></span>
+            </div>
+        </div>
+        <div class="info-card__item">
+            <div class="info-card__tile">
+                <h3 class="info-card__title">Flexibility</h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Our plans offer you flexibility to add top-ups as per your savings. Also, basis your risk appetite, you have the flexibility to choose from various investment options with our plans to meet your investment needs.</p>
+                </div>
+                <span class="info-card__icon icon icon-b2"></span>
+                <!-- providion for img -->
+                <!-- <span class="info-card__icon"><img src="../images/award1.png" alt="dummy alt text" title="dummy title text"></span> -->
+            </div>
+        </div>
+        <div class="info-card__item">
+            <div class="info-card__tile">
+                <h3 class="info-card__title">Partial Withdrawals</h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Our plans enable you to partially withdraw the amount from your funds in case of any emergency.</p>
+                </div>
+                <span class="info-card__icon icon icon-partial-withdrawals"></span>
+            </div>
+        </div>
+    </div>
+    <ul class="slick-nav slick-nav--info-card">
+        <li class="slick-nav__btn slick-nav__btn--prev">
+            <span class="icon icon-prev"></span>
+        </li>
+        <li class="slick-nav__btn slick-nav__btn--next">
+            <span class="icon icon-next"></span>
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="manage-ulip">
+            <div class="info-banner wb-tab-grey-bg bg-nav__info-banner">
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="info-banner__wrap">
+                <span class="info-banner__icon icon icon-calc bg-nav__info-banner-icon"></span>
+                <!-- provision for img -->
+                <!-- <span class="info-banner__icon"><img src="../images/award1.png" alt="dummy alt text" title="dummy title text"></span> -->
+                <div class="info-banner__title-wrap">
+                    <h2 class="info-banner__title">Human Life Value Calculator</h2>
+                    <p class="info-banner__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsu dolor sit amet.</p>
+                </div>
+                <div class="info-banner__action-wrap">
+                    <button class="button button-brown wb-protecting-shade-bg">Calculate Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="tips tips--typ-full">
+    <div class="title-wrap tips__title-wrap">
+        <h2 class="title-wrap__title">How to Manage ULIP Funds</h2>
+    </div>
+    <ul class="tips__list">
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">ULIPs are a long term investment and hence you should only invest in them with a long term time horizon. Note that the minimum lock-in period is 5 years, so you must be prepared to invest for at least that long.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">Many ULIPs give the option of systematic transfers from debt to equity ULIP funds. If you pay an annual premium, this can initially be invested in a debt fund and systematically be transferred to an equity fund. This is very similar to
+                    the highly popular Systematic Transfer Plans (STP). Consider using it, in order to reduce your investment risk.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">Alternatively, several ULIPs offer a lifecycle based strategy that automatically splits your money between equity and debt based on your age. Consider adopting this strategy if you are investing in the ULIP for your retirement.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">You should periodically review the performance and prospects of your ULIP funds. You should switch out of ULIP funds which have underperformed or funds whose asset class is overvalued. You can do this by switching out of an equity ULIP
+                    fund and moving into a debt ULIP fund. This will not attract any tax charges. It may attract some costs but many ULIPs give a certain number of free switches to investors every year.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="ulip-products">
+            <div class="term-products">
+    <div class="title-wrap">
+        <h2 class="title-wrap__title">ULIP Products</h2>
+    </div>
+    <div class="product-list product-list2">
+        <div class="product-card-wrap">
+            <div class="product-card">
+                <div class="product-card__top wb-protecting-pallete-04-bg">
+                    <h3 class="product-card__title">ABSLI Wealth Aspire Plan</h3>
+                    <p class="product-card__desc">ABSLI Wealth Aspire Plan is a unit linked insurance plan that ensures you fulfil your responsibilities without any trouble by empowering you with a personalised wealth</p>
+                    <p class="product-card__tag"><span class="product-card__icon icon icon-star"></span> <span>Top selling</span></p>
+                </div>
+                <div class="product-card__mid">
+                    <h5 class="product-card__punch-line">Best for people with kids</h5>
+                    <ul class="product-card__features features">
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-flexibility"></span>
+                            <!-- provison for img -->
+                            <!-- <span class="features__icon wb-light-brown-clr"><img src="../images/award1.png" alt="alt dummy text" title="title dummy text"></span> -->
+                            <span class="features__text">Choose from 4 investment options</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-cover-spouse"></span>
+                            <span class="features__text">Flexibility to add top-ups in case of </span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-premium"></span>
+                            <span class="features__text">Payout on death & policy continues till </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__bottom">
+                    <a href="#" title="dummy title text" class="button button-brown wb-protecting-shade-bg">buy now</a>
+                </div>
+                <a href="#" class="product-card__link" title="dummy title text"></a>
+            </div>
+        </div>
+        <div class="product-card-wrap">
+            <div class="product-card">
+                <div class="product-card__top wb-protecting-pallete-04-bg">
+                    <h3 class="product-card__title">ABSLI Wealth Secure Plan</h3>
+                    <p class="product-card__desc">ABSLI Wealth Secure Plan is a unit linked plan that combines long term savings and whole life coverage so that you attain your goals with every life stage and can be</p>
+                    <p class="product-card__tag"><span class="product-card__icon icon icon-star"></span> <span>Top selling</span></p>
+                </div>
+                <div class="product-card__mid">
+                    <h5 class="product-card__punch-line">Best for people with kids</h5>
+                    <ul class="product-card__features features">
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-financial-protection"></span>
+                            <span class="features__text">Pay premiums for a limited term</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-increase-income"></span>
+                            <span class="features__text">Choose from 3 investment options</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-eva"></span>
+                            <span class="features__text">Flexibility to add top-ups whenever</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__bottom">
+                    <a href="#" title="dummy title text" class="button button-brown wb-protecting-shade-bg">Calculate Premium</a>
+                    <a href="#" title="dummy title text" class="button button-border wb-protecting-shade-clr">Meet Advisor</a>
+                </div>
+                <a href="#" class="product-card__link" title="dummy title text"></a>
+            </div>
+        </div>
+        <div class="product-card-wrap">
+            <div class="product-card">
+                <div class="product-card__top wb-protecting-pallete-04-bg">
+                    <h3 class="product-card__title">ABSLI Wealth Assure Plus Plan</h3>
+                    <p class="product-card__desc">ABSLI Wealth Assure Plus Plan is a non participating unit linked insurance plan which enables your wealth to grow with good returns from MNC fund, providing a</p>
+                    <p class="product-card__tag"><span class="product-card__icon icon icon-star"></span> <span>Top selling</span></p>
+                </div>
+                <div class="product-card__mid">
+                    <h5 class="product-card__punch-line">Best for people with kids</h5>
+                    <ul class="product-card__features features">
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-financial-protection"></span>
+                            <span class="features__text">Choose from 4 investment options</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-increase-income"></span>
+                            <span class="features__text">Flexibility to add top-ups whenever</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-eva"></span>
+                            <span class="features__text">Flexibility to choose from 2 plan</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__bottom">
+                    <a href="#" title="dummy title text" class="button button-brown wb-protecting-shade-bg">Buy Now</a>
+                </div>
+                <a href="#" class="product-card__link" title="dummy title text"></a>
+            </div>
+        </div>
+        <div class="product-card-wrap">
+            <div class="product-card">
+                <div class="product-card__top wb-protecting-pallete-04-bg">
+                    <h3 class="product-card__title">ABSLI Fortune Elite Plan</h3>
+                    <p class="product-card__desc">ABSLI Fortune Elite is a unit linked plan that provides insurance coverage and the opportunity of wealth preservation and enhancement, while you enjoy the </p>
+                    <p class="product-card__tag"><span class="product-card__icon icon icon-star"></span> <span>Top selling</span></p>
+                </div>
+                <div class="product-card__mid">
+                    <h5 class="product-card__punch-line">Best for people with kids</h5>
+                    <ul class="product-card__features features">
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-financial-protection"></span>
+                            <span class="features__text">Choose from 3 investment options</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-increase-income"></span>
+                            <span class="features__text">Flexibility to add top-ups whenever</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-eva"></span>
+                            <span class="features__text">Flexibility to choose from 2 plan</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__bottom">
+                    <a href="#" title="dummy title text" class="button button-brown wb-protecting-shade-bg">Buy Now</a>
+                </div>
+                <a href="#" class="product-card__link" title="dummy title text"></a>
+            </div>
+        </div>
+        <div class="product-card-wrap">
+            <div class="product-card">
+                <div class="product-card__top wb-protecting-pallete-04-bg">
+                    <h3 class="product-card__title">ABSLI Wealth Max Plan</h3>
+                    <p class="product-card__desc">ABSLI Wealth Max Plan is a single premium unit linked insurance plan, which provides ﬁnancial protection for your family and also gives you good returns</p>
+                    <p class="product-card__tag"><span class="product-card__icon icon icon-star"></span> <span>Top selling</span></p>
+                </div>
+                <div class="product-card__mid">
+                    <h5 class="product-card__punch-line">Best for people with kids</h5>
+                    <ul class="product-card__features features">
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-financial-protection"></span>
+                            <span class="features__text">Pay once and reap the benefits of</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-increase-income"></span>
+                            <span class="features__text">Flexibility to add top-ups whenever</span>
+                        </li>
+                        <li class="features__item">
+                            <span class="features__icon wb-light-brown-clr icon icon-eva"></span>
+                            <span class="features__text">Flexibility of partial withdrawals to</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__bottom">
+                    <a href="#" title="dummy title text" class="button button-brown wb-protecting-shade-bg">Buy Now</a>
+                </div>
+                <a href="#" class="product-card__link" title="dummy title text"></a>
+            </div>
+        </div>
+    </div>
+
+    <ul class="slick-nav slick-nav--product">
+        <li class="slick-nav__btn slick-nav__btn--prev">
+            <span class="icon icon-prev"></span>
+        </li>
+        <li class="slick-nav__btn slick-nav__btn--next">
+            <span class="icon icon-next"></span>
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="ulip-types">
+            <div class="benefits-ulip">
+    <div class="title-wrap benefits-ulip__title-wrap">
+        <h2 class="title-wrap__title">Types of ULIPs</h2>
+        <p class="title-wrap__desc">One of the most flexible financial products, there are different types of ULIPs available for you to choose from. They are</p>
+    </div>
+    <ul class="benefits-list benefits-ulip__list">
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon icon icon-long-term-ulip wb-light-brown-clr"></span>
+            <span class="benefits__title benefits__title--typ2">ULIPs for long-term wealth creation</span>
+            <span class="benefits__desc benefits-ulip____desc">Structured to grow your wealth over the long-term, these ULIPs are further divided into:</span>
+            <span class="benefits__title benefits__title--typ-sm">Regular and Single Premium ULIP </span>
+            <span class="benefits__desc benefits-ulip____desc">In a regular premium ULIP, you need to pay premiums over a period of time. On the other hand, in a single premium ULIP, you pay the entire premium at one go. You can choose the one as per your income and cash flow.</span>
+            <span class="benefits__title benefits__title--typ-sm">Life staged based and Non-life stage based ULIP</span>
+            <span class="benefits__desc benefits-ulip____desc">Needs at different stages of life are different, isn’t it? Life stage based ULIPs invest your money accordingly. For example, when you are young and single, you may have a higher risk appetite, and, therefore, a higher allocation is towards equities.</span>
+            <span class="benefits__desc benefits-ulip____desc">As you grow old, the equity allocation reduces. The strategy ensures asset allocation matches your age and financial requirements. However, this is not the case with a non-life stage-based plan. You choose the funds as per your risk appetite and can switch between them when desired.</span>
+            <span class="benefits__title benefits__title--typ-sm">Guaranteed and Non-Guaranteed ULIP</span>
+            <span class="benefits__desc benefits-ulip____desc">Capital protection is the objective of guaranteed ULIP and hence it has limited equity exposure. On the other hand, a non-guaranteed ULIP offers you a range of funds to choose from as per your risk tolerance and financial goals. In these ULIPs, you can opt for a high equity exposure for higher returns in the long run. </span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon icon icon-child wb-light-brown-clr"></span>
+            <span class="benefits__title benefits__title--typ2">ULIPs to secure your child’s future</span>
+            <span class="benefits__desc benefits-ulip____desc">As a parent, you want to give the best of everything to your child. It’s your responsibility to secure your child’s future and ensure his/her needs are met even in your absence. ULIPs for child can help you in your efforts and ensures your child’s needs are well-taken care of even when you are no longer around. </span>
+            <span class="benefits__desc benefits-ulip____desc">These ULIPs help you save and build a large corpus for your child’s higher education and in case of an unfortunate event, the insurer pays a fixed lump sum that helps your family meet immediate requirements. Also, some plans offer the facility to partially withdraw to fund important education milestones of your child’s life. </span>
+        </li>
+        <li class="benefits-list__item benefits benefits--mobile-v2 benefits-ulip__item">
+            <span class="benefits__icon icon icon-retirement wb-light-brown-clr"></span>
+            <span class="benefits__title benefits__title--typ2">ULIPs for retirement</span>
+            <span class="benefits__desc benefits-ulip____desc">Everyone dreams of a stress-free retirement. ULIPs for retirement help you save and invest in a disciplined manner to build a large retirement corpus that enables you to take care of your post-retirement needs with ease. </span>
+            <span class="benefits__desc benefits-ulip____desc">While the purpose of the above-mentioned ULIP plans may differ, each one of them help you in disciplined savings and investments to achieve your set goal. </span>
+        </li>
+    </ul>
+    <button class="button button-link benefits-ulip__button-link benefits-ulip__button-link--read-more hide">Read More</button>
+    <button class="button button-link benefits-ulip__button-link benefits-ulip__button-link--read-less ">Read Less</button>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="ulip-things">
+            <div class="info-card">
+    <div class="title-wrap">
+        <h2 class="title-wrap__title">Things to Consider Before Buying ULIPs </h2>
+        <p class="title-wrap__desc">Just like any other investment, buying a ULIP requires consideration of the following things: </p>
+    </div>
+    <div class="info-card__wrap info-card__wrap--typ3">
+        <div class="info-card__item">
+            <div class="info-card__tile info-card__tile--typ2">
+                <h3 class="info-card__title">Evaluate Risk profile </h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Take into account your risk appetite or risk tolerance before investing in ULIPs. If you are a young and aggressive investor with a high-risk tolerance, then you can opt for equity funds in ULIPs. On the other hand, if you require
+                        financial stability then you can opt for debt funds.</p>
+                </div>
+                <span class="info-card__icon icon icon-add1"></span>
+                <!-- providion for img -->
+                <!-- <span class="info-card__icon"><img src="../images/award1.png" alt="dummy alt text" title="dummy title text"></span> -->
+            </div>
+        </div>
+        <div class="info-card__item">
+            <div class="info-card__tile info-card__tile--typ2">
+                <h3 class="info-card__title">Check Performance of the ULIP plan</h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Compare the performance of your ULIP plan over the long term before buying. As it has an investment component, check out how the respective equity, debt or hybrid funds have fared against their benchmark indices such as Nifty 50, BSE
+                        100, NSE 500, Crisil Composite Bond Index, etc., over the long term. </p>
+                </div>
+                <span class="info-card__icon icon icon-add2"></span>
+            </div>
+        </div>
+        <div class="info-card__item">
+            <div class="info-card__tile info-card__tile--typ2">
+                <h3 class="info-card__title">Evaluate Risk profile </h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Take into account your risk appetite or risk tolerance before investing in ULIPs. If you are a young and aggressive investor with a high-risk tolerance, then you can opt for equity funds in ULIPs. On the other hand, if you require
+                        financial stability then you can opt for debt funds.</p>
+                </div>
+                <span class="info-card__icon icon icon-add3"></span>
+                <!-- providion for img -->
+                <!-- <span class="info-card__icon"><img src="../images/award1.png" alt="dummy alt text" title="dummy title text"></span> -->
+            </div>
+        </div>
+        <div class="info-card__item">
+            <div class="info-card__tile info-card__tile--typ2">
+                <h3 class="info-card__title">Check Performance of the ULIP plan</h3>
+                <div class="info-card__desc">
+                    <p class="info-card__info">Compare the performance of your ULIP plan over the long term before buying. As it has an investment component, check out how the respective equity, debt or hybrid funds have fared against their benchmark indices such as Nifty 50, BSE
+                        100, NSE 500, Crisil Composite Bond Index, etc., over the long term. </p>
+                </div>
+                <span class="info-card__icon icon icon-add4"></span>
+            </div>
+        </div>
+    </div>
+    <ul class="slick-nav slick-nav--info-card">
+        <li class="slick-nav__btn slick-nav__btn--prev">
+            <span class="icon icon-prev"></span>
+        </li>
+        <li class="slick-nav__btn slick-nav__btn--next">
+            <span class="icon icon-next"></span>
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="buying-tips">
+            <div class="tips tips--typ-full common-padding wb-tab-grey-bg bg-nav__tips">
+    <div class="title-wrap tips__title-wrap">
+        <h2 class="title-wrap__title">Effective Tips for Wealth Creation Through ULIPs </h2>
+    </div>
+    <ul class="tips__list">
+        <li class="tips__item">
+            <h3 class="tips__title">Optimize asset allocation wisely</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">ULIPs allow you to switch between funds, equity to debt and vice-versa, when needed. You can use this strategy to optimize your asset allocation and diversify your investments. This also prevents the loss of accumulated gains due to market
+                    volatility. </p>
+                <p class="tips__info">For example, when equities are doing good, you could invest more in them and less in debt. On the contrary, when the markets are down, you can shift your investments from equities to debt to preserve your gains. Thus, by switching wisely
+                    and spreading your investments across asset classes, you can make meaningful gains</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <h3 class="tips__title">Adopt a long-term approach to benefit from the power of compounding</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">Note that since returns from ULIPs are market-linked, you need to stay invested for the long term to make meaningful gains. Also, if you stay invested for the long haul, say 15-20 years, it allows you to benefit from the power of compounding,
+                    which has a multiplier effect on wealth.</p>
+                <p class="tips__info">Did you know that the great Albert Einstein famously remarked it as the eighth wonder of the world? With compounding, the interest generated is reinvested with the principal amount that adds to your wealth</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <h3 class="tips__title">Align investment with financial goals</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">Goal-based investment ensures you have the funds when required. For example, if you are looking to build a sizeable corpus for your child’s higher education and have chosen equity funds in your ULIP plan, reduce its exposure and move to
+                    debt as you near the goal. </p>
+                <p class="tips__info">This ensure the gains made over the year are protected from getting eroded due to market volatility. </p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <h3 class="tips__title">EEE Taxation Benefit</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">ULIPs enjoy an exempt exempt exempt (EEE) tax status, which means that the amount invested, interest earned, and the maturity amount is free from taxation. You can choose from a range of funds as per your risk tolerance and life goals.
+                </p>
+                <p class="tips__info">1EEE benefit is subject to compliance of conditions mentioned under section 10(10D) of the Income-tax Act, 1961. If the conditions are not satisfied the maturity proceeds received will be taxable. </p>
+            </div>
+        </li>
+    </ul>
+</div>
+            <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="tips tips--typ-full tips--no-count">
+    <div class="title-wrap tips__title-wrap">
+        <h2 class="title-wrap__title">Understand the charges applicable for managing your ULIP</h2>
+        <p class="title-wrap__desc">Although ULIPs offered by different insurance companies have varying charge structures, these are some of the most commonly applied charges:</p>
+    </div>
+    <ul class="tips__list">
+        <li class="tips__item">
+            <h3 class="tips__title">Policy administration charges</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">These charges are towards administration of policies. They are deducted on a monthly basis.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <h3 class="tips__title">Premium allocation charges</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">These charges are deducted upfront from your premium. After these charges are deducted, your money gets invested in the funds of your choice.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <h3 class="tips__title">Mortality charges</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">Mortality expenses are charged towards providing you a Life Cover. These expenses vary with age and are deducted on a monthly basis.</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <h3 class="tips__title">Fund management charges</h3>
+            <div class="tips__info-wrap">
+                <p class="tips__info">The Fund Management charge is for managing these allocations to offer you potentially higher returns</p>
+            </div>
+        </li>
+        <li class="tips__item">
+            <div class="tips__info-wrap">
+                <p class="tips__info">As an policy holder, it is important for you to remember that since the overall charge structure of the ULIP reduces to a large extent over a long term, it is beneficial for you to stay invested for the entire term.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="articles">
+            <div class="info-banner info-banner--typ-no-icon wb-tab-grey-bg">
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="info-banner__wrap">
+                <div class="info-banner__title-wrap">
+                    <h2 class="info-banner__title">Explore ULIP Produtcs</h2>
+                    <p class="info-banner__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="info-banner__action-wrap">
+                    <button class="button button-brown wb-protecting-shade-bg">EXPLORE NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+            <div class="media-blogs">
+    <div class="title-wrap">
+        <h2 class="title-wrap__title">Enough with the jargon.</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="media-tile-list">
+                <h5 class="media-tile-list__title">Popular Articles</h5>
+                <div class="media-tile media-tile--blog media-tile--col2 media-ulip">
+                    <div class="media-tile__container media-tile__container--blog">
+                        <div class="media-tile__wrapper media-tile__wrapper--has-link media-tile__wrapper--blog">
+                            <div class="media-tile__media media-tile__media--blog media-tile__media--liked">
+                                <img src="../images/media-tile-v2-1.jpg" alt="dummy alt text" title="dummy title text" />
+                            </div>
+                            <div class="media-tile__content media-tile__content--blog">
+                                <div class="media-tile__title media-tile__title--blog">
+                                    <span> 3 Retirement planning mistakes to avoid</span>
+                                    <span class="icon icon-right-arrow media-tile__title--icon"></span>
+                                </div>
+                                <div class="media-tile__likes">
+                                    <span class="media-tile__like-icon icon icon-like"></span>
+                                    <span class="media-tile__likes-count">14UpVotes</span>
+                                </div>
+                                <a href="#" title="dummy title text" class="media-tile__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-tile__container media-tile__container--blog">
+                        <div class="media-tile__wrapper media-tile__wrapper--has-link media-tile__wrapper--blog">
+                            <div class="media-tile__media media-tile__media--blog">
+                                <img src="../images/media-tile-v2-2.jpg" alt="dummy alt text" title="dummy title text" />
+                            </div>
+                            <div class="media-tile__content media-tile__content--blog">
+                                <div class="media-tile__title media-tile__title--blog">
+                                    <span>How a Term Plan will secure your family’s future?</span>
+                                    <span class="icon icon-right-arrow media-tile__title--icon"></span>
+                                </div>
+                                <div class="media-tile__likes">
+                                    <span class="media-tile__like-icon icon icon-like"></span>
+                                    <span class="media-tile__likes-count">22UpVotes</span>
+                                </div>
+                                <a href="#" title="dummy title text" class="media-tile__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-tile__container media-tile__container--blog">
+                        <div class="media-tile__wrapper media-tile__wrapper--has-link media-tile__wrapper--blog">
+                            <div class="media-tile__media media-tile__media--blog media-tile__media--liked">
+                                <img src="../images/media-tile-v2-3.jpg" alt="dummy alt text" title="dummy title text" />
+                            </div>
+                            <div class="media-tile__content media-tile__content--blog">
+                                <div class="media-tile__title media-tile__title--blog">
+                                    <span>3 Retirement planning mistakes to avoid</span>
+                                    <span class="icon icon-right-arrow media-tile__title--icon"></span>
+                                </div>
+                                <div class="media-tile__likes">
+                                    <span class="media-tile__like-icon icon icon-like"></span>
+                                    <span class="media-tile__likes-count">32UpVotes</span>
+                                </div>
+                                <a href="#" title="dummy title text" class="media-tile__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-tile__container media-tile__container--blog">
+                        <div class="media-tile__wrapper media-tile__wrapper--has-link media-tile__wrapper--blog">
+                            <div class="media-tile__media media-tile__media--blog">
+                                <img src="../images/media-tile-v2-3.jpg" alt="dummy alt text" title="dummy title text" />
+                            </div>
+                            <div class="media-tile__content media-tile__content--blog">
+                                <div class="media-tile__title media-tile__title--blog">
+                                    <span>Which Term Plan is the best suited for you?</span>
+                                    <span class="icon icon-right-arrow media-tile__title--icon"></span>
+                                </div>
+                                <div class="media-tile__likes">
+                                    <span class="media-tile__like-icon icon icon-like"></span>
+                                    <span class="media-tile__likes-count">10UpVotes</span>
+                                </div>
+                                <a href="#" title="dummy title text" class="media-tile__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" title="dummy title text" class="button button-link view-all">View all</a>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+        <li class="bg-nav__cont-item" id="faqs">
+            <div class="faq-buy-guide">
+    <div class="title-wrap">
+        <h2 class="title-wrap__title">FAQs</h2>
+    </div>
+    <div class="faq-buy-guide__wrap">
+        <div class="tabs">
+            <ul class="tabs__links tabs__links--v3 faq-buy-guide__list">
+                <li class="tabs__link tabs__link--v3 tabs__link--active">
+                    <a href="#" class="tabs__anchor tabs__anchor--v3" data-target="buy-online">Buy Online</a>
+                </li>
+                <li class="tabs__link tabs__link--v3">
+                    <a href="#" class="tabs__anchor tabs__anchor--v3" data-target="premium">Premium</a>
+                </li>
+                <li class="tabs__link tabs__link--v3">
+                    <a href="#" class="tabs__anchor tabs__anchor--v3" data-target="policy-document">Policy Document</a>
+                </li>
+                <li class="tabs__link tabs__link--v3">
+                    <a href="#" class="tabs__anchor tabs__anchor--v3" data-target="term-insurance">Term Insurance</a>
+                </li>
+                <li class="tabs__link tabs__link--v3">
+                    <a href="#" class="tabs__anchor tabs__anchor--v3" data-target="riders">Riders</a>
+                </li>
+            </ul>
+
+            <div class="tabs__contents">
+                <div class="tabs__content tabs__content--v3 tabs__content--active" id="buy-online">
+                    <ul class="accordian__wrap accordian__wrap--v1">
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">What is the meaning of ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="termInsurance">
+                            <h2 class="accordian__title js-trigger">What are the benefits of buying ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="policyDocuments">
+                            <h2 class="accordian__title js-trigger">What is the sum assured in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="riders">
+                            <h2 class="accordian__title js-trigger">What maturity benefit do I get in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target accordian__item--active" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">Is ULIP investment a good idea? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button-link accordian__view-all">view all</button>
+                    <button class="button button-link accordian__view-less hide">view less</button>
+                </div>
+                <div class="tabs__content tabs__content--v3" id="premium">
+                    <ul class="accordian__wrap accordian__wrap--v1">
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">What is the meaning of ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="termInsurance">
+                            <h2 class="accordian__title js-trigger">What are the benefits of buying ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="policyDocuments">
+                            <h2 class="accordian__title js-trigger">What is the sum assured in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="riders">
+                            <h2 class="accordian__title js-trigger">What maturity benefit do I get in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target accordian__item--active" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">Is ULIP investment a good idea? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button-link accordian__view-all">view all</button>
+                    <button class="button button-link accordian__view-less hide">view less</button>
+                </div>
+                <div class="tabs__content tabs__content--v3" id="policy-document">
+                    <ul class="accordian__wrap accordian__wrap--v1">
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">What is the meaning of ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="termInsurance">
+                            <h2 class="accordian__title js-trigger">What are the benefits of buying ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="policyDocuments">
+                            <h2 class="accordian__title js-trigger">What is the sum assured in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="riders">
+                            <h2 class="accordian__title js-trigger">What maturity benefit do I get in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target accordian__item--active" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">Is ULIP investment a good idea? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button-link accordian__view-all">view all</button>
+                    <button class="button button-link accordian__view-less hide">view less</button>
+                </div>
+                <div class="tabs__content tabs__content--v3" id="term-insurance">
+                    <ul class="accordian__wrap accordian__wrap--v1">
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">What is the meaning of ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="termInsurance">
+                            <h2 class="accordian__title js-trigger">What are the benefits of buying ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="policyDocuments">
+                            <h2 class="accordian__title js-trigger">What is the sum assured in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="riders">
+                            <h2 class="accordian__title js-trigger">What maturity benefit do I get in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target accordian__item--active" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">Is ULIP investment a good idea? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button-link accordian__view-all">view all</button>
+                    <button class="button button-link accordian__view-less hide">view less</button>
+                </div>
+                <div class="tabs__content tabs__content--v3" id="riders">
+                    <ul class="accordian__wrap accordian__wrap--v1">
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">What is the meaning of ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="termInsurance">
+                            <h2 class="accordian__title js-trigger">What are the benefits of buying ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="policyDocuments">
+                            <h2 class="accordian__title js-trigger">What is the sum assured in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target" data-tag="riders">
+                            <h2 class="accordian__title js-trigger">What maturity benefit do I get in ULIP? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                        <li class="accordian__item js-acc-item js-filter-target accordian__item--active" data-tag="buyOnline">
+                            <h2 class="accordian__title js-trigger">Is ULIP investment a good idea? <span class="accordian__icon icon icon-increment"></span></h2>
+                            <div class="accordian__info js-target">
+                                <p class="accordian__desc">Upon maturity, you get the assured benefit or the fund value, whichever is higher.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button-link accordian__view-all">view all</button>
+                    <button class="button button-link accordian__view-less hide">view less</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+        </li>
+    </ul>
+    <!-- </div> -->
+</div>
+</div>
+
+
+        <div class="spacer-breakpoint divider m-b-75 m-b-lg-75 m-b-md-75 m-b-sm-30 m-b-xs-30" style="height: 0px; width: 100%;"></div>
+        <!-- disclaimer Start -->
+        <div class="disclaimer">
+    <div class="title-wrap disclaimer__title-wrap">
+        <h2 class="title-wrap__title">Disclaimer: </h2>
+    </div>
+    <div class="disclaimer__cont">
+        <p class="disclaimer__info">The linked Insurance Products do not offer any liquidity during the first five years of the contract. The policyholder will not be able to surrender/withdraw the monies invested in Linked Insurance Products completely or partially till the end
+            of the fifth year from inception. Linked Life Insurance products are different from the traditional insurance products and are subject to the risk factors. The premium paid in Unit Linked Life Insurance policies are subject to investment risks
+            associated with capital markets and the NAVs of the units may go up or down based on the performance of the investment fund and factors’ influencing the capital market and the insured is responsible for his or her decision. Aditya Birla Sun
+            Life Insurance Company Limited is only the name of the Insurance Company and does not in any way indicate the quality of the contract, its future prospects or returns. Please know the associated risks and the applicable charges, from your
+            Insurance agent or the Intermediary or policy document. The various funds offered under this contract are the names of the funds and do not any way indicate the quality of these plans, their future prospects and returns. The Past performance
+            of the Unit linked fund(s) of the company is not necessarily indicative of the future performance of any of these Unit linked fund(s).</p>
+        <label class="disclaimer__label">ADV/5/20-21/140</label>
+    </div>
+</div>
+        <!-- disclaimer end -->
+
+        <div class="spacer-breakpoint divider m-b-67 m-b-lg-67 m-b-md-67 m-b-sm-47 m-b-xs-47" style="height: 0px; width: 100%;"></div>
+
+        <!-- link block version 2 Start -->
+        <!--Link Block Starts-->
+<div class="link-list">
+    <div class="title-wrap">
+        <h2 class="title-wrap__title">Explore other categories</h2>
+    </div>
+    <!--Link List Starts --->
+    <div class="three-col-list link-list__container">
+        <ul class="link-list__list link-list__list--icon">
+            <li>
+                <a href="#" title="dummy title text">
+                    <span class="icon icon-term-plan"></span>
+                    <!-- provision for img instead of icon -->
+                    <!-- <span class="icon icon--img"><img src="../images/award1.png" alt=""></span>-->
+                    Term Plans</a>
+            </li>
+            <li><a href="#" title="dummy title text"><span class="icon icon-health"></span>Health Plans</a></li>
+            <li><a href="#" title="dummy title text"><span class="icon icon-health-protect"></span>Health with Protection Plans</a></li>
+            <li><a href="#" title="dummy title text"><span class="icon icon-retirement"></span>Retirement Plans</a></li>
+            <li><a href="#" title="dummy title text"><span class="icon icon-child"></span>Child Plans</a></li>
+            <li><a href="#" title="dummy title text"><span class="icon icon-savings"></span>Saving with Protection Plans</a></li>
+            <li><a href="#" title="dummy title text"><span class="icon icon-group"></span>Group Insurance</a></li>
+        </ul>
+    </div>
+</div>
+<!--Link List Ends-->
+<!--Link Block Ends-->
+        <!-- link block version 2 end -->
+
+        <div class="spacer-breakpoint divider m-b-80 m-b-lg-80 m-b-md-80 m-b-sm-40 m-b-xs-40" style="height: 0px; width: 100%;"></div>
+        <!-- lead form Start -->
+        <script src="../javascripts/quickServicesFunctions.js"></script>
+
+<div class="lead-form wb-lead-from-bg">
+
+    <div class="lead-form__container ">
+        <div class="lead-form__title-wrap">
+            <h2 class="lead-form__title">Haven’t found what you’re looking for?</h2>
+        </div>
+        <div class="lead-form__wrap">
+            <form class="abc-form abc-form--lead">
+                <div class="form-group form-group--no">
+                    <div class="input-group input-group--v2 disabled">
+                        <span class="input-group-addon">+91</span>
+                        <input type="text" name="mobileno" class="form-control form-group__placeholder only-number mobile-no" data-msg-required="This field is required" data-msg-minlength="Please enter a valid Mobile number." placeholder="Enter your mobile number" maxlength="10"
+                        />
+                        <span class="input-group-btn">
+                                    <button class="btn icon-btn btn-sumbit-inpt submit-num" type="button"><span class="icon icon-right-arrow"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group form-group--email hide">
+                    <div class="input-group input-group--v2 disabled">
+                        <input type="text" name="email" class="form-control form-group__placeholder email" placeholder="Enter your email address" />
+                        <span class="input-group-btn">
+                                    <button class="btn icon-btn btn-sumbit-inpt submit-email" type="button"><span class="icon icon-right-arrow"></span></button>
+                        </span>
+                        <input type="hidden" class="email-error" value="Please enter a valid email address. -------" />
+                    </div>
+                </div>
+                <div class="form-group form-group--name hide">
+                    <div class="input-group input-group--v2 disabled">
+                        <input type="text" name="name" class="form-control form-group__placeholder call-name" placeholder="Enter your full name" />
+                        <span class="input-group-btn">
+                                    <button class="btn icon-btn btn-sumbit-inpt submit-lead" type="button"><span class="icon icon-right-arrow"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group form-group--tnc hide">
+                    <div class="form-check typ2">
+                        <span class="terms-content">I agree to the Terms of Usage and Privacy Policy and authorize Aditya Birla Sun Life Insurance Company Limited and its associates to call/SMS/Email/WhatsApp me.</span>
+                        <input class="form-check-input tnc" name="tnc" type="checkbox" />
+                        <label class="form-check-label checkmark capital-checkbox"></label>
+                        <button class="button button-brown wb-protecting-shade-bg disabled act-btn submit-agree" type="button" disabled>Call Me</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="lead-form__thanks-msg hide">
+        <span class="lead-form__icon icon icon-tick"></span>
+        <!-- <div class="lead-form__icon-wrap">
+                    <img src="/images/award1.png" alt="done" title="done" class="lead-form__img">
+                </div> -->
+        <div class="lead-form__info-wrap">
+            <p class="lead-form__statement">
+                <span class="lead-form__statement--lg-text">Thank you for your details.</span> We will reach out to you shortly.
+            </p>
+            <p class="lead-form__statement">
+                <span class="lead-form__statement--lg-text">1800-270-7000</span> or reach out to us on this number.
+            </p>
+        </div>
+    </div>
+</div>
+        <!-- lead form End -->
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+
+    <div class="wb-footer">
+    <div class="container-fluid">
+        <div class="outerpadding">
+            <div class="foot-link-wrap">
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Term Insurance <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Life Shield Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Income Shield Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">(ULIP) Wealth with <br> Protection Plans <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Max Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Secure Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Assure Plus</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Fortune Elite Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Aspire Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Savings with protection <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI SecurePlus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision MoneyBack Plus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision LifeIncome Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Savings Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision LifeSecure Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Income Assured Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision Endowment Plus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Guaranteed Milestone Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI - Jeevan Bachat Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Monthly Income Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Group Insurance <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <h5 class="foot-link-set__sub-title">Protection Solution</h5>
+                            <ul class="foot-link-set__list foot-link-set__list--sub">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Employer Employee</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Non Employer Employee</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Credit Life</a>
+                                </li>
+                            </ul>
+                            <h5 class="foot-link-set__sub-title">Retirement Solution</h5>
+                            <ul class="foot-link-set__list foot-link-set__list--sub">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Gratuity</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Leave Encashment</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">PRMBS</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Superannuation</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Group Anuity</a>
+                                </li>
+                            </ul>
+                            <a href="#" title="dummy title text" class="foot-link-set__link foot-link-set__link--bold">Group Anuity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Retirement Plan <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Empower Pension Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Immediate Annuity Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Empower Pension- SP Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Health Insurance <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Cancer Shield Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI CritiShield Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Hospital Plus Plan</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Wealth Aspire Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Child Plans <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Vision Star Plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Discontinued Plans <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Ultima</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">ABSLI Ultima</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Pay Premium <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Initial</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Renewal</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Loan Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Insurance Calculators <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Human Life Value Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Retirement Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Wealth Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Child Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Health Insurance Calculator</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Tax Savings Calculator</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">About Us <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Who Are We</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Company Profile</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Public Disclosure</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Our Funds <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">NAV Performance</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Fund Portfolio & Benchmark</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Market Outlook</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">How Do I? <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Manage My Policy</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Manage Claims</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Register for One ABD ID</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Download Forms</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">FAQs</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Read Articles</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Contact Us</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Feedback</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Dictionary</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Quick Links <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Download Policy Contract</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Contact Salahkar</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Premium Paid Certificate</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">SI Registration</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Tax Benefits</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Unclaimed Amount</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Riders</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Rural</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">NRI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Public Disclosure <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">RDAI Circular</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">NAV Formula</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">IRDAI Consumer Education</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Environmental Management System</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"> IRDAI Public Notice on Spurious Phone Calls and Fictitious/Fraudulent Offers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-link-wrap__col">
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Tax Planning <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list foot-link-set__list--tax">
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">Choosing term insurance the right way. The most important article that a 25-year</a>
+                                    </div>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">The most important article that a 25-year The most important article that a 25-year</a>
+                                    </div>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">How much should be the adequate budget…</a>
+                                    </div>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <div class="img-link-block">
+                                        <img src="../images/footer-link1.png" alt="" class="img-link-block__img">
+                                        <a href="#" title="dummy title text" class="foot-link-set__link">How is term insurance different from life…</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Governing Bodies <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">IRDAI</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Life Insurance Council</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Ombudsman</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Support <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Pay Now</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Grievance Redressal</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Do Not Call Registry</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Corporate Agent</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Insurance Advisory</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-set">
+                        <h4 class="foot-link-set__title">
+                            <a href="#" class="foot-link-set__title-link">Copyright & Usage <span class="icon icon-arrow"></span></a>
+                        </h4>
+                        <div class="foot-link-set__cont">
+                            <ul class="foot-link-set__list">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Privacy Policy</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Terms of Use</a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-link-socialset">
+                        <h4 class="foot-link-socialset__title">
+                            <a href="#" class="foot-link-set__title-link">Connect with us</a>
+                        </h4>
+                        <div class="foot-link-socialset__cont">
+                            <ul class="foot-link-set__list foot-link-set__list--social">
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-facebook"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-linkedIn"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-twitter"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-instagram"></span></a>
+                                </li>
+                                <li class="foot-link-set__item">
+                                    <a href="#" title="dummy title text" class="foot-link-set__link"><span class="foot-link-set__icon icon icon-youtube"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg-office">
+                <h4 class="reg-office__title">Aditya Birla Sun Life Insurance Company Limited, Registered with Insurance Regulatory & Development Authority of India (IRDAI) as Life Insurance Company.</h4>
+                <h4 class="reg-office__title">Registered Office:</h4>
+                <p class="reg-office__desc">One Indiabulls Centre Tower 1, 16th Floor, Jupiter Mill Compound, 841, Senapati Bapat Marg, Elphinstone Road, Mumbai - 400013. CIN: U99999MH2000PLC128110 Registration No. 109.</p>
+                <p class="reg-office__desc">Trade Logo "Aditya Birla Capital" displayed above is owned by ADITYA BIRLA MANAGEMENT CORPORATION PRIVATE LIMITED (Trademark Owner) and used by ADITYA BIRLA SUN LIFE INSURANCE COMPANY LIMITED (ABSLI) under the license.</p>
+                <p class="reg-office__desc">Aditya Birla Sun Life Insurance Company Limited, Registered with Insurance Regulatory & Development Authority of India (IRDAI) as Life Insurance Company.</p>
+                <p class="reg-office__desc">For more details on risk factors, terms and conditions please read sales brochure carefully before concluding the sale.</p>
+            </div>
+            <div class="aware-block">
+                <h4 class="aware-block__title">BEWARE OF SPURIOUS / FRAUD PHONE CALLS!</h4>
+                <p class="aware-block__desc">IRDAI is not involved in activities like selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom-wrapper brand-dark-grey top-white divider">
+            <div class="container-fluid">
+                <div class="outerpadding">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="upper-div">
+                                <div class="footer-container">
+                                    <div class="footer-container__logo">
+                                        <!-- Footer Logo <start> -->
+                                        <div class="footer-logo">
+                                            <a itemprop="url" href="/">
+                                                <img src="../images/footer-logo.png" alt="Footer Logo" width="217" height="50" disablewebedit="False" />
+                                            </a>
+                                        </div>
+                                        <!-- Footer Logo <end> -->
+                                    </div>
+                                    <div class="footer-container__links">
+                                        <!-- Footer Navigation Col-1 <start> -->
+                                        <div class="lcol">
+                                            <ul>
+                                                <li>
+                                                    <a href="/about-us/our-solutions" target="" title="Our Solutions">Our Solutions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/investor-relations" target="" title="Investor Relations">Investor Relations</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/press-and-media" target="" title="Press and Media">Press and Media</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Footer Navigation Col-1 <end>-->
+                                        <!-- Footer Navigation Col-2 <start> -->
+                                        <div class="lcol">
+                                            <ul>
+                                                <li>
+                                                    <a href="/about-us/our-businesses" target="" title="Our Businesses">Our Businesses</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/about-us/financial-achievements" target="" title="Our Achievements">Our Achievements</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="" title="CSR">CSR</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Footer Navigation Col-2 <end> -->
+                                        <!-- Footer Navigation Col-3 <start> -->
+                                        <div class="lcol footerLinkWrap">
+                                            <ul class="footer-link">
+                                                <li>
+                                                    <a href="" target="" title="Locat Us">Locat Us</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/privacy-policy" target="" title="Privacy Policy">Privacy Policy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/terms-and-conditions" target="" title="Terms and Conditions">Terms and Conditions</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Footer Navigation Col-3 <end> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-div">
+                                <!-- caption <start> -->
+                                <div class="copyright">
+                                    <p class="caption">
+                                        <span>&copy; 2019, Aditya Birla Capital Ltd.</span>
+                                        <span>All Rights Reserved.</span>
+                                    </p>
+                                </div>
+                                <!-- caption <end> -->
+                                <!-- Social Media Links <start> -->
+                                <div class="socialicons">
+                                    <div class="contacttext">
+                                        <p class="caption">Call us toll free:</p>
+                                        <span class="icon-phone icon"></span>
+                                        <p class="caption">
+                                            <a href="tel:18002707000">1800 270 7000</a>
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <span class="icon-facebook icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" target="_blank">
+                                                <span class="icon-instagram icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" target="_blank">
+                                                <span class="icon-linkedIn icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:;" target="_blank">
+                                                <span class="icon-twitter icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" target="_blank">
+                                                <span class="icon-youtube icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Social Media Links <end> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    </div>
+    <input type="hidden" value="10" id="pageSize" />
+    <input type="hidden" value="8" id="totalNoPages" />
+    <input type="hidden" value="8" id="currentPageNo" />
+
+    <!-- TypeKit Example -->
+    <script src="https://use.typekit.net/knq5crg.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f196998ccf303001257b54c&product=
+custom-share-buttons' async='async'></script>
+    <script src="../javascripts/Custompagination.js"></script>
+    <script src="../javascripts/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../javascripts/equalHeight.js"></script>
+
+    
+</body>
+
+</html>

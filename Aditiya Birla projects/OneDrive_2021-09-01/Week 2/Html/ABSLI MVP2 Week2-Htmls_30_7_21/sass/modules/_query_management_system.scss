@@ -1,0 +1,140 @@
+.sm-query_btn{
+
+    button{
+        width: 100%;
+        margin: 20px 0px;
+        padding: 10px 10px;
+    }
+}
+
+.q-row-cntn{
+
+    p{
+        font-weight: 600;
+        text-align: left !important;
+        line-height: 10px;
+        padding-bottom: 10px !important; 
+        display: flex;
+        color: #292929 !important;
+        
+    }
+
+    span{
+        text-align: left;
+        
+        margin-bottom: -10px !important;
+    }
+}
+
+
+.q-card-md{
+    margin: none;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .q-row-cntn{
+
+        p{
+            font-weight: 600;
+            text-align: left !important;
+            line-height: 10px;
+            padding-bottom: 10px !important; 
+            padding-top: 15px !important; 
+            display: flex;
+            color: #292929 !important;
+            
+        }
+    
+        span{
+            text-align: left;
+            
+            margin-bottom: -10px !important;
+        }
+    }
+    
+    
+    .q-card-md{
+        padding-left:28px !important;
+    }
+     
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .q-card-md{
+        padding-left:15px !important;
+    }
+
+    .q-row-cntn{
+
+        p{
+            font-weight: 500;
+            text-align: left !important;
+            line-height: 10px;
+            padding-bottom: 10px !important; 
+            padding-top: 15px !important; 
+            display: flex;
+            color: #292929 !important;
+            
+        }
+    
+        span{
+            text-align: left;
+            
+            margin-bottom: -10px !important;
+        }
+    }
+    
+    
+     
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .q-card-md{
+        padding-left:15px !important;
+    }
+
+
+    .q-row-cntn{
+
+        p{
+            font-weight: 500;
+            text-align: left !important;
+            line-height: 10px;
+            padding-bottom: 10px !important; 
+            padding-top: 15px !important; 
+            display: flex;
+            color: #292929 !important;
+            
+        }
+    
+        span{
+            text-align: left;
+            
+            margin-bottom: -10px !important;
+        }
+    }
+    
+}
+
+
+

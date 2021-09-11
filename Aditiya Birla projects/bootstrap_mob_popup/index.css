@@ -1,0 +1,127 @@
+:root {
+    --support-red: #c7222a;
+    --dark-taupe: #6a4742;
+    --investing: #d4ae69;
+    --dirt-brown: #695934;
+    --financing-shade: #3e593c;
+    --support-yellow: #f7a500;
+    --inactive-grey: #6d7278;
+    --support-red: #8b151b;
+    --white: #fff;
+    --dark-grey: #6c7174;
+    --dirt-brown-two: #7f3a34;
+    --black: #000;
+    --light-grey: #d8d8d8;
+    --white-grey: #f1f3f6;
+    --grey-blue: #617382;
+    --bluey-grey: #8898a5;
+    --black: #000;
+    --white: #fff;
+  }
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color:black;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+.my-container{
+    display: none;
+    min-width: 100%;
+    min-height: 560px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 17.1px;
+    border-top-right-radius: 17.1px;
+
+}
+
+.my-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 135px;
+    min-width: 100%;
+    margin: 0;
+    border-radius: 17.1px;
+    background-color: var(--white-grey);
+
+    
+}
+.my-row{
+    min-width: 80%;
+    margin-left: 48px;
+    margin-right: 51px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 64px;
+
+}
+.img-box{
+    width: 80px;
+    height: 80px;
+    background-color: var(--support-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border-radius: 8.5px;
+}
+
+.img-box1{
+    width: 80px;
+    height: 80px;
+    /* background-color: var(--support-red); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background-color: #dee0e2;
+    border-radius: 8.5px;
+}
+
+
+
+img.logo-navbar {
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.myapp-name{
+    text-align:left;
+    font-family: PFHandbookPro;
+    font-weight: 550;
+
+}
+
+.my-btn{
+    width: 256px;
+    height: 80px;
+    background-color: var(--support-yellow);
+    color: black;
+    border-radius: 8.5px;
+
+}
+
+.my-btn1{
+    width: 256px;
+    height: 80px;
+    background-color: var(--white);
+    color: black;
+    border-radius: 8.5px;
+
+}
+
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+

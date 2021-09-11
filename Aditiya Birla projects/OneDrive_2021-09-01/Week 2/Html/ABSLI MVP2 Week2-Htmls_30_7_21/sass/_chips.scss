@@ -1,0 +1,88 @@
+.chips-tag{
+margin: 0px;
+list-style: none;
+padding: 0px;
+
+ 
+li{
+    color: $white;
+    border:none;
+    padding: 3px 20px;
+    display: inline-grid;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: $capital-red;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: $dark-red;
+    color: $white;
+}
+
+.out-line{
+    background-color: $white !important;
+    border: 1px $capital-red solid !important;
+    color: $capital-red !important;
+}
+
+}
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .chips-tag{
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+        
+       
+li{
+    color: $black;
+    border:1px solid #BBBEC1;
+    padding: 4px 20px;
+    display: inline-grid;
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: $white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+        
+        }
+        
+        
+        
+        
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+}
+
+
+

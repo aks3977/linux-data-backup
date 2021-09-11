@@ -1,0 +1,117 @@
+1) /api/v1/advisor/getPolicyListingByMode
+POST
+Headers
+clientid: "xxxxxx"
+password: "xxxxxx"
+checksum: enc(adid+mode+timestamp)
+timestamp: dd/mm/yyyy hh:mm:ss AM/PM
+
+Request
+{
+  "adid": "550001",
+  "page_no": "1",
+  "mode": "overdue",
+  "interval": "",
+  "filter": {
+    "from_date": "", // from_date and to_date to be used to filter by this month, year and custom date range
+	"to_date" : "",
+	"reinstatement_status": "To initiate, Pending with Customer, In process",
+	"pendency_type": "Payment, COI, Covid Questionnaire, Medical, Others",
+	"waiver_type":"Interest, COI, Medical"
+  },
+  "search": {
+    "search_text": ""
+  },
+  "sort": {
+    "sort_mode": "ASC",
+    "sort_param": "NAME" // name |amount
+  }
+}
+
+
+Response
+{
+	"status": "1",
+	"message": "Records retrieved Successfully",
+	"data":{
+		"total_records": "100",
+		"as_on_date": "dd-MMM-YYYY",
+		"PolicyList":[{
+			"name" : "",
+			"mobile": "",
+			"email": "",
+			"customer_id": "",
+			"policy_id": "",
+			"amount": "",
+			"lapsation_date" : "dd-mmm-yyyy",
+			"is_favourite": true,
+			"customer_category_name":"",
+			"total_amount_with_interest": "",
+			"aging": "xx Days", Logic - (Current Date - Lapsation Date)
+			"reinstatement_status": "Not initiated| Pending with Customer| In Process",
+			"pending_requirements": "Payment| COI| Covid Questionnaire| Medical",
+			"applicable_waiver_type": "Interest| COI| Medical",
+			"waiver_end_date": "DD-MMM-YY",
+			"other_requirements_raised": "", // to be picked from Ingenium - could be multiple paragraph lines
+			"trigger_left": 4
+			},
+			{
+			"name" : "",
+			"mobile": "",
+			"email": "",
+			"customer_id": "",
+			"policy_id": "",
+			"amount": "",
+			"lapsation_date" : "dd-mmm-yyyy",
+			"is_favourite": false,
+			"customer_category_name":"",
+			"total_amount_with_interest": "",
+			"aging": "xx Days", Logic - (Current Date - Lapsation Date)
+			"reinstatement_status": "Not initiated| Pending with Customer| In Process",
+			"pending_requirements": "Payment| COI| Covid Questionnaire| Medical",
+			"applicable_waiver_type": "Interest| COI| Medical",
+			"waiver_end_date": "DD-MMM-YY",
+			"other_requirements_raised": "", // to be picked from Ingenium - could be multiple paragraph lines
+			"trigger_left": 4
+			}
+		]
+	}
+}
+
+2) /api/v1/advisor/getPolicyRevivalDetails
+POST
+Headers
+clientid: "xxxxxx"
+password: "xxxxxx"
+checksum: enc(adid+policy_id+timestamp)
+timestamp: dd/mm/yyyy hh:mm:ss AM/PM
+
+Request
+{
+  "policy_id": "001234567"
+}
+
+Response
+{
+	"status": "1",
+	"message": "Record retrieved Successfully",
+	"data":{
+			"name" : "",
+			"mobile": "",
+			"email": "",
+			"customer_id": "",
+			"policy_id": "",
+			"amount": "",
+			"lapsation_date" : "dd-mmm-yyyy",
+			"is_favourite": true,
+			"customer_category_name":"",
+			"total_amount_with_interest": "",
+			"aging": "xx Days", Logic - (Current Date - Lapsation Date)
+			"reinstatement_status": "Not initiated| Pending with Customer| In Process",
+			"pending_requirements": "Payment| COI| Covid Questionnaire| Medical",
+			"applicable_waiver_type": "Interest| COI| Medical",
+			"waiver_end_date": "DD-MMM-YY",
+			"other_requirements_raised": "", // to be picked from Ingenium - could be multiple paragraph lines
+			"trigger_left": 4
+			}
+}

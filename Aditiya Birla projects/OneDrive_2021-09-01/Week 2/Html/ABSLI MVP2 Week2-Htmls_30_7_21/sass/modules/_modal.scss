@@ -1,0 +1,609 @@
+.modal-content {        
+    border-radius:5px !important;
+}
+.modal-close-button{
+    background: $black !important;
+    color: $white !important;
+    padding: 7px 13px !important;
+}
+
+.modal-dialog-terms-conditions {
+    max-width: 800px;
+    margin: 1.75rem auto;
+}
+
+.terms-text-div{
+    width: 100%;
+    height: 550px;
+    overflow-y: scroll;
+    padding: 12px 12px; 
+}
+
+// .modal-dialog-terms-conditions{
+
+//     .modal-content{
+//         .modal-body{
+//             min-height: 500px;
+//         }
+//     }
+// }
+
+.modal-body {
+  .modal-body-para {
+    color: $dark-grey;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  ol {
+    padding: 16px 12px;
+    li {
+      color: $dark-grey;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+}
+
+
+
+// Regular Modal
+
+.modal-regular{
+
+    .modal-header{
+
+        h5{
+            font-size: 25px;
+            color:$black;
+        }
+    }
+
+    .modal-body{
+        padding: 25px;
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .modal-footer{
+        button{
+            padding: 5px 20px;
+            height: 40px;
+            // border: 1px;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+    .modal-regular{
+
+        .modal-header{
+    
+            h5{
+                font-size: 18px;
+                color:$black;
+            }
+
+            img{
+                height: 22px;
+            }
+        }
+    
+        .modal-body{
+            padding: 25px;
+    
+            p{
+                font-size: 18px;
+            }
+        }
+    
+        .modal-footer{
+            button{
+                padding: 5px 12px;
+                height: 40px;
+                font-size: 16px;
+                // border: 1px;
+            }
+        }
+        
+    }
+
+    
+}
+
+
+
+
+
+
+
+// .modal.bottom
+// {
+
+//         .modal-dialog {
+//             -webkit-transform: translate3d(0%, 0, 0);
+//             -ms-transform: translate3d(0%, 0, 0);
+//             -o-transform: translate3d(0%, 0, 0);
+//             transform: translate3d(0%, 0, 0);
+//         }
+
+//         .modal-content {
+//             height: auto;
+//             overflow-y: auto;
+//           }
+       
+//           .modal-body {
+//             padding: 15px 15px;
+//           }
+
+//   }
+
+
+
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog,
+.modal.top .modal-dialog,
+.modal.bottom .modal-dialog {
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+/* Left & Right */
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 500px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+.modal.left.fade .modal-dialog {
+  left: -500px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.show .modal-dialog {
+  left: 0;
+}
+
+.modal.right.fade .modal-dialog {
+  right: -500px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+  right: 0;
+}
+
+.modal-dialog {
+  &.width-600 {
+    max-width: 600px;
+  }
+  &.width-800 {
+    max-width: 800px;
+  }
+}
+
+.modal-body {
+  &.padding-1y-2x{
+    padding: 1rem 2rem;
+    padding-top: 0px;
+  }
+  &.padding-yequal{
+    padding: 0 2rem 2rem;
+    h3 {
+      font-size: 28px;
+      font-family: "pf_handbook_probold";
+    }
+  }
+  .content-wrapper-bggrey{
+    background: $l-grey;
+    padding: 16px;
+    .details-wrapper{
+      margin-bottom: 12px;
+      .label{
+        font-size: 13px;
+      }
+      .details{
+        line-height: 1.1;
+        font-size: 15px;
+      }
+    }
+    .info-item {
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border: 1px solid $dark-grey;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }  
+  }
+  .content-wrapper{
+    padding: 8px 0;
+    border: 1px solid $l-grey;
+    border-radius: 5px;
+    .details-table{
+      margin: 0 8px;
+      .details-header{
+        text-transform: uppercase;
+        padding: 8px 16px;
+        border-bottom: 1px solid $light-grey4;
+      }
+      .details-row{
+        padding: 12px 16px;
+        border-bottom: 1px solid $light-grey4;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      .details-header-flex {
+        display: flex;
+        padding: 8px 16px;
+        text-transform: uppercase;        
+        border-bottom: 1px solid $light-grey4;
+        .w30 {
+          width: 30%;
+        }
+        .w40 {
+          width: 40%;
+        }
+        .w60 {
+          width: 60%;
+        }
+      }
+      .details-row-flex {
+        display: flex;
+        padding: 8px 16px;
+        border-bottom: 1px solid $light-grey4;
+        &:last-child {
+          border-bottom: none;
+        }
+        .w30 {
+          width: 30%;
+        }
+        .w40 {
+          width: 40%;
+        }
+        .w60 {
+          width: 60%;
+        }        
+      }
+    }
+  }
+}
+
+
+.modal.bottom .modal-content
+ {
+
+  border-radius: 0 !important;
+  border: none;
+  padding: 10px;
+  border-radius: 8px 8px 0px 0px !important;
+
+  .modal-title{
+    font-weight: 600;
+    display: inline;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  .modal-header{
+      border: none;
+      padding-bottom: 0px;
+    }
+
+  .modal-body{
+    padding: 0px;
+    text-align: center;
+    padding: 20px 15px;
+    padding-top: 0px; 
+
+    p{
+        text-align: left;
+        color: #8d9092;
+        margin-bottom: 30px;
+    }
+
+    button{
+        min-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .btn-txt{
+        color: #c7222a;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        background: none;
+    }
+
+  }
+  
+}
+
+
+
+
+
+.modal.bottom_success .modal-content
+    {
+  border-radius: 0 !important;
+  border: none;
+  padding: 10px;
+  border-radius: 8px 8px 0px 0px !important;
+
+  img{
+    margin: 20px 0px;
+  }
+
+  .modal-title{
+    text-align: center;
+    width: 100%;
+  }
+
+  .modal-header{
+      border: none;
+      padding-bottom: 0px;
+      text-align: center;
+    }
+
+  .modal-body{
+    padding: 0px;
+    text-align: center;
+    padding: 20px 15px;
+    padding-top: 0px; 
+
+    p{
+        text-align: left;
+        color: #8d9092;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    button{
+        min-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .btn-txt{
+        color: #c7222a;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        background: none;
+    }
+
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal.left .modal-dialog.modal-sm,
+.modal.right .modal-dialog.modal-sm {
+  width: 300px;
+}
+
+.modal.left .modal-dialog.modal-lg,
+.modal.right .modal-dialog.modal-lg {
+  width: 800px;
+}
+
+.modal.left .modal-dialog.modal-xl,
+.modal.right .modal-dialog.modal-xl {
+  width: 1140px;
+}
+
+/* Top and Bottom */
+
+.modal.top .modal-dialog,
+.modal.bottom .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.modal.top .modal-content,
+.modal.bottom .modal-content {
+  height: auto;
+  overflow-y: auto;
+}
+
+.modal.top .modal-body,
+.modal.bottom .modal-body {
+  padding: 15px 15px;
+}
+
+/* Top */
+
+.modal.top.fade .modal-dialog {
+  top: -100%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+  transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.top.fade.show .modal-dialog {
+  top: 0;
+}
+
+/* Bottom */
+
+.modal.bottom.fade .modal-dialog {
+  bottom: -100%;
+  -webkit-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+  transition: opacity 0.3s linear, bottom 0.3s ease-out;
+}
+
+.modal.bottom.fade.show .modal-dialog {
+  bottom: 0;
+}
+
+.modal.bottom.fade .modal-dialog {
+  bottom: -100%;
+}
+
+/* Full Screen */
+
+.modal.full .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.modal.full .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.full .close-modal {
+  position: fixed;
+  top: 0;
+  right: 3rem;
+}
+
+/* Footer */
+
+.modal-footer-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+}
+
+/* XS */
+
+.modal.left.xs .modal-body,
+.modal.right.xs .modal-body {
+  padding: 15px;
+}
+
+/* Full screen modal menu indicators */
+
+a.has-sub:after { font-family: "FontAwesome"; }
+a.has-sub:after { content: "\f107"; margin-left: 1rem; }
+a.has-sub[aria-expanded="true"]:after { content: "\f106"; }
+
+
+
+// -----------
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .modal-body {
+    .content-wrapper{      
+      .details-table{        
+        .details-header-flex {
+          .mobw50 {
+            width: 50%;
+          }
+          .mobw100 {
+            width: 100%;
+          }
+        }
+        .details-row-flex {
+          .mobw50 {
+            width: 50%;
+          }
+          .mobw100 {
+            width: 100%;
+          }        
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
+    
+     
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ 
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    
+}

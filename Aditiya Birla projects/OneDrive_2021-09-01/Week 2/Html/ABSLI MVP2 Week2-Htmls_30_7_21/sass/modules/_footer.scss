@@ -1,0 +1,161 @@
+.footer-container {
+    background-color: #6C7174;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .footer-brand {
+        position: relative;
+        background: #201e19;
+        padding: 0 50px;
+        margin: 0px;
+        font-family: "pf_encore_sans_proregular";
+        p {
+            color: #7f7e7f;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        .highlight {
+            color: #a1a2a2;
+        }
+        .impl {
+            position: absolute;
+            right: 50px;
+            top: 6px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            background: url('../../../assets/icons/imp_link.svg') no-repeat 0px center;
+            padding-left: 20px;
+            font-family: 'pf_handbook_proregular';
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            padding: 0 25px 10px;
+            p {
+                font-size: 14px;
+            }
+            .impl {
+                position: static;
+                font-size: 16px;
+            }
+        }
+    }
+    .container {
+        padding: 0;
+        .upper-div {
+            width: 100%;
+            border-bottom: 1px solid #CDCECE;
+            padding: 40px 0;
+            display: flex;
+            .logo {
+                img {
+                    width: 130px;
+                    height: 30px;
+                }
+            }
+            .lcol {
+                margin-left: 64px;
+                display: inline-flex;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        line-height: 36px;
+                        a {
+                            font-family: 'pf_encore_sans_proregular';
+                            font-size: 16px;
+                            color: #fff;
+                            text-decoration: none;
+                            &:visited {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .smcopyright {
+                padding: 0px 0 0 20px;
+                display:none;
+            }
+        }
+        .caption {
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'pf_encore_sans_proregular';
+            margin: 0;
+            .phone-link{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        .contacttext {
+            color: #fff;
+            display: flex;
+            .iconspan {
+                font-size: 22px;
+                margin: 0 8px;
+            }
+        }
+        .lower-div {
+            display: flex;
+            width: 100%;
+            padding: 32px 0;
+            justify-content: space-between;
+            .copyright {
+                display: inline-flex;
+            }
+            .socialicons {
+                display: inline-flex;
+            }
+            ul {
+                display: inline-flex;
+                margin: 0;
+                padding: 0;
+                li {
+                    padding: 0 8px;
+                    list-style: none;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        &:visited {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                    .abcicons {
+                        font-size: 22px;
+                        color: #fff;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        .container {
+            .upper-div {
+                flex-direction: column;
+                border: none;
+                padding: 20px;
+                .footer-menu-section {
+                    display: none;
+                }
+                .smcopyright {
+                    display: inline-flex;
+                    padding: 20px 0 0;
+                    flex-direction: column;
+                    .contacttext {
+                        padding-top: 10px;
+                    }
+                }
+            }
+            .lower-div {
+                display: none;
+            }
+        }
+    }
+}

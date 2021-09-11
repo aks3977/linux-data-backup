@@ -1,0 +1,29 @@
+@mixin getTransistion ($tranValue...) {
+    -ms-transition: $tranValue;
+    -o-transition: $tranValue;
+    -moz-transition: $tranValue;
+    -webkit-transition: $tranValue;  
+    transition: $tranValue;
+}
+
+@mixin getTransform($transformValue...) {
+    -webkit-transform: $transformValue;
+    -moz-transform: $transformValue;
+    -o-transform: $transformValue;
+    -ms-transform: $transformValue;
+    transform: $transformValue;
+}
+
+@mixin boxShadow($shadowValue...) {
+    -ms-box-shadow: $shadowValue;
+    -moz-box-shadow: $shadowValue;
+    -webkit-box-shadow: $shadowValue;
+    box-shadow: $shadowValue;
+    border-collapse: separate;
+}
+
+@mixin card_base {
+    background-color: $white;
+    padding: 22px;
+    border:1px #e1e2e2 solid;
+  }

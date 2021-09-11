@@ -1,0 +1,2376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Customer Details</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/custom/index.css">
+<style>
+	.arrow-up{
+        height: 11px!important;
+        width: 11px!important;
+        background: transparent url('../../img/icons/a-arrow-up.svg') 50% 50% no-repeat padding-box;
+        display: block;
+        background-size: 11px!important;
+		margin-top: 2px!important;
+    }
+    .arrow-down{
+        height: 11px!important;
+        width: 11px!important;
+        background: transparent url('../../img/icons/a-arrow-down-red.svg') 50% 50% no-repeat padding-box;
+        display: none;
+        background-size: 11px!important;  
+		margin-top: 2px!important;
+    }
+	.btn-text-closed{
+        display: none;
+        padding-right: 8px!important;
+        color: $capital-red;
+    }
+    .btn-text-open{
+        display: block;
+        padding-right: 10px!important;
+    }
+	</style>
+  </head>
+  <body>
+
+    <header>
+      <div class="sample-header">
+              
+      </div>
+    </header>
+    
+
+    <main class="bg-white " role="main">
+      <div class="breadcrubs-div shadow-sm mobile-exclude">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12">
+            <ul>
+              <li>Dashboard</li><li><img src="./assets/img/icons/breadcrumbs-arrow.png"></li><li>Customer List</li><li><img src="./assets/img/icons/breadcrumbs-arrow.png"></li><li class="active-li">All Customer</li>
+            </ul>
+           </div>
+         </div>
+       </div>
+      </div>
+
+
+    <div class="container">
+
+
+       <!-- Heading Starts  -->
+       <div class="row"> 
+        <div class="col page-header-wrapper">
+          <h1 class="p-header"><img src="./assets/img/icons/back-arrow.svg">Customer Details</h1>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6 box-saperation">
+          <div class="custmr-card shadow-normal">
+            <div class="row">
+              <div class="col-lg-2 col-md-2">
+                <div class="name_circle_large color-2">
+                  <p>A</p>
+                </div>
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <div class="name-details">
+                  <div class="category-div">
+                    <p class="float-right"><img src="./assets/img/icons/yellow-star-filled.svg"></p>
+                  </div>
+                  <div class="category-text">
+                    <p class="float-right">Category Name</p>
+                  </div>
+                  <label>John Fernando</label>
+                  <p class="d-flex align-items-center"><img src="./assets/img/icons/phone-call.svg">9876543213</p>
+                  <p class="pad-btnm d-flex align-items-center"><img src="./assets/img/icons/mail.svg">sangeetha@adityabirlacapital.com</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+        <div class="row">
+          <div class="col-6">
+            <div class="card-div-lrge shadow-normal m-left-0">
+              <p>Total Active Policies</p>
+              <h2>02</h2>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-div-lrge shadow-normal m-left-0">
+              <p>Premium Due</p>
+              <h2>01</h2>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+
+      <div class="tabs-div"></div>
+
+      <div class="tabs-div">
+        
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="sidebar">
+            <ul class="nav nav-tabs h-scroll-s " id="myTab" role="tablist">
+              <li class="nav-item w-50-p" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+              </li>
+              <li class="nav-item w-50-p" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#policy_details" role="tab" aria-controls="policy_details" aria-selected="false">Policy Details</a>
+              </li>              
+
+              <li class="nav-item w-50-p" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#reccomendation" role="tab" aria-controls="reccomendation" aria-selected="false">Recommendations</a>
+              </li>
+              
+              <li class="nav-item w-50-p" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#policy_statements" role="tab" aria-controls="policy_statements" aria-selected="false">Policy Statements</a>
+              </li>
+              <li class="nav-item w-50-p" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#earnings" role="tab" aria-controls="earnings" aria-selected="false">Earnings</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12 pad-0">
+            <div class="tab-content" id="myTabContent">
+              <!-- All Content Starts Here -->
+              <div class="tab-pane fade show active " id="overview" role="tabpanel" aria-labelledby="1">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="actions-wrapper">
+                      <div class="secondary-tab-menu">
+                        <ul class="nav secondary-nav-tabs h-scroll-s " id="mySecondaryTab" role="tablist">
+                          <li class="nav-item w-50-p" role="presentation">
+                            <a class="nav-link active" id="action-required-tab" data-toggle="tab" href="#action_required" role="tab" aria-controls="action_required" aria-selected="true">Action Required</a>
+                          </li>
+                          <li class="nav-item w-50-p" role="presentation">
+                            <a class="nav-link" id="personal-details-tab" data-toggle="tab" href="#personal_details" role="tab" aria-controls="personal_details" aria-selected="false">Personal Details</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="as-on-date-wrapper">
+                        <span>As on Date</span>
+                        <span>18-dec-2020</span>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active " id="action_required" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12 pad-0">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <div class="accordion-header-wrapper mt-0" data-toggle="collapse" href="#flush-collapseOne" role="button" aria-expanded="false" aria-controls="flush-collapseOne">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                Payments<span class="count-wrapper">2</span>
+                              </h2>
+                              <i class="arrow-up"></i>
+                              <i class="arrow-down"></i>
+                            </div>              
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show accordion-content">
+                              <div class="accordion-body">
+                                <div class="as-on-date-wrapper pb-2 mobile-only">
+                                  <span>As on Date</span>
+                                  <span>18-dec-2020</span>
+                                </div>
+                                <div class="row">                                                            
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">Premium Due</h4>
+                                        <div class="scard-subheader-text">Overdue</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/n_premum_due.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          Payment Failed
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Payment Link</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                  </div>                                                                                              
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header-wrapper collapsed" data-toggle="collapse" href="#flush-collapseTwo" role="button" aria-expanded="false" aria-controls="flush-collapseOne">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                Wishes<span class="count-wrapper">1</span>
+                              </h2>
+                              <i class="arrow-up"></i>
+                              <i class="arrow-down"></i>
+                            </div>              
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse accordion-content">
+                              <div class="accordion-body">
+                                <div class="as-on-date-wrapper pb-2 mobile-only">
+                                  <span>As on Date</span>
+                                  <span>18-dec-2020</span>
+                                </div>    
+                                <div class="row">
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">Birthday</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/gift.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">John Fernando</div>
+                                          <div class="sub-text">Relation | 27-dec-1990</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>                                                                                                                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header-wrapper collapsed" data-toggle="collapse" href="#flush-collapseThree" role="button" aria-expanded="false" aria-controls="flush-collapseThree">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                Policy Status<span class="count-wrapper">9</span>
+                              </h2>
+                              <i class="arrow-up"></i>
+                              <i class="arrow-down"></i>
+                            </div>              
+                            <div id="flush-collapseThree" class="accordion-collapse collapse accordion-content">
+                              <div class="accordion-body">
+                                <div class="as-on-date-wrapper pb-2 mobile-only">
+                                  <span>As on Date</span>
+                                  <span>18-dec-2020</span>
+                                </div>    
+                                <div class="row">
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">To Be Terminated</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/policy-id-new.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Reminder</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">Payouts Released</h4>
+                                        <div class="scard-subheader-text">Success</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/payout.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | Type | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Congratulations</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">Payouts To Be Released</h4>
+                                        <div class="scard-subheader-text"></div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/payout.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | Type</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Congratulations</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">Policy Matured</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/Payment-renewal.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">To Be Matured</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/Payment-renewal.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">To Be Matured</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/Payment-renewal.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">To Be Matured</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/Payment-renewal.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">To Be Matured</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/Payment-renewal.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                  <div class="col-lg-4 col-md-6">
+                                    <div class="smart-card2 shadow-normal">                                      
+                                      <div class="scard-header">
+                                        <h4 class="scard-header-text">To Be Matured</h4>
+                                        <div class="scard-subheader-text">Today</div>
+                                      </div>
+                                      <div class="scard-body">
+                                        <div class="scard-body-image">
+                                          <img src="./assets/img/icons/Payment-renewal.svg">
+                                        </div>
+                                        <div class="scard-body-text-wrapper">
+                                          <div class="main-text">Policy ID</div>
+                                          <div class="sub-text">27-dec-2020 | ₹ 1,00,000</div>
+                                        </div>
+                                      </div>                                      
+                                      <div class="scard-footer">
+                                        <div class="scard-footer-text">
+                                          
+                                        </div>
+                                        <div class="scard-footer-cta">
+                                          <button class="btn btn-outline-s py-1">Send Wishes</button>
+                                        </div>
+                                      </div>                                      
+                                    </div>                                    
+                                  </div>
+                                </div>
+                                <div class="text-center">
+                                  <button type="button" class="btn btn-primary">See More</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="personal_details" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="personal-de-card shadow-normal">
+                          <div class="row">
+                            <div class="col-lg-6">              
+                              <div class="value-div">
+                                <div class="row">
+                                  <div class="col-3">
+                                    <div class="name-c1 color-3">
+                                      <p>A</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-9 name-c2">
+                                    <p>Albert John<br><label>Client ID:123456</label></p>
+                                  </div>
+                                </div>              
+                              </div>              
+                              <div class="value-div">                                
+                                <div class="row">                                  
+                                  <div class="col-lg-6 col-md-3 value">
+                                    <p><label>CKYC No</label> <br>1234 3445 3322</p>
+                                  </div>              
+                                  <div class="col-lg-6 col-md-3 value">
+                                    <p><label>PAN Number</label> <br>AKNBH1546E</p>
+                                  </div>                                                                    
+                                </div>              
+                              </div>
+                            </div>                            
+                            <div class="col-lg-6">              
+                              <div class="grey-box">                                
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <p>Address</p>
+                                  </div>
+                                  <div class="col-lg-12 value">
+                                    <label>Communication Address:</label>
+                                    <p>Address Line 1 goes here, Address Line 2 goes here</p>
+                                  </div>
+                                  <div class="col-lg-12 value">
+                                    <label>Permanent Address:</label>
+                                    <p>Address Line 1 goes here, Address Line 2 goes here</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div><!-- Today Content Ends Here -->
+
+              <!-- Active Content Starts Here -------------------------------------------------------------------------------- -->
+              <div class="tab-pane fade" id="policy_details" role="tabpanel" aria-labelledby="next-week">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="actions-wrapper">
+                      <div class="secondary-tab-menu">
+                        <ul class="nav secondary-nav-tabs h-scroll-s " id="mySecondaryTab" role="tablist">
+                          <li class="nav-item w-50-p" role="presentation">
+                            <a class="nav-link active" id="policy-owned-c-tab" data-toggle="tab" href="#policy_owned_c" role="tab" aria-controls="policy_owned_c" aria-selected="true">Policies Owned by Customer</a>
+                          </li>
+                          <li class="nav-item w-50-p" role="presentation">
+                            <a class="nav-link" id="policy-owned-f-tab" data-toggle="tab" href="#policy_owned_f" role="tab" aria-controls="policy_owned_f" aria-selected="false">Policies Owned by Family</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="as-on-date-wrapper">
+                        <span>As on Date</span>
+                        <span>18-dec-2020</span>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="as-on-date-wrapper mobile-only pb-2">
+                  <span>As on Date</span>
+                  <span>18-dec-2020</span>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="policy_owned_c" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12">                        
+                        <div class="policy-grid-customer">
+                          <div class="policy-grid-header d-none d-lg-block d-sm-none">
+                            <div class="header-row">
+                              <div class="details-header">
+                                <div class="col-header-spanmd">
+                                  <h3>CUSTOMER NAME</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>PLAN NAME</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>AMOUNT</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>POLICY STATUS</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>DATE</h3>
+                                </div>
+                              </div>
+                              <div class="cta-header">
+                                <div class="col-header-spansm">
+                                  <h3 class="text-center">ACTIONS</h3>
+                                </div>
+                              </div>                              
+                            </div>
+                          </div>                
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample1">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>        
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample2">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample3">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample4">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample5">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="g-footer text-center top-padding py-3">
+                            <button type="button" class="btn btn-primary">See More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="policy_owned_f" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="policy-grid-customer">
+                          <div class="policy-grid-header d-none d-lg-block d-sm-none">
+                            <div class="header-row">
+                              <div class="details-header">
+                                <div class="col-header-spanmd">
+                                  <h3>CUSTOMER NAME</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>PLAN NAME</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>AMOUNT</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>POLICY STATUS</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>DATE</h3>
+                                </div>
+                              </div>
+                              <div class="cta-header">
+                                <div class="col-header-spansm">
+                                  <h3 class="text-center">ACTIONS</h3>
+                                </div>
+                              </div>                              
+                            </div>
+                          </div>                
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample1">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Customer Name<br><span>John</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Relation<br><span>Father</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>
+                                        <li>Remove Family Tag</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample2">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Customer Name<br><span>John</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Relation<br><span>Father</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>
+                                        <li>Remove Family Tag</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample3">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Customer Name<br><span>John</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Relation<br><span>Father</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>
+                                        <li>Remove Family Tag</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample4">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Customer Name<br><span>John</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Relation<br><span>Father</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>
+                                        <li>Remove Family Tag</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Customer Name</div>
+                                  <div class="mobile-black-text">Vijay Singa</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text long-text">Sample text for plan naaaaaaaaaaaaaaaaaaame</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Amount</div>
+                                  <div class="mobile-black-text">₹ 1,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Paid up</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Date</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample5">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy ID<br><span>123456798</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Customer Name<br><span>John</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Relation<br><span>Father</span></p>          
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Product Type<br><span>Term</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Issuance Date<br><span>28-dec-2020</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Premium Payment Term<br><span>5</span></p>          
+                                    </div>                                                                    
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Policy Term<br><span>2</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Auto Pay Status<br><span>No</span></p>          
+                                    </div>        
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <p>Total Sum Assured<br><span>₹ 28,22,222</span></p>          
+                                    </div>                                            
+                                  </div>                                  
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <ul class="chips-tag">
+                                        <li>Go to Policy Details</li>
+                                        <li>Remove Family Tag</li>                                        
+                                      </ul>
+                                    </div>
+                                  </div>                                          
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="text-center py-3">
+                            <button type="button" class="btn btn-primary btn-primary-s">See More</button>
+                            <button type="button" class="btn btn-primary btn-primary-s">Add Family</button>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- Active Week Content Ends Here -->
+              <!-- Fav Content Starts Here ------------------------------------------------------------------------------------------------>
+              <div class="tab-pane fade" id="reccomendation" role="tabpanel" aria-labelledby="later">
+                <div class="row mt-4"> 
+                  
+                  
+                  <div class="col-lg-4 col-md-6">
+                    <div class="smart-card2 shadow-normal">                                      
+                      <div class="scard-header">
+                        <h4 class="scard-header-text">Pre-Approved Offers</h4>
+                        <div class="scard-subheader-text">Term</div>
+                      </div>
+                      <div class="scard-body">
+                        <div class="scard-body-image">
+                          <img src="./assets/img/icons/n_pre-approved-offer.svg">
+                        </div>
+                        <div class="scard-body-text-wrapper">
+                          <div class="main-text">₹ 2,22,222</div>
+                          <div class="sub-text">Recommended Products: 'Product Name'</div>
+                        </div>
+                      </div>                                      
+                      <div class="scard-footer">
+                        <div class="scard-footer-text">                          
+                        </div>
+                        <div class="scard-footer-cta">
+                          <button class="btn btn-outline-s py-1">Know More</button>
+                        </div>
+                      </div>                                      
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="smart-card2 shadow-normal">                                      
+                      <div class="scard-header">
+                        <h4 class="scard-header-text">Pre-Approved Offers</h4>
+                        <div class="scard-subheader-text">Non-Term</div>
+                      </div>
+                      <div class="scard-body">
+                        <div class="scard-body-image">
+                          <img src="./assets/img/icons/n_pre-approved-offer.svg">
+                        </div>
+                        <div class="scard-body-text-wrapper">
+                          <div class="main-text">₹ 2,22,222</div>
+                          <div class="sub-text">Recommended Products: 'Product Name'</div>
+                        </div>
+                      </div>                                      
+                      <div class="scard-footer">
+                        <div class="scard-footer-text">
+                        </div>
+                        <div class="scard-footer-cta">
+                          <button class="btn btn-outline-s py-1">Know More</button>
+                        </div>
+                      </div>                                      
+                    </div>
+                  </div>
+
+
+                </div>                
+              </div><!-- Fav Content Ends Here -->
+              <!-- Fav Content Starts Here ------------------------------------------------------------------------------------------------>
+              <div class="tab-pane fade" id="policy_statements" role="tabpanel" aria-labelledby="later">
+                <div class="policy-statement-box">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6 pad-m-x">
+                      <div class="state-box shadow-normal">
+                        <div class="row r1">
+                          <div class="col-lg-12 text-center">
+                            <img src="./assets/img/icons/Taxcertificate.7a8c7f5a.svg">
+                          </div>
+                        </div>
+                        <div class="row r2">
+                          <div class="col-lg-12 text-center">
+                            <h3>Tax Certificate</h3>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6 pad-m-x">
+                      <div class="state-box shadow-normal">
+                        <div class="row r1">
+                          <div class="col-lg-12 text-center">
+                            <img src="./assets/img/icons/n_policy_account_statements.svg">
+                          </div>
+                        </div>
+                        <div class="row r2">
+                          <div class="col-lg-12 text-center">
+                            <h3>Policy Account Statements</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6 pad-m-x">
+                      <div class="state-box shadow-normal">
+                        <div class="row r1">
+                          <div class="col-lg-12 text-center">
+                            <img src="./assets/img/icons/n_certificate.svg">
+                          </div>
+                        </div>
+                        <div class="row r2">
+                          <div class="col-lg-12 text-center">
+                            <h3>Premium Due Certificate</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6 pad-m-x">
+                      <div class="state-box shadow-normal">
+                        <div class="row r1">
+                          <div class="col-lg-12 text-center">
+                            <img src="./assets/img/icons/SalesIllustration.a5aea37b.svg">
+                          </div>
+                        </div>
+                        <div class="row r2">
+                          <div class="col-lg-12 text-center">
+                            <h3>Sales Illustration</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6 pad-m-x">                      
+                      <a href="#" data-toggle="modal" data-target="#premium-payment-receipt-modal">
+                        <div class="state-box shadow-normal">
+                          <div class="row r1">
+                            <div class="col-lg-12 text-center">
+                              <img src="./assets/img/icons/Policycontract.cd4edbe4.svg">
+                            </div>
+                          </div>
+                          <div class="row r2">
+                            <div class="col-lg-12 text-center">
+                              <h3>Premium Payment Receipt</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </a>                      
+                    </div>                    
+                  </div>
+                </div>
+              </div><!-- Fav Content Ends Here -->
+              <!-- Active Content Starts Here -------------------------------------------------------------------------------- -->
+              <div class="tab-pane fade" id="earnings" role="tabpanel" aria-labelledby="next-week">                
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="transaction_history" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <!-- <div class="row pb-4">
+                          <div class="col col-lg-2 pr-0 py-1">
+                            <div>From Date</div>
+                            <input class="height-10 padimp-0 date_text_box" type="date">
+                          </div>
+                          <div class="col col-lg-2 height-10 py-1">
+                            <div>To Date</div>                            
+                            <input class="height-10 padimp-0 date_text_box" type="date">
+                          </div>
+                        </div> -->
+                        <div class="policy-grid-customer mt-4">
+                          
+                          <div class="policy-grid-header d-none d-lg-block d-sm-none py-2">
+                            <div class="header-row">
+                              <div class="details-header">
+                                <div class="col-header-spanlg">
+                                  <h3>Policy Id</h3>
+                                </div>
+                                <div class="col-header-spanlg">
+                                  <h3>Plan Name</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>Policy Status</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>Total Commission Earned</h3>
+                                </div>
+                              </div>
+                              <div class="cta-header">
+                                <div class="col-header-spansm">                                  
+                                </div>
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Id</div>
+                                  <div class="mobile-black-text">123456</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text">Lorem ipsum is placeholder</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Active</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Commission Earned</div>
+                                  <div class="mobile-black-text">₹ XX,XXX</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+								<button type="button" class="btn btn-outline-s" data-toggle="modal" >View Details</button>                                
+                                  
+                                </button>                                
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Id</div>
+                                  <div class="mobile-black-text">123456</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text">Lorem ipsum is placeholder</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Active</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Commission Earned</div>
+                                  <div class="mobile-black-text">₹ XX,XXX</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+								<button type="button" class="btn btn-outline-s" data-toggle="modal" >View Details</button>                                
+                                  
+                                </button>                                
+                              </div>                              
+                            </div>
+                          </div>
+						  <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Id</div>
+                                  <div class="mobile-black-text">123456</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text">Lorem ipsum is placeholder</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Active</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Commission Earned</div>
+                                  <div class="mobile-black-text">₹ XX,XXX</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+								<button type="button" class="btn btn-outline-s" data-toggle="modal" >View Details</button>                                
+                                  
+                                </button>                                
+                              </div>                              
+                            </div>
+                          </div>
+						  <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Id</div>
+                                  <div class="mobile-black-text">123456</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text">Lorem ipsum is placeholder</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Active</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Commission Earned</div>
+                                  <div class="mobile-black-text">₹ XX,XXX</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+								<button type="button" class="btn btn-outline-s" data-toggle="modal" >View Details</button>                                
+                                  
+                                </button>                                
+                              </div>                              
+                            </div>
+                          </div>
+						  <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Policy Id</div>
+                                  <div class="mobile-black-text">123456</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Plan Name</div>
+                                  <div class="mobile-black-text">Lorem ipsum is placeholder</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Policy Status</div>
+                                  <div class="mobile-black-text">Active</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Commission Earned</div>
+                                  <div class="mobile-black-text">₹ XX,XXX</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+								<button type="button" class="btn btn-outline-s" data-toggle="modal" >View Details</button>                                
+                                  
+                                </button>                                
+                              </div>                              
+                            </div>
+                          </div>
+                            
+                          <div class="policy-grid-row brdr-none">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="text-center"><img src="./assets/img/icons/n_loading.svg"></p>
+                              </div>
+                            </div>                            
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="unit_allocation" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="policy-grid-customer">
+                          <div class="policy-grid-header d-none d-lg-block d-sm-none">
+                            <div class="header-row">
+                              <div class="details-header">
+                                <div class="col-header-spanlg">
+                                  <h3>DATE OF TRANSACTION</h3>
+                                </div>
+                                <div class="col-header-spanlg">
+                                  <h3>AMOUNT ALLOCATED TO FUND</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>TOTAL DEDUCTIONS</h3>
+                                </div>
+                                <div class="col-header-spanmd">
+                                  <h3>FUND NAME/OPTION</h3>
+                                </div>
+                              </div>
+                              <div class="cta-header">
+                                <div class="col-header-spansm">
+                                  <h3 class="text-center">ACTIONS</h3>
+                                </div>
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">                                  
+                                  <div class="label mobile-only">Date of Transaction</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Amount Allocated to Fund</div>
+                                  <div class="mobile-black-text">₹ 4,00,000</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Deductions</div>
+                                  <div class="mobile-black-text">₹ 2,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Fund Name/Option</div>
+                                  <div class="mobile-black-text">Fund Name</div>                                  
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample1">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="px-4">
+                                    <div class="row">
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Fund Values<br><span>₹ 2,22,222</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Unit Price<br><span>3</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>No of Units<br><span></span>1000</p>          
+                                      </div>                                    
+                                    </div>
+                                  </div>                                  
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">                                  
+                                  <div class="label mobile-only">Date of Transaction</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Amount Allocated to Fund</div>
+                                  <div class="mobile-black-text">₹ 4,00,000</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Deductions</div>
+                                  <div class="mobile-black-text">₹ 2,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Fund Name/Option</div>
+                                  <div class="mobile-black-text">Fund Name</div>                                  
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample2">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="px-4">
+                                    <div class="row">
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Fund Values<br><span>₹ 2,22,222</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Unit Price<br><span>3</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>No of Units<br><span></span>1000</p>          
+                                      </div>                                    
+                                    </div>
+                                  </div>                                  
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">                                  
+                                  <div class="label mobile-only">Date of Transaction</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Amount Allocated to Fund</div>
+                                  <div class="mobile-black-text">₹ 4,00,000</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Deductions</div>
+                                  <div class="mobile-black-text">₹ 2,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Fund Name/Option</div>
+                                  <div class="mobile-black-text">Fund Name</div>                                  
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample3">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="px-4">
+                                    <div class="row">
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Fund Values<br><span>₹ 2,22,222</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Unit Price<br><span>3</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>No of Units<br><span></span>1000</p>          
+                                      </div>                                    
+                                    </div>
+                                  </div>                                  
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">                                  
+                                  <div class="label mobile-only">Date of Transaction</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Amount Allocated to Fund</div>
+                                  <div class="mobile-black-text">₹ 4,00,000</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Deductions</div>
+                                  <div class="mobile-black-text">₹ 2,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Fund Name/Option</div>
+                                  <div class="mobile-black-text">Fund Name</div>                                  
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample4">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="px-4">
+                                    <div class="row">
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Fund Values<br><span>₹ 2,22,222</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Unit Price<br><span>3</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>No of Units<br><span></span>1000</p>          
+                                      </div>                                    
+                                    </div>
+                                  </div>                                  
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row">
+                              <div class="details-wrapper">
+                                <div class="detail-row-spanlg">                                  
+                                  <div class="label mobile-only">Date of Transaction</div>
+                                  <div class="mobile-black-text">28-dec-2020</div>
+                                </div>
+                                <div class="detail-row-spanlg">
+                                  <div class="label mobile-only">Amount Allocated to Fund</div>
+                                  <div class="mobile-black-text">₹ 4,00,000</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Total Deductions</div>
+                                  <div class="mobile-black-text">₹ 2,22,222</div>
+                                </div>
+                                <div class="detail-row-spanmd">
+                                  <div class="label mobile-only">Fund Name/Option</div>
+                                  <div class="mobile-black-text">Fund Name</div>
+                                </div>
+                              </div>
+                              <div class="cta-wrapper">
+                                <button type="button" class="btn accordion-link-btn margr-24-mob0 py-0 collapsed" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                  <span class="btn-text-closed">View More</span>
+                                  <span class="btn-text-open">View Less</span>
+                                  <i class="arrow-up"></i>
+                                  <i class="arrow-down"></i>
+                                </button>                                
+                              </div>                              
+                            </div>
+                            <div class="row collapse more-details-wrapper" id="collapseExample5">
+                              <div class="col-lg-12 m-pad-div">
+                                <div class="expanded-div">
+                                  <div class="px-4">
+                                    <div class="row">
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Fund Values<br><span>₹ 2,22,222</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>Unit Price<br><span>3</span></p>          
+                                      </div>        
+                                      <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <p>No of Units<br><span></span>1000</p>          
+                                      </div>                                    
+                                    </div>
+                                  </div>                                  
+                                </div>        
+                              </div>                              
+                            </div>
+                          </div>
+                          <div class="policy-grid-row brdr-none">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="text-center"><img src="./assets/img/icons/n_loading.svg"></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="payouts" role="tabpanel" aria-labelledby="1">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="policy-grid-customer">
+                          <div class="policy-grid-header d-none d-lg-block d-sm-none">
+                            <div class="header-row">                              
+                              <div class="col-header-spanlg">
+                                <h3>TRANSACTION DATE</h3>
+                              </div>
+                              <div class="col-header-spanlg">
+                                <h3>PAYOUT TYPE</h3>
+                              </div>
+                              <div class="col-header-spanmd">
+                                <h3>AMOUNT</h3>
+                              </div>
+                              <div class="col-header-spanmd">
+                                <h3>STATUS</h3>
+                              </div>                                            
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row sm-flex-wrapper">
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Transaction Date</div>
+                                <div class="mobile-black-text">28-dec-2020</div>
+                              </div>
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Payout Type</div>
+                                <div class="mobile-black-text">payout type</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Amount</div>
+                                <div class="mobile-black-text">₹ 2,22,222</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Status</div>
+                                <div class="mobile-black-text">Failed</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row sm-flex-wrapper">
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Transaction Date</div>
+                                <div class="mobile-black-text">28-dec-2020</div>
+                              </div>
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Payout Type</div>
+                                <div class="mobile-black-text">payout type</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Amount</div>
+                                <div class="mobile-black-text">₹ 2,22,222</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Status</div>
+                                <div class="mobile-black-text">Failed</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row sm-flex-wrapper">
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Transaction Date</div>
+                                <div class="mobile-black-text">28-dec-2020</div>
+                              </div>
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Payout Type</div>
+                                <div class="mobile-black-text">payout type</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Amount</div>
+                                <div class="mobile-black-text">₹ 2,22,222</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Status</div>
+                                <div class="mobile-black-text">Failed</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row sm-flex-wrapper">
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Transaction Date</div>
+                                <div class="mobile-black-text">28-dec-2020</div>
+                              </div>
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Payout Type</div>
+                                <div class="mobile-black-text">payout type</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Amount</div>
+                                <div class="mobile-black-text">₹ 2,22,222</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Status</div>
+                                <div class="mobile-black-text">Failed</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="policy-grid-row">
+                            <div class="detail-row sm-flex-wrapper">
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Transaction Date</div>
+                                <div class="mobile-black-text">28-dec-2020</div>
+                              </div>
+                              <div class="detail-row-spanlg">
+                                <div class="label mobile-only">Payout Type</div>
+                                <div class="mobile-black-text">payout type</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Amount</div>
+                                <div class="mobile-black-text">₹ 2,22,222</div>
+                              </div>
+                              <div class="detail-row-spanmd">
+                                <div class="label mobile-only">Status</div>
+                                <div class="mobile-black-text">Success</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="policy-grid-row brdr-none">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="text-center"><img src="./assets/img/icons/n_loading.svg"></p>
+                              </div>
+                            </div>                            
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>                               
+              </div><!-- Active Week Content Ends Here -->               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Add Familty Tag Password Modal -->
+      <div class="modal fade" id="forgot-password" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="forgot-password" aria-hidden="true">
+        <div class="modal-dialog modal-width-family-tag">
+          <div class="modal-content">
+            <div class="modal-header brdr-none">
+              <!-- <h5 class="modal-title  bold" id="staticBackdropLabel">Forgot Password</h5> -->
+              <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body moda-family-tag-body">
+              <h3>Add Family Tag</h3>
+              <hr>
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="exampleInputEmail1">Search Policy</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-8 col-12">
+                  <div class="form-group">
+                    
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="policy" placeholder="Policy Number">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                  <button class="btn btn-primary">Search</button>
+                </div>
+              </div>
+
+              <div class="family-policy-details">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <p>Policy No. <br><label>123456789</label></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <p>Policy Holder Name <br><label>Rajesh Kanna</label></p>
+                  </div>
+                  <div class="col-lg-5">
+                    <p>Plan Name  <br><label>Plan Name goes here</label></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p>*Policy detail open in new tab</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-5 col-12">
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Tag as</label>
+                      <select class="form-control " id="exampleFormControlSelect1">
+                        <option>Brother</option>
+                        <option>Sister</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row modal-cta">
+                <div class="col-lg-12 text-right">
+                  
+                  <button class="btn btn-outline-s">Cancel</button> <button class="btn btn-primary">Add</button>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Add Family Modal-->
+      <div class="modal fade" id="premium-payment-receipt-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="premium-payment-receipt-modal" aria-hidden="true">
+        <div class="modal-dialog width-800">
+          <div class="modal-content">
+            <div class="modal-header brdr-none">              
+              <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body padding-1y-2x">
+              <h3>Premium Payment Receipt</h3>
+              <hr>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="font14 pb-1">Select Year</div>
+                  <div class="select-box w-100">
+                    <select class="w-100">
+                      <option value="" disabled>Select Year</option>
+                      <option>MM-YYYY</option>
+                      <option>MM-YYYY</option>
+                      <option>MM-YYYY</option>
+                      <option selected>Request for Older Statements</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 col-12 pr-0 py-1">
+                  <div class="m-minus-15">
+                  <div class="font14 pb-1">From Date</div>
+                  <input class="height-10 padimp-0 date_text_box date-text-box-modal w-95" type="date">
+                </div>
+                </div>
+                <div class="col-md-3 col-12 height-10 py-1">
+                  <div class="m-minus-15">
+                  <div class="font14 pb-1">To Date</div>                            
+                  <input class="height-10 padimp-0 date_text_box date-text-box-modal w-100" type="date">
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="content-wrapper mt-4 shadow-normal">
+                <div class="details-table">
+                  <div class="details-header d-none d-lg-block d-sm-none">
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-3">
+                        Policy No.
+                      </div>
+                      <div class="col-md-4">
+                        Policy Owner Name
+                      </div>
+                      <div class="col-md-4">
+                        Plan Name
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-row">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" checked>
+                          <label class="custom-control-label" for="customControlValidation1"></label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        12345678
+                      </div>
+                      <div class="col-md-4">
+                        Sangeetha
+                      </div>
+                      <div class="col-md-4">
+                        Plan name goes here
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-row">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked">
+                          <label class="custom-control-label" for="customControlValidation2"></label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        12345678
+                      </div>
+                      <div class="col-md-4">
+                        Sangeetha
+                      </div>
+                      <div class="col-md-4">
+                        Plan name goes here
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-row">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked">
+                          <label class="custom-control-label" for="customControlValidation3"></label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        12345678
+                      </div>
+                      <div class="col-md-4">
+                        Sangeetha
+                      </div>
+                      <div class="col-md-4">
+                        Plan name goes here
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right py-4">
+                <button class="btn btn-primary-s">Request</button>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <br><br><br><br><br>
+        </div>
+      </div>
+
+     
+
+    </div>
+    </main>
+<!-- <footer class="text-muted">
+  <div class="sample-footer">
+              
+  </div>
+</footer> -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="./assets/js/vendor/bootstrap.min.js"></script> 
+<script src="./assets/js/vendor/bootstrap.bundle.min.js"></script> 
+</body>
+
+</html>

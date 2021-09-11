@@ -1,0 +1,22 @@
+.frq-text{
+    font-size: 18px;
+    line-height: 1.4;
+    color: $dark-grey;
+    padding: 8px 20px 0 0;    
+    border-top: 1px solid $light-grey;
+}
+.raise-query-cta-wrapper{
+    color: $dark-grey2;
+    font-size: 18px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    span{
+        padding-right: 16px;
+    }
+}
+.grey-border{
+    height: 1px;
+    width: 100%;
+    background: $light-grey;
+}
